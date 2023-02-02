@@ -1,0 +1,13 @@
+[build]
+  command = "gatsby build"
+  publish = "public"
+
+[build.environment]
+  NPM_VERSION = "8"
+  NODE_VERSION = "16"
+
+[[redirects]]
+  from = "https://svachmic-dev.netlify.app/*"
+  to = "https://dev.svachmic.cz/:splat"
+  status = 301
+  force = true
