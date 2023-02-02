@@ -1,12 +1,21 @@
 {
   "name": "svachmic-cz-dev-blog",
-  "private": true,
   "description": "Tech blog of Michal Svacha",
-  "version": "1.0.0",
+  "version": "2023.02.02",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
   "dependencies": {
-    "@fontsource/jetbrains-mono": "^4.5.5",
-    "@fontsource/merriweather": "^4.5.8",
-    "@fontsource/montserrat": "^4.5.7",
+    "@fontsource/jetbrains-mono": "^4.5.12",
+    "@fontsource/merriweather": "^4.5.14",
+    "@fontsource/montserrat": "^4.5.14",
     "gatsby": "^2.32.13",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-dark-mode": "^1.1.2",
@@ -15,7 +24,7 @@
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-offline": "^3.10.1",
     "gatsby-plugin-react-helmet": "^3.10.0",
-    "gatsby-plugin-robots-txt": "^1.7.1",
+    "gatsby-plugin-robots-txt": "1.7.1",
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-plugin-sitemap": "^2.12.0",
     "gatsby-remark-copy-linked-files": "^2.10.0",
@@ -27,25 +36,12 @@
     "gatsby-source-filesystem": "^2.11.1",
     "gatsby-transformer-remark": "^2.16.1",
     "gatsby-transformer-sharp": "^2.12.1",
-    "prismjs": "^1.27.0",
+    "prismjs": "^1.29.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "2.6.2"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "prettier": "2.8.3"
   }
 }
