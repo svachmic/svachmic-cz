@@ -15,14 +15,14 @@ Akademický rok 2014/2015 trávím na Erasmu v Paříži. Nestěžuju si, ale fr
 
 Záměrně pro účely plného porozumění uvedu přesný postup procesu podání přihlášky (jeho pochopení je klíčové pro zbytek příběhu):
 
-1.   Navštívil jsem stránku [Google Careers][google-careers].
-2.   Pod vyzývavým logem **DO COOL THINGS THAT MATTER** jsem šlápl na odkaz [Student jobs and internships][google-students].
-3.   Vlezl jsem do záložky *Advanced degree* a vybral *Internships for Masters Students*
-4.   Nakonec jsem vybral finální odkaz - **Software Engineering Intern 2015**
+1.  Navštívil jsem stránku [Google Careers][google-careers].
+2.  Pod vyzývavým logem **DO COOL THINGS THAT MATTER** jsem šlápl na odkaz [Student jobs and internships][google-students].
+3.  Vlezl jsem do záložky _Advanced degree_ a vybral _Internships for Masters Students_
+4.  Nakonec jsem vybral finální odkaz - **Software Engineering Intern 2015**
 
 Tam jsem následně vše pravdivě vyplnil, vložil životopis a odeslal. Nedával jsem si žádné šance, ale kdo nic nezkusí, nic nezkazí.
 
-Netrvalo to dlouho (konkrétně 2 dny) než se mi ozvala HR specialistka z Googlu (pro jednoduchost jí budu fiktivně říkat Jane), že by si se mnou ráda popovídala. Po tom co se přes mou hlavu přenesly veškeré emoce od radosti až po zoufalost jsem utrousil *cool* a odpověděl jsem Jane, že jsem rád za její zájem a že si určitě rád popovídám. 
+Netrvalo to dlouho (konkrétně 2 dny) než se mi ozvala HR specialistka z Googlu (pro jednoduchost jí budu fiktivně říkat Jane), že by si se mnou ráda popovídala. Po tom co se přes mou hlavu přenesly veškeré emoce od radosti až po zoufalost jsem utrousil _cool_ a odpověděl jsem Jane, že jsem rád za její zájem a že si určitě rád popovídám.
 
 Na první kontakt jsem se připravoval [videem][destil-google] od [Davida Vávry][destil], které mi pomohlo pochopit, co mě asi tak může čekat.
 
@@ -30,12 +30,12 @@ Na první kontakt jsem se připravoval [videem][destil-google] od [Davida Vávry
 
 První pohovor (s Jane) jsme si domluvili cca 3 dny od prvního kontaktu. Říkal jsem si, že není na co čekat a tak jsem do toho šel hned.
 
-Pohovor se nesl ve velmi přátelské atmosféře, nejvíc jsme se bavili o mně - projekty, práce, škola. Sem tam se mě nenápadně zeptala na nějakou záludnou technickou otázku, ale nenechal jsem se nachytat na švestkách. Ptala se mě na mou situaci ve škole, tak jsem ji pravdivě řekl, že jsem na Erasmu a že hledám na druhý semestr stáž. Na otázku "a co potom?" jsem opět pravdivě odpověděl, že chci zpět do Prahy, protože chci dodělat školu (reklama na FEL: fakulta nabízí pár *hustodémonsky krutopřísných* předmětů - například [tento][GPU], [tenhle][SAD] nebo [tamten][OSW], které bych ještě rád absolvoval a zároveň jsem ústně domluven u koho budu psát diplomku...).
+Pohovor se nesl ve velmi přátelské atmosféře, nejvíc jsme se bavili o mně - projekty, práce, škola. Sem tam se mě nenápadně zeptala na nějakou záludnou technickou otázku, ale nenechal jsem se nachytat na švestkách. Ptala se mě na mou situaci ve škole, tak jsem ji pravdivě řekl, že jsem na Erasmu a že hledám na druhý semestr stáž. Na otázku "a co potom?" jsem opět pravdivě odpověděl, že chci zpět do Prahy, protože chci dodělat školu (reklama na FEL: fakulta nabízí pár _hustodémonsky krutopřísných_ předmětů - například [tento][GPU], [tenhle][SAD] nebo [tamten][OSW], které bych ještě rád absolvoval a zároveň jsem ústně domluven u koho budu psát diplomku...).
 
-Překvapivě byla Jane natolik nadšená, že mi rovnou nabídla postup do dalšího kola - interview s inženýrem. Informovala mě, že budu mít jedno kolo přes telefon/hangout a potom bych měl pohovor *on-site* v případě úspěchu. Druhé kolo trvá 45 minut, subjekt dostane 2 otázky - lehkou a těžkou a musí je nakódit do Google Docs (bomba...). Třetí kolo, v kanceláři Googlu se skládá ze dvou 45 minutových technických interview, obědu (neoficiální interview) a dalších dvou 45 minutových interview. Jestli se mě snažila vystrašit, tak se jí to celkem obstojně podařilo. Dodatek - "ale nenech se rozptýlit tím, že je to Google..." - nezlepšil opravdu **vůbec nic**. Nakonec mi dala tipy na pohovor (co je tedy jako fajn umět):
+Překvapivě byla Jane natolik nadšená, že mi rovnou nabídla postup do dalšího kola - interview s inženýrem. Informovala mě, že budu mít jedno kolo přes telefon/hangout a potom bych měl pohovor _on-site_ v případě úspěchu. Druhé kolo trvá 45 minut, subjekt dostane 2 otázky - lehkou a těžkou a musí je nakódit do Google Docs (bomba...). Třetí kolo, v kanceláři Googlu se skládá ze dvou 45 minutových technických interview, obědu (neoficiální interview) a dalších dvou 45 minutových interview. Jestli se mě snažila vystrašit, tak se jí to celkem obstojně podařilo. Dodatek - "ale nenech se rozptýlit tím, že je to Google..." - nezlepšil opravdu **vůbec nic**. Nakonec mi dala tipy na pohovor (co je tedy jako fajn umět):
 
-1.   Časové a paměťové složitosti algoritmů
-2.   Naprogramovat datové struktury pomocí pole (speciálně hashmaps a hashtables)
+1.  Časové a paměťové složitosti algoritmů
+2.  Naprogramovat datové struktury pomocí pole (speciálně hashmaps a hashtables)
 
 Dále jsem dostal elektronickou kopii [Cracking the Coding Interview][crack-code] na procvičení (jako kdybych toho neměl dost z [PALů][PAL] a [DSAček][DSA]) a otázku - "kdy bys chtěl mít interview?". Opatrně jsem se zeptal, jak dlouhou dobu si kandidáti vybírají. Odpověď byla, že mezi 2-4 týdny. Pochopitelně jsem nechtěl vypadat ani jako frajer ani jako srab, tak jsem zvolil "zlatou" střední cestu, tedy 3 týdny.
 
@@ -47,7 +47,7 @@ Před druhým kolem jsem otestoval vše potřebné - link na Google Docs šlapal
 
 Dostal jsem první jednoduchou otázku (na rozehřátí), kterou samozřejmě nemohu prozradit, ale neměla nic společného ani s datovou strukturou v poli, ani s časovou a paměťovou složitostí. Druhá otázka k mému překvapení opět neměla s výše zmíněnými tématy absolutně nic společného, ale záludná byla. Úroveň odhaduji na druhý semestr bakaláře na FELu ([Programování v Javě][PJV]), kdy jsem jako semestrálku programoval Bejeweled. Místy jsem se parkrát vysekal, ale k mému překvapení jsem ani nebyl příliš nervózní. Můžu ale říct, že Google Docs mi opravdu pily krev. Co to je proboha za nápad - Google určitě musí mít interní editor pro psaní kódu, který alespoň doplňuje závorky a odsazuje kód. Neshledávám jako umění umět pod tlakem mačkat milionkrát tabulátor a být si v každém daném momentě vědom kolik zavírajících závorek musím ještě napsat.
 
-Inženýr na sebe prozradil, že dělá na Androidu, ale že víc mi nemůže říct. Podotknu taky, že byl fakt arogantní. Důkaz, že na blbce můžete narazit všude. Nicméně ocenil mou znalost [bzipu][bzip] a dokonce se mi i dostalo obdivu, že to už je "pokročilé programování". So *hardcore*! Dokonce se mě zeptal, zda mám nějaké dotazy. Směle jsem se tedy zeptal nakolik doopravdy aplikujou agilní metodiky vývoje (Scrum, Pair programming, Rapid prototyping...) a jestli se každý den těší do práce.
+Inženýr na sebe prozradil, že dělá na Androidu, ale že víc mi nemůže říct. Podotknu taky, že byl fakt arogantní. Důkaz, že na blbce můžete narazit všude. Nicméně ocenil mou znalost [bzipu][bzip] a dokonce se mi i dostalo obdivu, že to už je "pokročilé programování". So _hardcore_! Dokonce se mě zeptal, zda mám nějaké dotazy. Směle jsem se tedy zeptal nakolik doopravdy aplikujou agilní metodiky vývoje (Scrum, Pair programming, Rapid prototyping...) a jestli se každý den těší do práce.
 
 Na odpověď od Thomase ohledně výsledků jsem čekal dva týdny. V pozdní čtvrteční večer, kdy jsem byl zrovna v Praze, mi přišel slibně vypadající e-mail, že jsem se inženýrovi líbil...**ALE** údajně jsem se dopustil pár drobných chyb a proto by se mnou chtěli udělat ještě jedno kolo - pro jistotu. A že si mám dát pozor na detaily. Aha, fakt super feedback. Domluvili jsme se tedy obratem na dalším interview následující týden.
 
@@ -57,9 +57,7 @@ Přiznám se, že jak mezi jednotlivými koly bylo mraky času, tak jsem se už 
 
 Druhý inženýr byl naopak absolutně má krevní skupina - pohodář, kterému to pálí. První otázka byla čistě matematická záležitost. Pěkně jsme si popovídali o zadané funkci včetně jejího důkazu. Zabočili jsme i do paměťových limitů a vypadal spokojeně, že tady nebude žádný problém. Druhá otázka byla absolutně bezvadná - STROMY. Konečně, řekl jsem si - jako loni v PALech. Chvíli jsem nad tím (nahlas) dumal, mezitím co mi můj protějšek s úsměvem přikyvoval. Zeptal jsem se ho, zda moje navrhnuté řešení dává smysl a on řekl, že rozhodně a že mohu začít psát. Byl jsem asi v plovině implementace, když náhle telefon hlásil stav 0% baterie.
 
-
 > **Zde prosím vložte svou oblíbenou nadávku.**
-
 
 Přirozeně browser **stále** nepřijímal mikrofony napojené na MacBook Pro a jelikož byl můj telefon mimo, nemohl mi ani zavolat na emergency číslo. Minimální nabití, aby iPhone alespoň v nabíječce fungoval je kolem 5-10 minut a takový luxus si zkrátka inženýři z Googlu nemohou dovolit. Jelikož inženýr na druhé straně měl za ušima a zřejmě se mu líbil můj nápad, tak mi řekl - "Can you hear me?", na což jsem zakýval hlavou a na to konto řekl - "Let's reschedule, you almost got it.". Budiž.
 
@@ -94,7 +92,7 @@ Konec zábavy, nervy mám jen jedny. Pěkně jsem Thomasovi poděkoval, že nem�
 Cítím zášť nebo nenávist? Ale vůbec. Zkusím to znovu? Zcela určitě! Ač mi trochu hnuli žlučí, tak to ve skutečnosti byl docela dobrý trénink - vyzkoušet si třikrát technický pohovor. Alespoň teď přesně vím, co mě příště čeká. Budu muset naskillovat trochu iterátory, v mezičase budu pokračovat na svém [grafovacím frameworku][SGRAPH] a třeba se příště dočkám krásné otázky na teorii grafů hned v prvním kole. Jen si dám pozor, že obě strany chápou, o jakou pozici se ucházím. To aby Google příště dostál svému "IF YOU FAIL, FAIL FAST".
 
 [destil]: https://twitter.com/destil
-[destil-google]: https://www.youtube.com/watch?v=bAi83yD4-fc 
+[destil-google]: https://www.youtube.com/watch?v=bAi83yD4-fc
 [internship-movie]: http://www.csfd.cz/film/321909-stazisti/
 [google-careers]: https://www.google.com/about/careers/
 [google-students]: https://www.google.com/about/careers/students/

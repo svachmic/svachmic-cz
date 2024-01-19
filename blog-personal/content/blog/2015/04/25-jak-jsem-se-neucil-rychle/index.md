@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jak jsem se neučil rychle"
+title: "Jak jsem se neučil rychle"
 description: "O tom, jak jsem se dostal z iluze úspěchu přes noc."
 date: "2015-04-25 10:00:00"
 categories: "personal"
@@ -27,19 +27,20 @@ Asi víte o čem mluvim - přednášky, které vám dávají pocit nabuzení, od
 
 ### 3. Rekurze
 
-"Cože, to sem jako budeš tahat programování?" - ale to zase ne, ale sedí to sem jak prdel na hrnec. Rekurze, tedy úplně nejjednoduššeji "definování objektu pomocí sebe sama" se objevuje v této doméně jako nekonečné zanořování se hlouběji a hlouběji do podstaty věci osobního rozvoje. Dejme tomu, že si přečtete jednu knížku, která by vám měla zodpovědět všechny vaše otázky. Jenže problém je v tom, že autor usiluje o to, aby po jejím přečtení jste si uvědomili, že těch otázek je vlastně mnohem víc. A tak si přečtete další a další a další...až jednou si (ti šťastnějsí jedinci) uvědomíte, že čtete prázdné bláboly a fráze. Ti kteří si to neuvědomí tak tráví veškerý volný čas mimo své povinnosti čtením hovadin místo vytváření hodnot (pokud je to váš případ, zde je prostor pro vystřízlivění). 
+"Cože, to sem jako budeš tahat programování?" - ale to zase ne, ale sedí to sem jak prdel na hrnec. Rekurze, tedy úplně nejjednoduššeji "definování objektu pomocí sebe sama" se objevuje v této doméně jako nekonečné zanořování se hlouběji a hlouběji do podstaty věci osobního rozvoje. Dejme tomu, že si přečtete jednu knížku, která by vám měla zodpovědět všechny vaše otázky. Jenže problém je v tom, že autor usiluje o to, aby po jejím přečtení jste si uvědomili, že těch otázek je vlastně mnohem víc. A tak si přečtete další a další a další...až jednou si (ti šťastnějsí jedinci) uvědomíte, že čtete prázdné bláboly a fráze. Ti kteří si to neuvědomí tak tráví veškerý volný čas mimo své povinnosti čtením hovadin místo vytváření hodnot (pokud je to váš případ, zde je prostor pro vystřízlivění).
 
 Druhá forma rekurze je přílišný optimizmus nad marketingovejma žvástama, které daný zdroj obsahuje - geniální techniky pro způsob práce. Mluvím o všech těch "akčních plánech", "osobních fídbecích", "časových snímcích" a "dopisech svému budoucímu já".
 
 > Dovolte mi, abych se zde pozastavil a nahlas si zadumal. Daný zdroj čtenáře motivuje k použití jakési dokonalé techniky "jak pracovat". Čtenář si vytvoří bojový plán, všechno vytuní, vybarví jinobarevkama a dotáhnete do dokonalosti. Výsledek si jak blbec vylepí na ledničku a nechá to tam hnít.
 
- Jinými slovy stráví mraky času přemýšlením o "proč to budu dělat", "jak to budu dělat" a "jak to bude parádní až to budu dělat". Místo toho, aby se zvedl a začal "TO NĚCO" dělat.
+Jinými slovy stráví mraky času přemýšlením o "proč to budu dělat", "jak to budu dělat" a "jak to bude parádní až to budu dělat". Místo toho, aby se zvedl a začal "TO NĚCO" dělat.
 
 ### 4. Znalosti snadno a rychle
 
 Sorry, ale nic neni zadarmo a neexistujou zkratky. Neexistuje nic jako "Naučte se XYZ za 24h" nebo "Mistrem v XYZ za 21 dnů". Všechny tyhle názvy knih jsou oblbování zákazníka a snůška lží. Nepopírám, že neexistuje spoustu skvělých knih, které vám v daném časovém intervalu dají jakési mělké povědomí o dané doméně. Ale doufat, že najdete zkratku k získání znalostí a zkušeností je absolutně liché. Dovedete si představit, že bychom to dovedli ad absurdum a začali si kupovat "Zubařem snadno a rychle", nebo "Staňte se mistrem v pilotování osobního letadla"? Uplně slyším "Ale to je něco jinýho..!"...není. Nenaučíte se ani programovat ani hrát na hudební nástroj (bohužel, ani na violu...) ani nic jinýho za měsíc. Trvá to roky soustavné práce a čím dřív si to všichni přiznáme, tím dřív se ty voloviny přestanou objevovat v regálech Luxoru.
 
 ## Moje motivační 5ti minutové okénko
+
 Abych tedy spojil dvě zdánlivě nespojitelná témata (a uspokojil ty kteří mě chtěli vidět na pódiu prodávat vodu), tedy depresi a osobní rozvoj, povím vám, jak jsem se z deprese vysoukal ven. Trvala od soboty dopoledne do nedělního odpoledne. Jelikož beru depresi jako ztrátu času, začal jsem se debugovat jako debuguju kód - krok za krokem. Když horní vrstva nevykázala žádný problém, musel jsem o úroveň níž. A znova. A znova. Až nakonec, když jsem nedokázal pochopit, co po nás dirigent chce v tý pitomý třetí větě, kde to bylo falešný jak fena, tak mi v tu ránu došlo, že jsem přešlej kvůli vlastní neschopnosti mluvit dokonale francouzsky po roce a půl učení se, když všechny články a knížky mi říkaly, že to jde. Nejde, tečka. Přestaň si Michale nalhávat, že obejdeš učící křivku, protože jseš vyjímečnej. Nejseš a neobejdeš. Naučit se COKOLIV na vysoké úrovni potřebuje ČAS a PÍLI. Nárazové zbláznění se do něčeho nikam nevede, pouze [práce a disciplína][mahler].
 
 Takže přátelé, jestli vám můžu dát jednu radu, tak tady je:

@@ -24,19 +24,19 @@ Rád bych vám tvrdil jak jsem borec a sepsal jsem svůj proslov za půl hodiny 
 
 **O čem jsem chtěl mluvit:**
 
-* O studentech
-* O rodičích
-* O vedoucích
-* O budoucnosti
+- O studentech
+- O rodičích
+- O vedoucích
+- O budoucnosti
 
 Celá promoce byla "o nás", o studentech. Na to jsem se chtěl zaměřit. Samozřejmě jsem myslel i na rodiny a vedoucí závěrečných prací. To jsou ti nejdůležitější lidé, kterým patří ten největší dík za to, že to s námi "vydrželi". Nechtěl jsem nikomu jinýmu děkovat za to, že chodil do přednáškovému sálu vykládat, že jsme nemožný. A že se to opravdu párkrát stalo. To tam ale nepatří, takoví lidé si zaslouží mlčení. Pouze tím, že je vynechám je spravedlivě potrestám. V neposlední řadě jsem musel udělat prostor pro budoucnost. Trochu je nabudit jak tam tak seděli přes hodinu. Dát jim najevo, že promocí ta pravá jízda teprv začíná.
 
 **O čem jsem nechtěl mluvit:**
 
-* O nepříjemných vyučujících
-* O senátu
-* O průšvizích
-* O nevyužitých příležitostech
+- O nepříjemných vyučujících
+- O senátu
+- O průšvizích
+- O nevyužitých příležitostech
 
 Nic z toho tam nepatřilo. Ani jeden bod. Promoce je pozitivní událost a mělo by se mluvit pouze o pozitivních tématech. Špínu můžu na někoho tahat v hospodě nebo u soudu. A že jsem té špíny za ty roky viděl. Krásné vzpomínky jsou ale to co paměť uchová a to špatné vytěsní. Stejně tak nepatří na promoce mluvit o tom co jsme provedli, opsali a nafejkovali. Prostě nepatří, tím bych znehodnotil celý ceremoniál a možná z toho dělal trochu frašku. Udělat si z něčeho srandu, budiž, ale z podvádění asi úplně ne.
 
@@ -53,11 +53,11 @@ Překvapivě jsem to nezblbnul! Proslov proběhl bez přežblebnutí, dokonce js
 Redakčně upravená, uhlazená verze:
 
 > Vaše Magnificence, Spektabilis, Honorabiles, vážené dámy a vážení pánové,
-> 
+>
 > dnešním dnem slavnostně zakončujeme naše studia na fakultě elektrotechnické, českého vysokého učení technického v Praze. Dostalo se mi pocty a zároveň zodpovědnosti, abych zde pronesl projev za nás studenty, ode dneška tedy absolventy.
-> 
-> Není tomu tak dlouho, kdy jsme všichni skládali slib a marně si představovali jaké to asi bude, až dostudujeme. Jaké to bude až budeme zde, v Betlémské kapli, tak jak je tomu právě dnes. Představa, která se jevila před lety jako daleko v budoucnosti nám dnes připadá skoro až absurdní, protože máme pocit jakoby to vlastně bylo včera kdy jsme poprvé vkročili do přednáškového sálu. 
-> 
+>
+> Není tomu tak dlouho, kdy jsme všichni skládali slib a marně si představovali jaké to asi bude, až dostudujeme. Jaké to bude až budeme zde, v Betlémské kapli, tak jak je tomu právě dnes. Představa, která se jevila před lety jako daleko v budoucnosti nám dnes připadá skoro až absurdní, protože máme pocit jakoby to vlastně bylo včera kdy jsme poprvé vkročili do přednáškového sálu.
+>
 > Naše vnímání času a událostí se mění a proto ucelený obraz našeho vzdělání nebylo možné předem vytvořit v našich hlavách. Vytvořit ho jde pouze zpětným pohledem, kdy všechny dílky skládanky zapadly do sebe. Proto zde náleží dík všem, kteří v nás celou dobu věřili a podporovali nás v nejtěžších chvílích, když měli jsme chuť to všechno vzdát. Za všechny studenty děkuji našim rodinám, známým, přátelům, ale i vedoucím závěrečných prací a pedagogům obecně.
 >
 > Škola nás možná nenaučila vše pro to, abychom ihned nastoupili na ty nejvyšší pozice. Od toho vlastně ani škola není. Co nám ale škola dala, mimo krásné roky a pevná přátelství, je způsob “jak být chytrý”. Jak analyticky přistoupit k zadanému problému. Jak v nejkratším možném čase zvládnout obtížnou úlohu. Možná i jak se přes noc stát expertem na lineární algebru. Zkrátka nás naučila jak efektivně využít všechny dostupné zdroje, abychom byli schopní vykonat kvalitně svou práci a podložit své argumenty tvrdými daty.
@@ -72,7 +72,7 @@ Redakčně upravená, uhlazená verze:
 >
 > Přeji vám, abyste byli odvážní - jděte mimo svou komfortní zónu, cestujte, zkoušejte nové věci, experimentujte. Pokud budete pouze opakovat to, co dělali jiní před vámi, těžko dosáhnete nového výsledku.
 >
-> Nakonec bych vám chtěl popřát hodně štěstí. I díky němu tu zde dnes stojíme. 
+> Nakonec bych vám chtěl popřát hodně štěstí. I díky němu tu zde dnes stojíme.
 >
 > Jak by řekl klasik - je ale potřeba jít tomu štěstíčku trochu naproti.
 >

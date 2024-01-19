@@ -27,9 +27,10 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --fontFamily-sans: "Montserrat", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
@@ -255,7 +256,7 @@ a:focus {
 }
 
 .main-heading {
-  font-size: var(--fontSize-6);
+  font-size: var(--fontSize-7);
   margin: 0;
 }
 
@@ -308,9 +309,9 @@ a:focus {
 }
 
 .blog-post header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
-}
+    font-size: var(--fontSize-2);
+    font-family: var(--font-heading);
+  }
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
@@ -326,7 +327,7 @@ a:focus {
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-
+  
 .iframe-responsive {
   position: absolute;
   top: 0;

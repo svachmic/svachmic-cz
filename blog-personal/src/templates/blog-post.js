@@ -1,25 +1,36 @@
+import * as React from "react"
+
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
-const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
-  const readingTime = Math.ceil(post.fields.readingTime.minutes)
-  const hyperlinks = data.site.siteMetadata.hyperlinks
+const readTimeEstimate = require("read-time-estimate")
+
+const BlogPostTemplate = ({
+  data: { previous, next, site, markdownRemark: post },
+  location,
+}) => {
+  const siteTitle = site.siteMetadata?.title || `Title`
+  const hyperlinks = site.siteMetadata.hyperlinks
   const date = new Date(post.frontmatter.date)
-  const localizedDate = date.toLocaleDateString('cs-CZ')
+  const localizedDate = date.toLocaleDateString("cs-CZ")
+  const {
+    // humanizedDuration, // 'less than a minute'
+    duration, // 0.23272727272727273
+    // totalWords, // 9
+    // wordTime, // 0.03272727272727273
+    // totalImages, // 1
+    // imageTime, //  0.2
+    // otherLanguageTimeCharacters, // 6
+    // otherLanguageTime, // 0.012
+  } = readTimeEstimate(post.html)
+  // const readingTime = Math.ceil(post.fields.readTimeEstimate?.duration)
+  const readingTime = Math.ceil(duration)
 
   return (
     <Layout location={location} title={siteTitle} hyperlinks={hyperlinks}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
       <article
         className="blog-post"
         itemScope
@@ -27,7 +38,13 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{localizedDate}{' '}&bull;{' '}<span role="img" aria-label="coffee emoji reading time">☕️</span> {readingTime} min čtení</p>
+          <p>
+            {localizedDate} &bull;{" "}
+            <span role="img" aria-label="coffee emoji reading time">
+              ☕️
+            </span>{" "}
+            {readingTime} min čtení
+          </p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -68,6 +85,15 @@ const BlogPostTemplate = ({ data, location }) => {
   )
 }
 
+export const Head = ({ data: { markdownRemark: post } }) => {
+  return (
+    <Seo
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+    />
+  )
+}
+
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
@@ -80,10 +106,9 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         hyperlinks {
-            pixeesoft
-            github
-            stackoverflow
-            email
+          devBlog
+          manaOutpost
+          email
         }
       }
     }
@@ -97,10 +122,16 @@ export const pageQuery = graphql`
         description
       }
       fields {
-        readingTime {
-            text
-            minutes
-          }
+        readTimeEstimate {
+          duration
+          humanizedDuration
+          imageTime
+          otherLanguageTime
+          otherLanguageTimeCharacters
+          totalImages
+          totalWords
+          wordTime
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

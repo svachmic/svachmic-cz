@@ -26,38 +26,39 @@ Jak zde figuruje "pravda je někde uprostřed"? Pojďme si vytvořit fiktivní p
 - Babička přehání a řekne dědovi, že Honzík si zlámal obě nohy na koloběžce.
 
 Děda bere osud do vlastních rukou a volá tatínkovi. V tuto chvíli má k dispozici dvě zprávy o situaci, které jsou v přímem konfliktu:
+
 1. Nic se nestalo.
 2. Honzík má zlomené obě nohy.
 
 Pakliže si řekneme, že význam "pravda je někde uprostřed" je "sečtu obojí a vydělím dvěma":
 
-> ![\Large \frac{0n&plus;2n}{2}=1n][leg-formula]
+> ![\Large \frac{0n+2n}{2}=1n][leg-formula]
 
-Dostaneme se k závěru neslučujícím se s realitou - zlomil si *právě jednu nohu*.
+Dostaneme se k závěru neslučujícím se s realitou - zlomil si _právě jednu nohu_.
 
 ### Definice děleného prostoru
 
-Jev, který jsem se počtem zlomených nohou snažil demonstrovat se v datové analýze nazývá [*outlier*][outlier] - tedy nějaká hodnota, která se naprosto vymyká distribuci ostatních hodnot v dané množině.
+Jev, který jsem se počtem zlomených nohou snažil demonstrovat se v datové analýze nazývá [_outlier_][outlier] - tedy nějaká hodnota, která se naprosto vymyká distribuci ostatních hodnot v dané množině.
 
 > ![\Large x\in{1,2,1,0,2,0,42,1}][outlier-formula]
 
-Hodnota *42* je outlier - naše množina jsou hodnoty v rozmezí 0 až 2 a hodnota 42 nám tam nezapadá. Proč nezapadá?
+Hodnota _42_ je outlier - naše množina jsou hodnoty v rozmezí 0 až 2 a hodnota 42 nám tam nezapadá. Proč nezapadá?
 
 1. Modus množiny je roven **1**
 2. Medián množiny je roven **1**
 3. Průměr množiny je **6.25**
 
-Jelikož žádná z hodnot (= realita) nenabývá hodnoty blízké šesti, můžeme usoudit, že průměr množiny je nám statisticky úplně k ničemu a musíme pátrat jinde - *hledat outlier*.
+Jelikož žádná z hodnot (= realita) nenabývá hodnoty blízké šesti, můžeme usoudit, že průměr množiny je nám statisticky úplně k ničemu a musíme pátrat jinde - _hledat outlier_.
 
 Pojďme si ještě pro ilustraci črtnout hodnoty množiny do grafu:
 
 ![Graf hodnot](./plot.jpg)
 
-Hodnotu 42 si můžeme představit, jako informaci o zlámaných nohou Honzíka. Hodnoty 0-2 ve spodní části grafu jsou pak mantinely mezi kterými se pohybuje ta *reálná* průměrná hodnota, kde můžeme s klidem říct, že "pravda je někde uprostřed".
+Hodnotu 42 si můžeme představit, jako informaci o zlámaných nohou Honzíka. Hodnoty 0-2 ve spodní části grafu jsou pak mantinely mezi kterými se pohybuje ta _reálná_ průměrná hodnota, kde můžeme s klidem říct, že "pravda je někde uprostřed".
 
 ### Oddělení plevele od stébla
 
-Jistě, výhodou našeho fiktivního příběhu je to, že je *evidentní*, jaká je realita. Není ale důvod k panice - ačkoliv je svět složitější, než příklady [z učebnice od Petákové][petakova], stejně tak se dá naučit rozpoznat nesmysly a bláboly a najít kompromis, který je *doopravdy uprostřed* spektra smysluplných hodnot.
+Jistě, výhodou našeho fiktivního příběhu je to, že je _evidentní_, jaká je realita. Není ale důvod k panice - ačkoliv je svět složitější, než příklady [z učebnice od Petákové][petakova], stejně tak se dá naučit rozpoznat nesmysly a bláboly a najít kompromis, který je _doopravdy uprostřed_ spektra smysluplných hodnot.
 
 Jak na to? Pojďme se podívat na příčiny informačního šumu:
 
@@ -67,6 +68,7 @@ Jak na to? Pojďme se podívat na příčiny informačního šumu:
 Nejdůležitější ingrediencí pro nacvičení rozpoznávání blbostí je informační dieta. Koneckonců, sociální sítě amplifikují přenos falešných zpráv a proto je třeba si vytvořit disciplínu a netrávit na sociálních sítích příliš času. Nebudu se pouštět do vysvětlování proč - od toho má můj bývalý šéf, [Pepa Holý][holy-josef], podcast, který [vřele doporučuju][kanarci].
 
 Můj přístup k sociálním sítím:
+
 1. Instagram - privátní účet, aktivně nepoužívám.
 2. Facebook - zrušené sledování všech kromě rodiny a blízkých přátel. Aktivita jednou denně.
 3. LinkedIn - pouze online CV, žádná timeline a sdílení obsahu. Aktivita jednou-dvakrát do měsíce.
@@ -80,9 +82,9 @@ Další důležitý prvek pro nacvičení filtru je čtení kvalitních zdrojů,
 
 Stejně jako předchozí rčení i toto obrátíme trochu naruby. Pokud hledáte dávku motivace a návod na ultraproduktivní den, chyba lávky. Díky dlouhému času strávenému doma jsem měl tu možnost přečíst spoustu knížek. Jedna z nich, která mě pozitivně ovlivnila byla ["Essentialism"][essential] od Grega McKeowna.
 
-### Co můžeš *ale nemusíš* udělat dnes ...
+### Co můžeš _ale nemusíš_ udělat dnes ...
 
-Co je opravdu důležité vykonávat na denní bázi (bez evidentních aktivit jako hygiena, stravování se aj.)? Které činnosti v práci *opravdu* musíte udělat a které děláte proto, že cítíte tlak okolí/kolegů? Opravdu je trávení času na výše zmíněných sociálních sítích důležitější, než čtení intelektuálně stimulující knížky? Dost otázek, čas na odpověď, kterou využíváme méně, než je zdrávo.
+Co je opravdu důležité vykonávat na denní bázi (bez evidentních aktivit jako hygiena, stravování se aj.)? Které činnosti v práci _opravdu_ musíte udělat a které děláte proto, že cítíte tlak okolí/kolegů? Opravdu je trávení času na výše zmíněných sociálních sítích důležitější, než čtení intelektuálně stimulující knížky? Dost otázek, čas na odpověď, kterou využíváme méně, než je zdrávo.
 
 > Ne.
 
@@ -94,7 +96,7 @@ A to je konec věty. Prostě ne.
 
 Ne, ne a ne. Všichni máme stejný počet hodin v jednom dni. Jestliže si sám nenastavím priority v mém kalendáři, někdo jiný to udělá za mě.
 
-### ... neodkládej na zítřek, *ale na nikdy*
+### ... neodkládej na zítřek, _ale na nikdy_
 
 Na první pokus to bude nepříjemný. Kolegové budou zklamaní, někteří přátelé vám to možná budou chvíli vyčítat, ale ve finále budete mít mnohem větší respekt. To proto, že si vážíte svýho času a proto si času s vámi budou vážit jiní o to víc.
 
@@ -141,6 +143,7 @@ Takže na pozitivních vlnách a za zvuku Kelly Clarkson nashle příště! 👋
     class="iframe-responsive"
     title="What doesn't kill you makes you stronger."
     src="https://www.youtube.com/embed/Xn676-fLq7I"
+    referrerpolicy="no-referrer-when-downgrade"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowFullscreen
@@ -148,7 +151,7 @@ Takže na pozitivních vlnách a za zvuku Kelly Clarkson nashle příště! 👋
 </div>
 
 [guardian]: https://www.theguardian.com/science/2019/feb/17/study-blames-youtube-for-rise-in-number-of-flat-earthers
-[leg-formula]: https://latex.codecogs.com/svg.latex?\Large&space;\frac{0n&plus;2n}{2}=1n
+[leg-formula]: https://latex.codecogs.com/svg.latex?\Large&space;\frac{0n+2n}{2}=1n
 [outlier]: https://en.wikipedia.org/wiki/Outlier
 [outlier-formula]: https://latex.codecogs.com/svg.latex?\Large&space;x\in{1,2,1,0,2,0,42,1}
 [petakova]: https://prometheus-nakl.cz/index.php?zobraz=detail&id_katalog=170
