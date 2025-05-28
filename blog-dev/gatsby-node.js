@@ -1,39 +1,43 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+// Define the template for blog post
+const blogPost = path.resolve(`./src/templates/blog-post.js`)
+
+/**
+ * @type {import('gatsby').GatsbyNode['createPages']}
+ */
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
-
   // Get all markdown blog posts sorted by date
-  const result = await graphql(
-    `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
-          nodes {
-            id
-            fields {
-              slug
-              readingTime {
-                text
-                minutes
-              }
+  const result = await graphql(`
+    {
+      allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
+        nodes {
+          id
+          fields {
+            slug
+            readTimeEstimate {
+              duration
+              humanizedDuration
+              imageTime
+              otherLanguageTime
+              otherLanguageTimeCharacters
+              totalImages
+              totalWords
+              wordTime
             }
           }
         }
       }
-    `
-  )
+    }
+  `)
 
   if (result.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
-      result.errors
+      result.errors,
     )
     return
   }
@@ -62,6 +66,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 }
 
+/**
+ * @type {import('gatsby').GatsbyNode['onCreateNode']}
+ */
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
@@ -76,6 +83,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
+/**
+ * @type {import('gatsby').GatsbyNode['createSchemaCustomization']}
+ */
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
@@ -122,12 +132,18 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type Fields {
       slug: String
-      readingTime: ReadingTime
+      readTimeEstimate: ReadTimeEstimate
     }
 
-    type ReadingTime  {
-        text: String
-        minutes: Float
-      }
+    type ReadTimeEstimate  {
+      duration: Float
+      humanizedDuration: String
+      imageTime: Float
+      otherLanguageTime: Float
+      otherLanguageTimeCharacters: Float
+      totalImages: Float
+      totalWords: Float
+      wordTime: Float
+    }
   `)
 }

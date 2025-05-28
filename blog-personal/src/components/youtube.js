@@ -1,6 +1,6 @@
 import React from "react"
 
-const Youtube = ({ videoId, title }) => {
+const YouTube = ({ videoId, title }) => {
   const videoUrl = `https://www.youtube.com/embed/${videoId}`
 
   return (
@@ -18,4 +18,4 @@ const Youtube = ({ videoId, title }) => {
   )
 }
 
-export default Youtube
+export default YouTube

@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Youtube from "../components/youtube"
+import YouTube from "../components/youtube"
 import { graphql } from "gatsby"
 
 const NotFoundPage = ({ data, location }) => {
@@ -13,7 +13,7 @@ const NotFoundPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle} hyperlinks={hyperlinks}>
       <h1>404: Stránka nenalezena</h1>
       <p>Něco by tu možná mělo být. Ale není...</p>
-      <Youtube
+      <YouTube
         videoId="X_-q9xeOgG4"
         title="Always look on the bright side of life."
       />

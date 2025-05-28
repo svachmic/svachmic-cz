@@ -1,3 +1,6 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
     title: `/dev/svachmic`,
@@ -6,10 +9,10 @@ module.exports = {
       summary: `Přemýšlím, programuji a píšu o tom.`,
     },
     hyperlinks: {
-        personal: `https://blog.svachmic.cz`,
-        github: `https://github.com/svachmic`,
-        stackoverflow: `https://stackoverflow.com/users/1196908/michal`,
-        email: `mailto:kontakt@svachmic.cz`
+      personal: `https://blog.svachmic.cz`,
+      github: `https://github.com/svachmic`,
+      stackoverflow: `https://stackoverflow.com/users/1196908/michal`,
+      email: `mailto:kontakt@svachmic.cz`
     },
     description: `Tech blog Michala Šváchy.`,
     siteUrl: `https://dev.svachmic.cz/`,
@@ -18,6 +21,32 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+          {
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+          }
+        `,
+        resolveSiteUrl: () => `https://dev.svachmic.cz/`,
+        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
+          return allPages.map(page => {
+            return { ...page }
+          })
+        },
+        serialize: ({ path }) => {
+          return {
+            url: path,
+          }
+        },
+      },
+    },
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,45 +79,89 @@ module.exports = {
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-          `gatsby-remark-reading-time`,
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-feed`,
       options: {
-        trackingId: `UA-61928196-3`,
-        anonymize: true,
-        respectDNT: true,
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `{
+              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+                nodes {
+                  excerpt
+                  html
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    date
+                  }
+                }
+              }
+            }`,
+            output: "/rss.xml",
+            title: `/dev/svachmic`,
+          },
+        ],
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Tech blog Michala Šváchy`,
-        short_name: `dev,svachmic.cz`,
+        name: `Tech blog Michala Šváchy.`,
+        short_name: `/dev/svachmic`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#8a02bc`,
+        background_color: `#1e2128`,
+        theme_color: `#bb05fe`,
         display: `minimal-ui`,
         icon: `content/assets/favicon.png`,
       },
     },
-    `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-dark-mode',
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
     {
-      resolve: `gatsby-plugin-robots-txt`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        policy: [{ userAgent: "*", allow: "/" }],
+        trackingIds: ["G-JHX3P2B5BR"],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: false,
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/draft/**"],
+        },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

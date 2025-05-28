@@ -3,8 +3,8 @@
   publish = "public"
 
 [build.environment]
-  NPM_VERSION = "8"
-  NODE_VERSION = "16"
+  NPM_VERSION = "10"
+  NODE_VERSION = "22"
 
 [[redirects]]
   from = "https://svachmic-dev.netlify.app/*"

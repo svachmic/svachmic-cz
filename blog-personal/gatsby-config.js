@@ -1,3 +1,6 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
     title: `svachmic.cz`,
@@ -80,7 +83,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `read-time-estimate`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -142,6 +144,7 @@ module.exports = {
         icon: `content/assets/favicon.png`,
       },
     },
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

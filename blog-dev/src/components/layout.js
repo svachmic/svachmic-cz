@@ -1,5 +1,5 @@
+import * as React from "react"
 import { Link } from "gatsby"
-import React from "react"
 
 const Layout = ({ location, title, children, hyperlinks }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -25,24 +25,16 @@ const Layout = ({ location, title, children, hyperlinks }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-      <div style={{ float: 'right' }}>
+        <div style={{ float: "right" }}>
           <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
             rss
           </a>
         </div>
-        <a
-          href={hyperlinks.personal}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={hyperlinks.personal} target="_blank" rel="noopener noreferrer">
           osobní blog
-        </a>{' '}
-        &bull;{' '}
-        <a
-          href={hyperlinks.email}
-        >
-          kontakt
-        </a>
+        </a>{" "}
+        &bull;{" "}
+        <a href={hyperlinks.email}>kontakt</a>
       </footer>
     </div>
   )
