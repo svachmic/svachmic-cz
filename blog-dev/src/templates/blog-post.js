@@ -85,12 +85,56 @@ const BlogPostTemplate = ({
   )
 }
 
-export const Head = ({ data: { markdownRemark: post } }) => {
+export const Head = ({ data: { markdownRemark: post, site }, location }) => {
+  const siteUrl = site.siteMetadata?.siteUrl || "https://dev.svachmic.cz"
+  const slug = post.fields?.slug || ""
+  
+  // Look for header image in the post content (common pattern in your blog)
+  const headerImageMatch = post.html.match(/<img[^>]+src="([^">]+)"[^>]*alt="[Zz]áhlaví"/)
+  const headerImage = headerImageMatch ? headerImageMatch[1] : null
+  
+  // Get tags from frontmatter
+  const tags = post.frontmatter.tags || []
+  
   return (
     <Seo
       title={post.frontmatter.title}
       description={post.frontmatter.description || post.excerpt}
-    />
+      image={headerImage}
+      article={true}
+      publishedDate={post.frontmatter.date}
+      tags={tags}
+      author={post.frontmatter.author}
+    >
+      {/* Additional structured data for articles */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": post.frontmatter.title,
+          "description": post.frontmatter.description || post.excerpt,
+          "image": headerImage ? `${siteUrl}${headerImage}` : `${siteUrl}/content/assets/profile-pic.jpg`,
+          "author": {
+            "@type": "Person",
+            "name": post.frontmatter.author || "Michal Švácha"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "svachmic.cz",
+            "logo": {
+              "@type": "ImageObject",
+              "url": `${siteUrl}/content/assets/favicon.png`
+            }
+          },
+          "datePublished": post.frontmatter.date,
+          "dateModified": post.frontmatter.date,
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `${siteUrl}${slug}`
+          }
+        })}
+      </script>
+    </Seo>
   )
 }
 
@@ -105,6 +149,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
         hyperlinks {
           personal
           github
@@ -121,8 +166,11 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        author
+        tags
       }
       fields {
+        slug
         readTimeEstimate {
           duration
           humanizedDuration

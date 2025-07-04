@@ -2,7 +2,7 @@
 layout: post
 title: "Jak jsem promoval"
 description: "FEL není škola, FEL je život."
-author: Michal
+author: Michal Švácha
 date: "2016-09-17 10:00:00"
 categories: "education"
 tags: [czech, education]

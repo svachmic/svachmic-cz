@@ -17,7 +17,7 @@ module.exports = {
     description: `Tech blog Michala Šváchy.`,
     siteUrl: `https://dev.svachmic.cz/`,
     social: {
-      twitter: `miguelitinho`,
+      twitter: `svachmic`,
     },
   },
   plugins: [

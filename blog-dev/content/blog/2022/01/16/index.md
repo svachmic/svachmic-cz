@@ -5,6 +5,7 @@ description: "Jak nastavit pravidla přístupu pro Firestore a Firebase Storage 
 date: "2022-01-16 18:00:00"
 categories: "tutorial"
 tags: [czech, firebase, firestore, acl]
+author: "Michal Švácha"
 ---
 
 Práce s Firebase je super, obzvlášť na hobby projekty. Je potřeba minimální nastavování infrastruktury, všechno funguje téměř out-of-the-box, máte k dispozici lokální emulátor většiny[^1] komponent Firebase a k tomu obří komunitu na [StackOverflow][so_community] a [Slacku][slack]. Co víc si přát?

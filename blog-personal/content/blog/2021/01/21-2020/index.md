@@ -2,7 +2,7 @@
 layout: post
 title: "Co mě naučil rok 2020"
 description: "2020 dal, 2020 vzal."
-author: Michal
+author: Michal Švácha
 date: "2021-01-26 10:00:00"
 categories: education
 tags: [czech, opinion]

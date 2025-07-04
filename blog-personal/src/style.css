@@ -338,6 +338,19 @@ a:focus {
   height: 100%;
 }
 
+.linkedin-embed-container {
+  margin: var(--spacing-8) 0;
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  padding: var(--spacing-4);
+  background-color: var(--color-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-embed-container iframe {
+  border-radius: 4px;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
