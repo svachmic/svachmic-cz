@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import ReadingProgressBar from "../components/reading-progress-bar"
 
 const readTimeEstimate = require("read-time-estimate")
 
@@ -31,6 +32,7 @@ const BlogPostTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle} hyperlinks={hyperlinks}>
+      <ReadingProgressBar />
       <article
         className="blog-post"
         itemScope
@@ -45,6 +47,15 @@ const BlogPostTemplate = ({
             </span>{" "}
             {readingTime} min čtení
           </p>
+          {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
+            <div className="post-tags">
+              {post.frontmatter.tags.map(tag => (
+                <span key={tag} className="post-tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}

@@ -5,7 +5,7 @@ description: "Od stolní verze MTG přes digitální svět Hearthstone zpátky k
 author: Michal Švácha
 date: "2024-01-15 10:00:00"
 categories: "gaming"
-tags: [czech, gaming, magic-the-gathering, hearthstone, nostalgia]
+tags: [gaming, magic-the-gathering, hearthstone, nostalgia]
 ---
 
 ![Záhlaví](./header.jpg)

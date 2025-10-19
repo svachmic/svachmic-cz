@@ -5,7 +5,7 @@ description: "FEL není škola, FEL je život."
 author: Michal Švácha
 date: "2016-09-17 10:00:00"
 categories: "education"
-tags: [czech, education]
+tags: [education]
 ---
 
 ![Záhlaví](./header.jpg)

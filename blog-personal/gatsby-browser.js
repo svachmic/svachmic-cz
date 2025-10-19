@@ -17,3 +17,5 @@ import "./src/normalize.css"
 import "./src/style.css"
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
+// KaTeX for math formulas
+import "katex/dist/katex.min.css"

@@ -22,7 +22,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: var(--maxWidth-4xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -53,7 +53,7 @@
   --fontWeight-bold: 700;
   --fontWeight-extrabold: 800;
   --fontWeight-black: 900;
-  --fontSize-root: 16px;
+  --fontSize-root: 15px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
@@ -67,13 +67,30 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #bb05fe;
-  --color-text: #d1dce5;
-  --color-text-light: #e8f5ff;
-  --color-heading: #606060;
-  --color-heading-black: #a9a7a7;
-  --color-accent: #d1dce5;
-  --color-background: #1e2128;
+
+  /* Cyber Terminal Dark Theme - Inspired by Tokyo Night & Darcula */
+  --color-primary: #bb9af7;          /* Purple - primary accent, dominant */
+  --color-secondary: #7dcfff;        /* Cyan - secondary accent, terminal-inspired */
+  --color-tertiary: #9ece6a;         /* Green - success/highlight */
+  --color-warning: #e0af68;          /* Amber - warnings/special */
+
+  /* Background colors */
+  --color-background: #1a1b26;       /* Deep dark blue-black */
+  --color-background-alt: #16161e;   /* Slightly darker variant */
+  --color-background-elevated: #24283b; /* Elevated surfaces */
+
+  /* Text colors */
+  --color-text: #c0caf5;             /* Light blue-gray - primary text */
+  --color-text-light: #a9b1d6;       /* Muted blue-gray - secondary text */
+  --color-text-muted: #565f89;       /* Even more muted - tertiary text */
+
+  /* Heading colors */
+  --color-heading: #bb9af7;          /* Purple for headings - matches primary */
+  --color-heading-black: #bb9af7;    /* Purple for main heading - dominant */
+
+  /* Accent colors */
+  --color-accent: #414868;           /* Border/separator color */
+  --color-accent-bright: #545c7e;    /* Brighter border variant */
 }
 
 /* HTML elements */
@@ -103,9 +120,25 @@ footer {
 }
 
 hr {
-  background: var(--color-accent);
-  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  height: 2px;
   border: 0;
+  margin: var(--spacing-8) 0;
+  position: relative;
+}
+
+hr::before {
+  content: "▬▬▬▬";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-secondary);
+  background: var(--color-background);
+  padding: 0 var(--spacing-2);
+  font-size: var(--fontSize-0);
+  letter-spacing: 0.2em;
+  opacity: 0.6;
 }
 
 /* Heading */
@@ -212,14 +245,31 @@ li > ul {
 }
 
 blockquote {
-  color: var(--color-text-light);
-  margin-left: calc(-1 * var(--spacing-6));
-  margin-right: var(--spacing-8);
-  padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
-  font-style: italic;
+  color: var(--color-text);
+  background-color: var(--color-background-alt);
+  margin-left: 0;
+  margin-right: 0;
+  padding: var(--spacing-4) var(--spacing-6) var(--spacing-4) var(--spacing-8);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 4px 4px 0;
+  font-size: var(--fontSize-1);
+  font-style: normal;
+  font-family: var(--fontFamily-mono);
   margin-bottom: var(--spacing-8);
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+blockquote::before {
+  content: ">";
+  position: absolute;
+  left: var(--spacing-4);
+  top: var(--spacing-4);
+  color: var(--color-primary);
+  font-weight: bold;
+  opacity: 0.5;
+  font-size: var(--fontSize-2);
+  line-height: 1;
 }
 
 blockquote > :last-child {
@@ -236,21 +286,68 @@ table {
   margin-bottom: var(--spacing-8);
   border-collapse: collapse;
   border-spacing: 0.25rem;
+  background-color: var(--color-background-alt);
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 table thead tr th {
+  border-bottom: 2px solid var(--color-primary);
+  background-color: var(--color-background-elevated);
+  color: var(--color-primary);
+  padding: var(--spacing-3) var(--spacing-4);
+  text-align: left;
+  font-family: var(--fontFamily-mono);
+  font-size: var(--fontSize-0);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+table tbody tr {
   border-bottom: 1px solid var(--color-accent);
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}
+
+table tbody tr:hover {
+  background-color: var(--color-background-elevated);
+  transition: background-color 0.2s ease;
+}
+
+table tbody td {
+  padding: var(--spacing-3) var(--spacing-4);
 }
 
 /* Link */
 
 a {
   color: var(--color-primary);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  color: var(--color-secondary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Inline code styling */
+:not(pre) > code {
+  background-color: var(--color-background-elevated);
+  color: var(--color-tertiary);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: var(--fontFamily-mono);
+  font-size: 0.9em;
+  border: 1px solid var(--color-accent);
 }
 
 /* Custom classes */
@@ -277,6 +374,18 @@ a:focus {
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
+  padding: var(--spacing-6);
+  background-color: var(--color-background-alt);
+  border: 1px solid var(--color-accent);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.post-list-item:hover {
+  border-left-color: var(--color-secondary);
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(187, 154, 247, 0.15);
 }
 
 .post-list-item p {
@@ -289,6 +398,11 @@ a:focus {
   color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
+  transition: color 0.2s ease;
+}
+
+.post-list-item:hover h2 {
+  color: var(--color-secondary);
 }
 
 .post-list-item header {
@@ -369,12 +483,44 @@ a:focus {
 
 @media (max-width: 42rem) {
   blockquote {
-    padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4) var(--spacing-3) var(--spacing-6);
     margin-left: var(--spacing-0);
   }
+
+  blockquote::before {
+    left: var(--spacing-2);
+  }
+
   ul,
   ol {
     list-style-position: inside;
+  }
+
+  .post-list-item {
+    padding: var(--spacing-4);
+  }
+
+  .tag-button {
+    padding: var(--spacing-2) var(--spacing-3);
+    font-size: var(--fontSize-1);
+  }
+
+  .tag-list,
+  .selected-tags {
+    gap: var(--spacing-2);
+  }
+}
+
+/* Desktop enhancements - horizontal expansion */
+@media (min-width: 42rem) {
+  .tag-list,
+  .selected-tags {
+    gap: var(--spacing-3);
+  }
+
+  .tag-button {
+    padding: var(--spacing-1) var(--spacing-3);
+    white-space: nowrap;
   }
 }
 
@@ -411,4 +557,253 @@ pre[class*="language-"] {
   color: var(--color-text-light);
   font-family: var(--font-heading);
   margin-left: var(--spacing-2);
+}
+
+/* Tag Filter Styles - Terminal/Cyber Theme */
+
+.tag-filter {
+  margin: 0 0 var(--spacing-8) 0;
+  padding: 0;
+}
+
+.tag-filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--spacing-3);
+}
+
+.tag-filter h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--fontSize-0);
+  font-family: var(--fontFamily-mono);
+  font-weight: var(--fontWeight-semibold);
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tag-filter h3::before {
+  content: "$ ";
+  color: var(--color-tertiary);
+  margin-right: var(--spacing-1);
+}
+
+.tag-filter-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.clear-filters {
+  padding: var(--spacing-1) var(--spacing-3);
+  font-size: var(--fontSize-0);
+  font-family: var(--fontFamily-mono);
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-accent);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-filters:hover {
+  color: var(--color-warning);
+  border-color: var(--color-warning);
+  background-color: rgba(224, 175, 104, 0.1);
+}
+
+.collapse-button {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  font-size: var(--fontSize-0);
+  font-family: var(--fontFamily-mono);
+  transition: color 0.2s ease;
+}
+
+.collapse-button:hover {
+  color: var(--color-primary);
+}
+
+.selected-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-3);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-3);
+}
+
+.tag-button {
+  padding: var(--spacing-1) var(--spacing-2);
+  font-size: var(--fontSize-0);
+  font-family: var(--fontFamily-mono);
+  background-color: transparent;
+  color: var(--color-text-light);
+  border: 1px solid var(--color-accent);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.tag-button::before {
+  content: "#";
+  color: var(--color-text-muted);
+  margin-right: 2px;
+}
+
+.tag-button:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  background-color: rgba(187, 154, 247, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(187, 154, 247, 0.2);
+}
+
+.tag-button.active {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border-color: var(--color-primary);
+  font-weight: var(--fontWeight-semibold);
+  box-shadow: 0 0 12px rgba(187, 154, 247, 0.5);
+}
+
+.tag-button.active::before {
+  color: var(--color-background);
+}
+
+/* Post Tags Display - Inline with Terminal Style */
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-3);
+}
+
+.post-tag {
+  padding: 2px var(--spacing-2);
+  font-size: var(--fontSize-0);
+  font-family: var(--fontFamily-mono);
+  background-color: transparent;
+  color: var(--color-text-muted);
+  border: none;
+  display: inline-block;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.post-tag::before {
+  content: "#";
+  margin-right: 2px;
+  color: var(--color-tertiary);
+  opacity: 0.7;
+}
+
+.post-tag:hover {
+  color: var(--color-primary);
+}
+
+/* Additional terminal-style enhancements */
+
+.blog-post header p {
+  font-family: var(--fontFamily-mono);
+  color: var(--color-text-muted);
+  font-size: var(--fontSize-0);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-post header p::before {
+  content: "// ";
+  color: var(--color-tertiary);
+  margin-right: var(--spacing-1);
+}
+
+/* Code block enhancements */
+.gatsby-highlight {
+  margin-bottom: var(--spacing-8);
+  border-radius: 4px;
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Scrollbar styling for webkit browsers - Terminal theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-bright);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(187, 154, 247, 0.3);
+  color: var(--color-text);
+}
+
+::-moz-selection {
+  background: rgba(187, 154, 247, 0.3);
+  color: var(--color-text);
+}
+
+/* Reading Progress Bar
+ *
+ * NOTE: This blog uses an elaborate cyber-terminal themed design with gradients,
+ * glowing effects, and complex styling to match the overall theme.
+ * The personal blog uses a simpler, minimalist design.
+ * This difference is intentional and reflects the distinct design philosophies
+ * of each blog.
+ */
+.reading-progress-bar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-background-elevated));
+  z-index: 1000;
+  opacity: 0.95;
+}
+
+.reading-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  box-shadow: 0 0 10px rgba(187, 154, 247, 0.5), 0 0 20px rgba(125, 207, 255, 0.3);
+  /* No transition needed - requestAnimationFrame provides smooth 60fps updates */
+  position: relative;
+}
+
+/* Glowing effect at the end of the bar */
+.reading-progress-bar::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--color-secondary));
+  filter: blur(8px);
+  opacity: 0.8;
 }

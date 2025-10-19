@@ -68,5 +68,12 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# MCP
+.playwright-mcp/
+
 # Blog Drafts
-content/blog/draft/
+blog-dev/content/blog/draft/
+blog-personal/content/blog/draft/
+
+# Context scratch files (temporary screenshots, test files, etc.)
+context/scratch/

@@ -5,7 +5,7 @@ description: "O tom, jak jsem se dostal z iluze úspěchu přes noc."
 author: Michal Švácha
 date: "2015-04-25 10:00:00"
 categories: "personal"
-tags: [czech, opinion, education]
+tags: [opinion, education]
 ---
 
 ![Záhlaví](./header.jpg)

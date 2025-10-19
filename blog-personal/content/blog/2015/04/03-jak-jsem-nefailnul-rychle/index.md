@@ -5,7 +5,7 @@ description: "O tom, jak jsem se chtěl dostat do Googlu a byl jsem nakonec za p
 author: Michal Švácha
 date: "2015-04-03 13:00:00"
 categories: "jobs"
-tags: [czech, programming, career, interview]
+tags: [career, interview]
 ---
 
 ![Záhlaví](./header.jpg)

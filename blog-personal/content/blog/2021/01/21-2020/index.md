@@ -5,7 +5,7 @@ description: "2020 dal, 2020 vzal."
 author: Michal Švácha
 date: "2021-01-26 10:00:00"
 categories: education
-tags: [czech, opinion]
+tags: [opinion]
 ---
 
 ![Záhlaví](./header.jpg)
@@ -32,7 +32,7 @@ Děda bere osud do vlastních rukou a volá tatínkovi. V tuto chvíli má k dis
 
 Pakliže si řekneme, že význam "pravda je někde uprostřed" je "sečtu obojí a vydělím dvěma":
 
-> ![\Large \frac{0n+2n}{2}=1n][leg-formula]
+> $$ \frac{0n+2n}{2}=1n $$
 
 Dostaneme se k závěru neslučujícím se s realitou - zlomil si _právě jednu nohu_.
 
@@ -40,7 +40,7 @@ Dostaneme se k závěru neslučujícím se s realitou - zlomil si _právě jednu
 
 Jev, který jsem se počtem zlomených nohou snažil demonstrovat se v datové analýze nazývá [_outlier_][outlier] - tedy nějaká hodnota, která se naprosto vymyká distribuci ostatních hodnot v dané množině.
 
-> ![\Large x\in{1,2,1,0,2,0,42,1}][outlier-formula]
+> $$ x \in {1,2,1,0,2,0,42,1} $$
 
 Hodnota _42_ je outlier - naše množina jsou hodnoty v rozmezí 0 až 2 a hodnota 42 nám tam nezapadá. Proč nezapadá?
 
@@ -151,9 +151,7 @@ Takže na pozitivních vlnách a za zvuku Kelly Clarkson nashle příště! 👋
 </div>
 
 [guardian]: https://www.theguardian.com/science/2019/feb/17/study-blames-youtube-for-rise-in-number-of-flat-earthers
-[leg-formula]: https://latex.codecogs.com/svg.latex?\Large&space;\frac{0n+2n}{2}=1n
-[outlier]: https://en.wikipedia.org/wiki/Outlier
-[outlier-formula]: https://latex.codecogs.com/svg.latex?\Large&space;x\in{1,2,1,0,2,0,42,1}
+
 [petakova]: https://prometheus-nakl.cz/index.php?zobraz=detail&id_katalog=170
 [occam]: https://cs.wikipedia.org/wiki/Occamova_břitva
 [holy-josef]: https://twitter.com/holyj?lang=gl
