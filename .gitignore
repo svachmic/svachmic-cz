@@ -83,3 +83,6 @@ blog-personal/content/blog/draft/
 
 # Context scratch files (temporary screenshots, test files, etc.)
 scratch/
+
+# Local Netlify folder
+.netlify

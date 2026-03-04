@@ -1,6 +1,6 @@
 {
   "name": "svachmic-cz",
-  "version": "2026.02.18",
+  "version": "20260304.0.0",
   "private": true,
   "packageManager": "pnpm@10.28.2",
   "description": "Monorepo for svachmic.cz sites",

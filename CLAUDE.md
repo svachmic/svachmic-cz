@@ -82,9 +82,9 @@ Frontmatter fields: `title`, `description`, `date`, `modified`, `categories`, `t
 - **Build Orchestration:** Turborepo
 - **Styling:** CSS with Custom Properties (shared tokens in `packages/shared/css/tokens.css`)
 - **Typography:** Montserrat (headings), Merriweather (body), JetBrains Mono (code)
-- **Deployment:** Netlify (Node 22)
+- **Deployment:** Netlify (Node 24). Each site is a separate Netlify project with its base directory set to the site folder. Netlify runs `gatsby build` from there (not a root turbo command). The `ignore` field in each `netlify.toml` skips builds when only unrelated files changed.
 - **Remark plugins (shared):** images, responsive-iframe, autolink-headers, katex, prismjs, copy-linked-files
-- **Site plugins:** sitemap, RSS feed, robots.txt, Google Analytics (both blogs)
+- **Site plugins:** sitemap, RSS feed, robots.txt, Google Analytics (all sites)
 
 ## Development Commands
 
@@ -107,12 +107,12 @@ From individual site directories:
 
 ## Versioning
 
-DateVer format `YYYY.MM.DD` in each site's `package.json`.
+DateVer format `YYYYMMDD.0` in each site's `package.json`. Bump the patch number for multiple builds on the same day.
 
 Bump version:
 
 ```bash
-cd blog-dev && pnpm version $(date +"%Y.%m.%d") --no-git-tag-version && cd ..
-cd blog-personal && pnpm version $(date +"%Y.%m.%d") --no-git-tag-version && cd ..
-cd homepage && pnpm version $(date +"%Y.%m.%d") --no-git-tag-version && cd ..
+cd blog-dev && pnpm version $(date +"%Y%m%d").0 --no-git-tag-version && cd ..
+cd blog-personal && pnpm version $(date +"%Y%m%d").0 --no-git-tag-version && cd ..
+cd homepage && pnpm version $(date +"%Y%m%d").0 --no-git-tag-version && cd ..
 ```
