@@ -1,0 +1,7 @@
+User-agent: *
+Site-name: svachmic.cz
+Site-url: https://svachmic.cz
+Author: Michal Svacha
+Language: cs
+Description: Osobni homepage Michala Svachy s bio, odkazy na blogy a socialni site.
+Sitemap: https://svachmic.cz/sitemap-index.xml

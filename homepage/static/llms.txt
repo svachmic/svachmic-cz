@@ -1,0 +1,18 @@
+# Michal Švácha
+
+> Personal homepage and hub for two blogs by Michal Švácha, a software engineer based in Prague.
+
+## Blogs
+
+- [/dev/svachmic](https://dev.svachmic.cz) — Technical blog about software development (Czech)
+  - [llms.txt](https://dev.svachmic.cz/llms.txt)
+- [blog.svachmic.cz](https://blog.svachmic.cz) — Personal blog about career, gaming, and life (Czech)
+  - [llms.txt](https://blog.svachmic.cz/llms.txt)
+
+## Links
+
+- GitHub: https://github.com/svachmic
+- StackOverflow: https://stackoverflow.com/users/1196908/michal
+- X/Twitter: https://x.com/svachmic
+- Mana Outpost: https://manaoutpost.substack.com
+- Email: kontakt@svachmic.cz

@@ -1,0 +1,31 @@
+{
+  "name": "svachmic-homepage",
+  "version": "20260304.0.0",
+  "private": true,
+  "description": "Personal homepage for svachmic.cz",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,json}\""
+  },
+  "dependencies": {
+    "@fontsource/merriweather": "^5.2.11",
+    "@fontsource/montserrat": "^5.2.8",
+    "@netlify/blobs": "^8.1.0",
+    "@svachmic/shared": "workspace:*",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-google-gtag": "^5.16.0",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.16.0",
+    "gatsby-plugin-sitemap": "^6.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
