@@ -6,9 +6,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import TagFilter from "../components/tag-filter"
-
-const readTimeEstimate = require("read-time-estimate")
+import { TagFilter } from "@svachmic/shared"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -80,17 +78,7 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
           const date = new Date(post.frontmatter.date)
           const localizedDate = date.toLocaleDateString("cs-CZ")
-          const {
-            // humanizedDuration, // 'less than a minute'
-            duration, // 0.23272727272727273
-            // totalWords, // 9
-            // wordTime, // 0.03272727272727273
-            // totalImages, // 1
-            // imageTime, //  0.2
-            // otherLanguageTimeCharacters, // 6
-            // otherLanguageTime, // 0.012
-          } = readTimeEstimate(post.html)
-          // const readingTime = Math.ceil(post.fields.readTimeEstimate?.duration)
+          const duration = post.fields?.readTimeEstimate?.duration || 0
           const readingTime = Math.ceil(duration)
 
           return (
@@ -149,7 +137,7 @@ export default BlogIndex
  */
 export const Head = ({ data }) => {
   const name = data.site.siteMetadata?.author?.name || `Blog`
-  return <Seo title={name} />
+  return <Seo title={name} pathname="/" />
 }
 
 export const pageQuery = graphql`

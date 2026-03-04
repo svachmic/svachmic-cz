@@ -1,0 +1,11 @@
+name: Scheduled Netlify Build
+on:
+  schedule:
+    - cron: '0 6,18 * * *'
+  workflow_dispatch:
+jobs:
+  trigger-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify Build Hook
+        run: curl -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK_URL }}"

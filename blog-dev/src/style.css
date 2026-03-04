@@ -1,73 +1,6 @@
-/* Import fonts */
-@import url("@fontsource/montserrat/400.css");
-@import url("@fontsource/montserrat/600.css");
-@import url("@fontsource/montserrat/700.css");
-@import url("@fontsource/merriweather/400.css");
-@import url("@fontsource/merriweather/700.css");
-@import url("@fontsource/jetbrains-mono/400.css");
-
-/* Import Darcula theme for dev blog */
-@import "./prism-darcula.css";
-
-/* CSS Custom Properties Definitions */
+/* Color variables — theme-specific, not shared */
 
 :root {
-  --maxWidth-none: "none";
-  --maxWidth-xs: 20rem;
-  --maxWidth-sm: 24rem;
-  --maxWidth-md: 28rem;
-  --maxWidth-lg: 32rem;
-  --maxWidth-xl: 36rem;
-  --maxWidth-2xl: 42rem;
-  --maxWidth-3xl: 48rem;
-  --maxWidth-4xl: 56rem;
-  --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-4xl);
-  --spacing-px: "1px";
-  --spacing-0: 0;
-  --spacing-1: 0.25rem;
-  --spacing-2: 0.5rem;
-  --spacing-3: 0.75rem;
-  --spacing-4: 1rem;
-  --spacing-5: 1.25rem;
-  --spacing-6: 1.5rem;
-  --spacing-8: 2rem;
-  --spacing-10: 2.5rem;
-  --spacing-12: 3rem;
-  --spacing-16: 4rem;
-  --spacing-20: 5rem;
-  --spacing-24: 6rem;
-  --spacing-32: 8rem;
-  --fontFamily-sans: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
-    Times, serif;
-  --fontFamily-mono: "JetBrains Mono", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
-  --font-body: var(--fontFamily-serif);
-  --font-heading: var(--fontFamily-sans);
-  --fontWeight-normal: 400;
-  --fontWeight-medium: 500;
-  --fontWeight-semibold: 600;
-  --fontWeight-bold: 700;
-  --fontWeight-extrabold: 800;
-  --fontWeight-black: 900;
-  --fontSize-root: 15px;
-  --lineHeight-none: 1;
-  --lineHeight-tight: 1.1;
-  --lineHeight-normal: 1.5;
-  --lineHeight-relaxed: 1.625;
-  /* 1.200 Minor Third Type Scale */
-  --fontSize-0: 0.833rem;
-  --fontSize-1: 1rem;
-  --fontSize-2: 1.2rem;
-  --fontSize-3: 1.44rem;
-  --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
-  --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
-
   /* Cyber Terminal Dark Theme - Inspired by Tokyo Night & Darcula */
   --color-primary: #bb9af7;          /* Purple - primary accent, dominant */
   --color-secondary: #7dcfff;        /* Cyan - secondary accent, terminal-inspired */
@@ -479,6 +412,27 @@ a:focus {
   border-radius: 4px;
 }
 
+.linkedin-embed-fallback {
+  font-size: var(--fontSize-0);
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--spacing-2);
+  margin-bottom: 0;
+}
+
+.linkedin-embed-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.linkedin-embed-link:hover {
+  text-decoration: underline;
+}
+
+.footer-rss {
+  float: right;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {
@@ -508,6 +462,12 @@ a:focus {
   .tag-list,
   .selected-tags {
     gap: var(--spacing-2);
+  }
+
+  .blog-post table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -626,6 +586,13 @@ pre[class*="language-"] {
 
 .collapse-button:hover {
   color: var(--color-primary);
+}
+
+.tag-button:focus-visible,
+.clear-filters:focus-visible,
+.collapse-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .selected-tags {

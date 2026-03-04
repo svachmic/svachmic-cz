@@ -1,3 +1,11 @@
+const {
+  createSitemapPlugin,
+  createFeedPlugin,
+  createRobotsTxtPlugin,
+  createGtagPlugin,
+  createRemarkPlugins,
+} = require(`@svachmic/shared/config/gatsby-plugins`)
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -21,31 +29,7 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        query: `
-          {
-            allSitePage {
-              nodes {
-                path
-              }
-            }
-          }
-        `,
-        resolveSiteUrl: () => `https://dev.svachmic.cz/`,
-        resolvePages: ({ allSitePage: { nodes: allPages } }) => {
-          return allPages.map(page => {
-            return { ...page }
-          })
-        },
-        serialize: ({ path }) => {
-          return {
-            url: path,
-          }
-        },
-      },
-    },
+    createSitemapPlugin(`https://dev.svachmic.cz`),
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -64,89 +48,12 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 630,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: {
-              className: `anchor-header`,
-              elements: [`h2`, `h3`, `h4`],
-            },
-          },
-          {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
-              strict: `ignore`
-            }
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-        ],
+        plugins: createRemarkPlugins(),
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
-            },
-            query: `{
-              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-                nodes {
-                  excerpt
-                  html
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                    date
-                  }
-                }
-              }
-            }`,
-            output: "/rss.xml",
-            title: `/dev/svachmic`,
-          },
-        ],
-      },
-    },
+    createFeedPlugin(`/dev/svachmic`),
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -159,23 +66,7 @@ module.exports = {
         icon: `content/assets/favicon.png`,
       },
     },
-    `gatsby-plugin-robots-txt`,
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: ["G-JHX3P2B5BR"],
-        gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          // Avoids sending pageview hits from custom paths
-          exclude: ["/draft/**"],
-        },
-      },
-    },
+    createRobotsTxtPlugin(`https://dev.svachmic.cz`),
+    createGtagPlugin(`G-JHX3P2B5BR`),
   ],
 }

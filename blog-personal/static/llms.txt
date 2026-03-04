@@ -1,0 +1,15 @@
+# svachmic.cz - Osobni blog
+
+> Osobni blog Michala Svachy o kariere, hrani, vzdelavani a zivotnich udalostech. Psano cesky.
+
+Jazyk: cs
+URL: https://blog.svachmic.cz
+Autor: Michal Svacha
+
+## Prispevky
+
+- [Stary hrac v novem svete](https://blog.svachmic.cz/2024/01/15-stary-hrac-v-novem-svete/) - Od stolni verze MTG pres digitalni svet Hearthstone zpatky ke stolum. Aneb 14 let je dlouha doba! (2024-01-15)
+- [Co me naucil rok 2020](https://blog.svachmic.cz/2021/01/21-2020/) - 2020 dal, 2020 vzal. (2021-01-26)
+- [Jak jsem promoval](https://blog.svachmic.cz/2016/09/17-jak-jsem-promoval/) - FEL neni skola, FEL je zivot. (2016-09-17)
+- [Jak jsem se neucil rychle](https://blog.svachmic.cz/2015/04/25-jak-jsem-se-neucil-rychle/) - O tom, jak jsem se dostal z iluze uspechu pres noc. (2015-04-25)
+- [Jak jsem nefailnul rychle](https://blog.svachmic.cz/2015/04/03-jak-jsem-nefailnul-rychle/) - O tom, jak jsem se chtel dostat do Googlu a byl jsem nakonec za pitomce. (2015-04-03)

@@ -1,0 +1,8 @@
+User-agent: *
+Site-name: /dev/svachmic
+Site-url: https://dev.svachmic.cz
+Author: Michal Svacha
+Language: cs
+Description: Tech blog o vyvoji softwaru od Michala Svachy.
+Feed: https://dev.svachmic.cz/rss.xml
+Sitemap: https://dev.svachmic.cz/sitemap-index.xml

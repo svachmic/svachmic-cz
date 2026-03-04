@@ -9,16 +9,17 @@ import * as React from "react"
 
 import { graphql, useStaticQuery } from "gatsby"
 
-const Seo = ({ 
-  description, 
-  title, 
-  image, 
+const Seo = ({
+  description,
+  title,
+  image,
   article = false,
   publishedDate,
   modifiedDate,
   tags = [],
   author,
-  children 
+  pathname = "",
+  children
 }) => {
   const { site } = useStaticQuery(graphql`
     query {
@@ -43,6 +44,7 @@ const Seo = ({
   const siteUrl = site.siteMetadata?.siteUrl
   const twitterUsername = site.siteMetadata?.social?.twitter
   const authorName = author || site.siteMetadata?.author?.name
+  const canonicalUrl = `${siteUrl.replace(/\/$/, '')}${pathname || '/'}`
 
   // Create full image URL if image is provided
   const fullImageUrl = image 
@@ -54,6 +56,7 @@ const Seo = ({
 
   return (
     <>
+      <html lang="cs" />
       <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
       <meta name="description" content={metaDescription} />
       
@@ -63,7 +66,7 @@ const Seo = ({
       <meta property="og:type" content={article ? "article" : "website"} />
       <meta property="og:image" content={fullImageUrl} />
       <meta property="og:image:alt" content={`${title} - ${defaultTitle}`} />
-      <meta property="og:url" content={siteUrl} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content={defaultTitle} />
       <meta property="og:locale" content="cs_CZ" />
       
@@ -81,8 +84,8 @@ const Seo = ({
       
       {/* Twitter Card tags */}
       <meta name="twitter:card" content={twitterCardType} />
-      <meta name="twitter:creator" content={twitterUsername ? `@${twitterUsername}` : ``} />
-      <meta name="twitter:site" content={twitterUsername ? `@${twitterUsername}` : ``} />
+      {twitterUsername && <meta name="twitter:creator" content={`@${twitterUsername}`} />}
+      {twitterUsername && <meta name="twitter:site" content={`@${twitterUsername}`} />}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={fullImageUrl} />
@@ -91,7 +94,7 @@ const Seo = ({
       {/* Additional meta tags for better SEO */}
       <meta name="robots" content="index, follow" />
       <meta name="author" content={authorName} />
-      <link rel="canonical" href={siteUrl} />
+      <link rel="canonical" href={canonicalUrl} />
       
       {children}
     </>

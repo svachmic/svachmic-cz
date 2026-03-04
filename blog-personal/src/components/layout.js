@@ -26,7 +26,7 @@ const Layout = ({ location, title, children, hyperlinks }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        <div style={{ float: "right" }}>
+        <div className="footer-rss">
           <a href="/rss.xml" target="_blank" rel="noopener noreferrer">
             rss
           </a>
@@ -42,7 +42,11 @@ const Layout = ({ location, title, children, hyperlinks }) => {
         >
           mana outpost
         </a>{" "}
-        &bull; <a href={hyperlinks.email}>kontakt</a>
+        &bull; <a href={hyperlinks.email}>kontakt</a>{" "}
+        &bull;{" "}
+        <a href="https://svachmic.cz" target="_blank" rel="noopener noreferrer">
+          svachmic.cz
+        </a>
       </footer>
     </div>
   )

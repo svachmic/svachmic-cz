@@ -1,9 +1,9 @@
 [build]
   command = "gatsby build"
   publish = "public"
+  ignore = "git diff --quiet $CACHED_COMMIT HEAD -- ../packages/shared/ . ../pnpm-lock.yaml"
 
 [build.environment]
-  NPM_VERSION = "10"
   NODE_VERSION = "22"
 
 [[redirects]]
@@ -11,3 +11,57 @@
   to = "https://blog.svachmic.cz/:splat"
   status = 301
   force = true
+
+# Security headers for all paths
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' www.googletagmanager.com www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: www.google-analytics.com www.googletagmanager.com; font-src 'self' data:; connect-src 'self' www.google-analytics.com www.googletagmanager.com; frame-src www.youtube.com www.youtube-nocookie.com; object-src 'none'; base-uri 'self'"
+
+# Immutable caching for static assets
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# HTML must-revalidate
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Short TTL for sitemap and RSS
+[[headers]]
+  for = "/sitemap-index.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"

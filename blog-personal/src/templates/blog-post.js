@@ -1,11 +1,10 @@
 import * as React from "react"
-
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import ReadingProgressBar from "../components/reading-progress-bar"
+import { ReadingProgressBar } from "@svachmic/shared"
 
 const readTimeEstimate = require("read-time-estimate")
 
@@ -17,17 +16,7 @@ const BlogPostTemplate = ({
   const hyperlinks = site.siteMetadata.hyperlinks
   const date = new Date(post.frontmatter.date)
   const localizedDate = date.toLocaleDateString("cs-CZ")
-  const {
-    // humanizedDuration, // 'less than a minute'
-    duration, // 0.23272727272727273
-    // totalWords, // 9
-    // wordTime, // 0.03272727272727273
-    // totalImages, // 1
-    // imageTime, //  0.2
-    // otherLanguageTimeCharacters, // 6
-    // otherLanguageTime, // 0.012
-  } = readTimeEstimate(post.html)
-  // const readingTime = Math.ceil(post.fields.readTimeEstimate?.duration)
+  const { duration } = readTimeEstimate(post.html)
   const readingTime = Math.ceil(duration)
 
   return (
@@ -97,16 +86,17 @@ const BlogPostTemplate = ({
 }
 
 export const Head = ({ data: { markdownRemark: post, site }, location }) => {
-  const siteUrl = site.siteMetadata?.siteUrl || "https://blog.svachmic.cz"
+  const baseUrl = (site.siteMetadata?.siteUrl || "https://blog.svachmic.cz").replace(/\/$/, '')
+  const siteTitle = site.siteMetadata?.title || "svachmic.cz"
   const slug = post.fields?.slug || ""
-  
+
   // Look for header image in the post content (common pattern in your blog)
   const headerImageMatch = post.html.match(/<img[^>]+src="([^">]+)"[^>]*alt="[Zz]áhlaví"/)
   const headerImage = headerImageMatch ? headerImageMatch[1] : null
-  
+
   // Get tags from frontmatter
   const tags = post.frontmatter.tags || []
-  
+
   return (
     <Seo
       title={post.frontmatter.title}
@@ -114,35 +104,57 @@ export const Head = ({ data: { markdownRemark: post, site }, location }) => {
       image={headerImage}
       article={true}
       publishedDate={post.frontmatter.date}
+      modifiedDate={post.frontmatter.modified || post.frontmatter.date}
       tags={tags}
       author={post.frontmatter.author}
+      pathname={post.fields?.slug}
     >
-      {/* Additional structured data for articles */}
+      {/* BlogPosting structured data */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BlogPosting",
           "headline": post.frontmatter.title,
           "description": post.frontmatter.description || post.excerpt,
-          "image": headerImage ? `${siteUrl}${headerImage}` : `${siteUrl}/content/assets/profile-pic.jpg`,
+          "image": headerImage ? `${baseUrl}${headerImage}` : `${baseUrl}/content/assets/profile-pic.jpg`,
           "author": {
             "@type": "Person",
             "name": post.frontmatter.author || "Michal Švácha"
           },
           "publisher": {
             "@type": "Organization",
-            "name": "svachmic.cz",
+            "name": siteTitle,
             "logo": {
               "@type": "ImageObject",
-              "url": `${siteUrl}/content/assets/favicon.png`
+              "url": `${baseUrl}/content/assets/favicon.png`
             }
           },
           "datePublished": post.frontmatter.date,
-          "dateModified": post.frontmatter.date,
+          "dateModified": post.frontmatter.modified || post.frontmatter.date,
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `${siteUrl}${slug}`
+            "@id": `${baseUrl}${slug}`
           }
+        })}
+      </script>
+      {/* BreadcrumbList structured data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Domů",
+              "item": baseUrl
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": post.frontmatter.title
+            }
+          ]
         })}
       </script>
     </Seo>
@@ -175,6 +187,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        modified(formatString: "MMMM DD, YYYY")
         description
         author
         tags
