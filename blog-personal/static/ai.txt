@@ -1,0 +1,8 @@
+User-agent: *
+Site-name: svachmic.cz
+Site-url: https://blog.svachmic.cz
+Author: Michal Svacha
+Language: cs
+Description: Osobni blog Michala Svachy o kariere, hrani, vzdelavani a zivotnich udalostech.
+Feed: https://blog.svachmic.cz/rss.xml
+Sitemap: https://blog.svachmic.cz/sitemap-index.xml

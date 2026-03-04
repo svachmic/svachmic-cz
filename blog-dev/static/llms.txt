@@ -1,0 +1,16 @@
+# /dev/svachmic
+
+> Tech blog o vyvoji softwaru od Michala Svachy.
+
+Jazyk: cs (cestina)
+URL: https://dev.svachmic.cz
+
+## Prispevky
+
+- [Hello World!](https://dev.svachmic.cz/2021/07/04-hello-world/)
+  Uvodni prispevek na blogu.
+  Datum: 2021-07-04
+
+- [Firestore a Firebase Storage rules snadno a rychle](https://dev.svachmic.cz/2022/01/16/)
+  Jak nastavit pravidla pristupu pro Firestore a Firebase Storage a strukturu dat tak, abychom se nestrileli do vlastni nohy.
+  Datum: 2022-01-16

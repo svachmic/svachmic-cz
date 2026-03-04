@@ -1,7 +1,7 @@
+import * as React from "react"
 import Layout from "../components/layout"
-import React from "react"
 import Seo from "../components/seo"
-import YouTube from "../components/youtube"
+import { YouTube } from "@svachmic/shared"
 import { graphql } from "gatsby"
 
 const NotFoundPage = ({ data, location }) => {
@@ -17,7 +17,11 @@ const NotFoundPage = ({ data, location }) => {
   )
 }
 
-export const Head = () => <Seo title="404: Stránka nenalezena" />
+export const Head = () => (
+  <Seo title="404: Stránka nenalezena">
+    <meta name="robots" content="noindex, nofollow" />
+  </Seo>
+)
 
 export default NotFoundPage
 

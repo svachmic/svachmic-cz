@@ -1,0 +1,16 @@
+packages:
+  - packages/*
+  - blog-dev
+  - blog-personal
+  - homepage
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - core-js
+  - core-js-pure
+  - es5-ext
+  - gatsby
+  - gatsby-cli
+  - lmdb
+  - msgpackr-extract
+  - sharp

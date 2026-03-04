@@ -75,5 +75,8 @@ yarn-error.log
 blog-dev/content/blog/draft/
 blog-personal/content/blog/draft/
 
+# Turborepo
+.turbo/
+
 # Context scratch files (temporary screenshots, test files, etc.)
-context/scratch/
+scratch/

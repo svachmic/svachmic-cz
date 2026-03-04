@@ -12,7 +12,9 @@ import "@fontsource/montserrat/800.css"
 import "@fontsource/montserrat/900.css"
 import "@fontsource/jetbrains-mono"
 // normalize CSS across browsers
-import "./src/normalize.css"
+import "@svachmic/shared/css/normalize.css"
+// shared design tokens
+import "@svachmic/shared/css/tokens.css"
 // custom CSS styles
 import "./src/style.css"
 // Highlighting for code blocks
