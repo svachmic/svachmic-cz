@@ -4,7 +4,7 @@
   ignore = "git diff --quiet $CACHED_COMMIT HEAD -- ../packages/shared/ . ../pnpm-lock.yaml"
 
 [build.environment]
-  NODE_VERSION = "22"
+  NODE_VERSION = "24"
 
 [[redirects]]
   from = "https://svachmic-dev.netlify.app/*"
@@ -17,7 +17,6 @@
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"

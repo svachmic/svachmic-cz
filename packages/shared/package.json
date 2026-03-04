@@ -1,6 +1,6 @@
 {
   "name": "@svachmic/shared",
-  "version": "2026.02.18",
+  "version": "20260304.0.0",
   "private": true,
   "main": "index.js",
   "peerDependencies": {
