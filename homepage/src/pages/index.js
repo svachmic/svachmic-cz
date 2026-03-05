@@ -438,7 +438,7 @@ export const pageQuery = graphql`
     }
     profilePic: file(relativePath: { eq: "profile-pic.jpg" }) {
       childImageSharp {
-        gatsbyImageData(width: 160, height: 160, layout: FIXED, placeholder: BLURRED, quality: 90)
+        gatsbyImageData(width: 160, height: 160, layout: CONSTRAINED, placeholder: BLURRED, quality: 90)
       }
     }
   }
