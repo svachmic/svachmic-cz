@@ -52,4 +52,5 @@ Each dev server runs at `http://localhost:8000`.
 
 ## License
 
-MIT
+- **Code** (source files, configs, build scripts): [MIT](LICENSE)
+- **Content** (blog posts, images, profile photos): [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
