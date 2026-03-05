@@ -11,7 +11,7 @@
 [build]
   command = "gatsby build"
   publish = "public"
-  ignore = "git diff --quiet $CACHED_COMMIT HEAD -- ../packages/shared/ . ../pnpm-lock.yaml"
+
 
 [build.environment]
   NODE_VERSION = "24"
