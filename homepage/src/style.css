@@ -559,12 +559,12 @@ body {
   }
 
   .hero {
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .hero__photo {
-    width: 96px;
-    height: 96px;
+    width: 64px;
+    height: 64px;
   }
 
   .hero__name {
