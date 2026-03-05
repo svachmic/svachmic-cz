@@ -559,16 +559,17 @@ body {
   }
 
   .hero {
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .hero__photo {
-    width: 96px;
-    height: 96px;
+    width: 100px;
+    height: 100px;
   }
 
   .hero__name {
     font-size: 2rem;
+    margin-bottom: 0.35rem;
   }
 
   .now {
