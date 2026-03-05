@@ -1,42 +1,55 @@
 # svachmic.cz
 
-This repository contains the source code for two personal blogs, both built with Gatsby.js.
+[![Netlify Status — Homepage](https://api.netlify.com/api/v1/badges/edb48a1b-7d19-447f-acf2-eb940df5a1d0/deploy-status)](https://app.netlify.com/projects/svachmic-homepage/deploys)
+[![Netlify Status — /dev/svachmic](https://api.netlify.com/api/v1/badges/96654798-b9c1-4099-b411-53e7ac742690/deploy-status)](https://app.netlify.com/sites/svachmic-dev/deploys)
+[![Netlify Status — blog.svachmic.cz](https://api.netlify.com/api/v1/badges/ec173f01-737b-4663-b144-5e1df65792cf/deploy-status)](https://app.netlify.com/sites/svachmic/deploys)
 
-## The Blogs
+Monorepo with three personal websites by [Michal Švácha](https://svachmic.cz), built with Gatsby v5.
 
-### 1. [/dev/svachmic](https://dev.svachmic.cz) (Technical Blog)
+## Sites
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/96654798-b9c1-4099-b411-53e7ac742690/deploy-status)](https://app.netlify.com/sites/svachmic-dev/deploys)
+### [svachmic.cz](https://svachmic.cz) — Homepage
 
--   **Folder:** [`blog-dev`](./blog-dev)
--   **Description:** A technical blog about software development, programming, and other related topics.
--   **Design:** Dark theme with a purple accent color.
+- **Directory:** [`homepage/`](./homepage)
+- **Description:** Personal homepage with bio, GitHub & GitLab contribution graph, featured project, blog links, and social links. Written in Czech.
+- **Design:** Minimal single-page layout, purple accent.
 
-### 2. [blog.svachmic.cz](https://blog.svachmic.cz) (Personal Blog)
+### [dev.svachmic.cz](https://dev.svachmic.cz) — Technical Blog
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ec173f01-737b-4663-b144-5e1df65792cf/deploy-status)](https://app.netlify.com/sites/svachmic/deploys)
+- **Directory:** [`blog-dev/`](./blog-dev)
+- **Description:** Technical blog about software development. Written in Czech.
+- **Design:** Dark theme with purple accent. Custom Darcula syntax highlighting.
 
--   **Folder:** [`blog-personal`](./blog-personal)
--   **Description:** A personal blog for thoughts and writings on various topics.
--   **Design:** Light theme with a purple accent color.
+### [blog.svachmic.cz](https://blog.svachmic.cz) — Personal Blog
+
+- **Directory:** [`blog-personal/`](./blog-personal)
+- **Description:** Personal blog covering career, gaming, education, and life reflections. Written in Czech.
+- **Design:** Light theme with purple accent.
+
+## Shared Package
+
+[`packages/shared/`](./packages/shared) (`@svachmic/shared`) contains components, Gatsby config helpers, and CSS tokens shared across all three sites.
 
 ## Technology Stack
 
-Both blogs are built with the following technologies:
-
--   **Framework:** Gatsby.js
--   **Language:** JavaScript
--   **Styling:** CSS with Custom Properties
--   **Content:** Markdown files
--   **Deployment:** Netlify
+- **Framework:** Gatsby.js v5, React 19
+- **Package Manager:** pnpm 10 (workspaces)
+- **Build Orchestration:** Turborepo
+- **Styling:** CSS with Custom Properties
+- **Content:** Markdown with frontmatter (blogs), GitHub/GitLab API data (homepage)
+- **Deployment:** Netlify (Node 24)
 
 ## Local Development
 
-To run either of the blogs locally, navigate to the respective directory and follow the instructions in the `README.md` file within that directory.
+```sh
+pnpm install              # install all dependencies
+pnpm run dev:homepage     # start homepage dev server
+pnpm run dev:blog-dev     # start technical blog dev server
+pnpm run dev:blog-personal # start personal blog dev server
+```
 
--   [`blog-dev/README.md`](./blog-dev/README.md)
--   [`blog-personal/README.md`](./blog-personal/README.md)
+Each dev server runs at `http://localhost:8000`.
 
 ## License
 
-MIT License
+MIT

@@ -82,7 +82,7 @@ Frontmatter fields: `title`, `description`, `date`, `modified`, `categories`, `t
 - **Build Orchestration:** Turborepo
 - **Styling:** CSS with Custom Properties (shared tokens in `packages/shared/css/tokens.css`)
 - **Typography:** Montserrat (headings), Merriweather (body), JetBrains Mono (code)
-- **Deployment:** Netlify (Node 24). Each site is a separate Netlify project with its base directory set to the site folder. Netlify runs `gatsby build` from there (not a root turbo command). The `ignore` field in each `netlify.toml` skips builds when only unrelated files changed.
+- **Deployment:** Netlify (Node 24). Each site is a separate Netlify project with its base directory set to the site folder. Netlify runs `gatsby build` from there (not a root turbo command). The blog sites use an `ignore` field in `netlify.toml` to skip builds when only unrelated files changed; the homepage always builds.
 - **Remark plugins (shared):** images, responsive-iframe, autolink-headers, katex, prismjs, copy-linked-files
 - **Site plugins:** sitemap, RSS feed, robots.txt, Google Analytics (all sites)
 
