@@ -86,13 +86,17 @@ const BlogPostTemplate = ({
 }
 
 export const Head = ({ data: { markdownRemark: post, site }, location }) => {
-  const baseUrl = (site.siteMetadata?.siteUrl || "https://blog.svachmic.cz").replace(/\/$/, '')
+  const baseUrl = (
+    site.siteMetadata?.siteUrl || "https://blog.svachmic.cz"
+  ).replace(/\/$/, "")
   const siteTitle = site.siteMetadata?.title || "svachmic.cz"
   const slug = post.fields?.slug || ""
 
-  // Look for header image in the post content (common pattern in your blog)
-  const headerImageMatch = post.html.match(/<img[^>]+src="([^">]+)"[^>]*alt="[Zz]áhlaví"/)
-  const headerImage = headerImageMatch ? headerImageMatch[1] : null
+  // Find the img tag with header alt text, then extract src (attribute order independent)
+  const headerImgTag = post.html.match(/<img[^>]*alt="[Zz]áhlaví"[^>]*>/)
+  const headerImage = headerImgTag
+    ? headerImgTag[0].match(/src="([^">]+)"/)?.[1]
+    : null
 
   // Get tags from frontmatter
   const tags = post.frontmatter.tags || []
@@ -114,27 +118,29 @@ export const Head = ({ data: { markdownRemark: post, site }, location }) => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BlogPosting",
-          "headline": post.frontmatter.title,
-          "description": post.frontmatter.description || post.excerpt,
-          "image": headerImage ? `${baseUrl}${headerImage}` : `${baseUrl}/content/assets/profile-pic.jpg`,
-          "author": {
+          headline: post.frontmatter.title,
+          description: post.frontmatter.description || post.excerpt,
+          image: headerImage
+            ? `${baseUrl}${headerImage}`
+            : `${baseUrl}/content/assets/profile-pic.jpg`,
+          author: {
             "@type": "Person",
-            "name": post.frontmatter.author || "Michal Švácha"
+            name: post.frontmatter.author || "Michal Švácha",
           },
-          "publisher": {
+          publisher: {
             "@type": "Organization",
-            "name": siteTitle,
-            "logo": {
+            name: siteTitle,
+            logo: {
               "@type": "ImageObject",
-              "url": `${baseUrl}/content/assets/favicon.png`
-            }
+              url: `${baseUrl}/content/assets/favicon.png`,
+            },
           },
-          "datePublished": post.frontmatter.date,
-          "dateModified": post.frontmatter.modified || post.frontmatter.date,
-          "mainEntityOfPage": {
+          datePublished: post.frontmatter.date,
+          dateModified: post.frontmatter.modified || post.frontmatter.date,
+          mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": `${baseUrl}${slug}`
-          }
+            "@id": `${baseUrl}${slug}`,
+          },
         })}
       </script>
       {/* BreadcrumbList structured data */}
@@ -142,19 +148,19 @@ export const Head = ({ data: { markdownRemark: post, site }, location }) => {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          "itemListElement": [
+          itemListElement: [
             {
               "@type": "ListItem",
-              "position": 1,
-              "name": "Domů",
-              "item": baseUrl
+              position: 1,
+              name: "Domů",
+              item: baseUrl,
             },
             {
               "@type": "ListItem",
-              "position": 2,
-              "name": post.frontmatter.title
-            }
-          ]
+              position: 2,
+              name: post.frontmatter.title,
+            },
+          ],
         })}
       </script>
     </Seo>

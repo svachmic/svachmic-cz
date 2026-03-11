@@ -12,10 +12,10 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
   const hyperlinks = data.site.siteMetadata.hyperlinks
-  
+
   // State for selected tags
   const [selectedTags, setSelectedTags] = useState([])
-  
+
   // Extract all unique tags
   const allTags = useMemo(() => {
     const tagSet = new Set()
@@ -26,27 +26,25 @@ const BlogIndex = ({ data, location }) => {
     })
     return Array.from(tagSet).sort()
   }, [posts])
-  
+
   // Filter posts based on selected tags
   const filteredPosts = useMemo(() => {
     if (selectedTags.length === 0) return posts
-    
+
     return posts.filter(post => {
       if (!post.frontmatter.tags) return false
       return selectedTags.some(tag => post.frontmatter.tags.includes(tag))
     })
   }, [posts, selectedTags])
-  
+
   // Handle tag toggle
-  const handleTagToggle = (tag) => {
+  const handleTagToggle = tag => {
     if (tag === null) {
       // Clear all filters
       setSelectedTags([])
     } else {
-      setSelectedTags(prev => 
-        prev.includes(tag) 
-          ? prev.filter(t => t !== tag)
-          : [...prev, tag]
+      setSelectedTags(prev =>
+        prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag],
       )
     }
   }
@@ -64,7 +62,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle} hyperlinks={hyperlinks}>
       <Bio />
       {allTags.length > 0 && (
-        <TagFilter 
+        <TagFilter
           tags={allTags}
           selectedTags={selectedTags}
           onTagToggle={handleTagToggle}
@@ -109,15 +107,16 @@ const BlogIndex = ({ data, location }) => {
                     }}
                     itemProp="description"
                   />
-                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                    <div className="post-tags">
-                      {post.frontmatter.tags.map(tag => (
-                        <span key={tag} className="post-tag">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
+                  {post.frontmatter.tags &&
+                    post.frontmatter.tags.length > 0 && (
+                      <div className="post-tags">
+                        {post.frontmatter.tags.map(tag => (
+                          <span key={tag} className="post-tag">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                 </section>
               </article>
             </li>

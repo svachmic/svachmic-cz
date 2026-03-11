@@ -42,8 +42,7 @@ const Layout = ({ location, title, children, hyperlinks }) => {
         >
           mana outpost
         </a>{" "}
-        &bull; <a href={hyperlinks.email}>kontakt</a>{" "}
-        &bull;{" "}
+        &bull; <a href={hyperlinks.email}>kontakt</a> &bull;{" "}
         <a href="https://svachmic.cz" target="_blank" rel="noopener noreferrer">
           svachmic.cz
         </a>
