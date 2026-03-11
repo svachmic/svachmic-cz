@@ -271,10 +271,6 @@ a:focus-visible {
   border-radius: 100%;
 }
 
-.blog-post .gatsby-resp-image-wrapper {
-  max-width: 100% !important;
-}
-
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }

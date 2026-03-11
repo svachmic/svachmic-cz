@@ -168,7 +168,7 @@ function createRemarkPlugins() {
     {
       resolve: `gatsby-remark-images`,
       options: {
-        maxWidth: 896,
+        maxWidth: 840,
       },
     },
     {

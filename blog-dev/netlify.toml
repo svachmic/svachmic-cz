@@ -1,5 +1,5 @@
 [build]
-  command = "gatsby build"
+  command = "gatsby clean && gatsby build"
   publish = "public"
   ignore = "[ -z \"$CACHED_COMMIT\" ] && exit 1 || git diff --quiet $CACHED_COMMIT HEAD -- ../packages/shared/ . ../pnpm-lock.yaml"
 
