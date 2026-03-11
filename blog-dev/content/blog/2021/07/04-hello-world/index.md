@@ -8,7 +8,7 @@ tags: [czech, kotlin]
 author: "Michal Švácha"
 ---
 
-![Záhlaví](./header.jpg)
+![Záhlaví](./header.png)
 
 Nevím kdy jsem napsal svůj první "Hello World!" program. Asi to bylo na [gymplu][gymvod] v Pascalu na hodinách IVTčka. Nebo to mohla být jedna z prvních webových stránek co jsem bouchal v MS FrontPage nebo Dreamweaveru. Zato si ale pamatuju, kdy jsem napsal svůj zatím poslední Hello World, který je nasazený v produkci:
 

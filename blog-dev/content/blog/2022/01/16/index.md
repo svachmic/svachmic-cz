@@ -8,7 +8,7 @@ tags: [czech, firebase, firestore, acl]
 author: "Michal Švácha"
 ---
 
-![Záhlaví](./header.jpg)
+![Záhlaví](./header.png)
 
 Práce s Firebase je super, obzvlášť na hobby projekty. Je potřeba minimální nastavování infrastruktury, všechno funguje téměř out-of-the-box, máte k dispozici lokální emulátor většiny[^1] komponent Firebase a k tomu obří komunitu na [StackOverflow][so_community] a [Slacku][slack]. Co víc si přát?
 
