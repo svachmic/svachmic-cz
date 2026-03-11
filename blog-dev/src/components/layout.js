@@ -37,8 +37,7 @@ const Layout = ({ location, title, children, hyperlinks }) => {
         <a href={hyperlinks.personal} target="_blank" rel="noopener noreferrer">
           osobní blog
         </a>{" "}
-        &bull;{" "}
-        <a href={hyperlinks.email}>kontakt</a>
+        &bull; <a href={hyperlinks.email}>kontakt</a>
       </footer>
     </div>
   )

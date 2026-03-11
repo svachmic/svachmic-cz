@@ -38,15 +38,13 @@ const BlogIndex = ({ data, location }) => {
   }, [posts, selectedTags])
 
   // Handle tag toggle
-  const handleTagToggle = (tag) => {
+  const handleTagToggle = tag => {
     if (tag === null) {
       // Clear all filters
       setSelectedTags([])
     } else {
       setSelectedTags(prev =>
-        prev.includes(tag)
-          ? prev.filter(t => t !== tag)
-          : [...prev, tag]
+        prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag],
       )
     }
   }
@@ -109,15 +107,16 @@ const BlogIndex = ({ data, location }) => {
                     }}
                     itemProp="description"
                   />
-                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                    <div className="post-tags">
-                      {post.frontmatter.tags.map(tag => (
-                        <span key={tag} className="post-tag">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
+                  {post.frontmatter.tags &&
+                    post.frontmatter.tags.length > 0 && (
+                      <div className="post-tags">
+                        {post.frontmatter.tags.map(tag => (
+                          <span key={tag} className="post-tag">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
                 </section>
               </article>
             </li>

@@ -20,7 +20,7 @@ module.exports = {
       personal: `https://blog.svachmic.cz`,
       github: `https://github.com/svachmic`,
       stackoverflow: `https://stackoverflow.com/users/1196908/michal`,
-      email: `mailto:kontakt@svachmic.cz`
+      email: `mailto:kontakt@svachmic.cz`,
     },
     description: `Tech blog Michala Šváchy.`,
     siteUrl: `https://dev.svachmic.cz/`,

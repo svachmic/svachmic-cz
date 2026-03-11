@@ -12,7 +12,10 @@ const NotFoundPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle} hyperlinks={hyperlinks}>
       <h1>404: Stránka nenalezena</h1>
       <p>Něco by tu možná mělo být. Ale není...</p>
-      <YouTube videoId="X_-q9xeOgG4" title="Always look on the bright side of life." />
+      <YouTube
+        videoId="X_-q9xeOgG4"
+        title="Always look on the bright side of life."
+      />
     </Layout>
   )
 }

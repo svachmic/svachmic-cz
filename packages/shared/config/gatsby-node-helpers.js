@@ -1,5 +1,5 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 /**
  * Creates the createPages function for blog posts.
@@ -7,7 +7,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
  */
 function createBlogPages(templatePath) {
   return async ({ graphql, actions, reporter }) => {
-    const { createPage } = actions
+    const { createPage } = actions;
 
     const result = await graphql(`
       {
@@ -30,22 +30,23 @@ function createBlogPages(templatePath) {
           }
         }
       }
-    `)
+    `);
 
     if (result.errors) {
       reporter.panicOnBuild(
         `There was an error loading your blog posts`,
         result.errors,
-      )
-      return
+      );
+      return;
     }
 
-    const posts = result.data.allMarkdownRemark.nodes
+    const posts = result.data.allMarkdownRemark.nodes;
 
     if (posts.length > 0) {
       posts.forEach((post, index) => {
-        const previousPostId = index === 0 ? null : posts[index - 1].id
-        const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+        const previousPostId = index === 0 ? null : posts[index - 1].id;
+        const nextPostId =
+          index === posts.length - 1 ? null : posts[index + 1].id;
 
         createPage({
           path: post.fields.slug,
@@ -55,26 +56,26 @@ function createBlogPages(templatePath) {
             previousPostId,
             nextPostId,
           },
-        })
-      })
+        });
+      });
     }
-  }
+  };
 }
 
 /**
  * Shared onCreateNode — creates slug field for MarkdownRemark nodes.
  */
 function onCreateNode({ node, actions, getNode }) {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode });
 
     createNodeField({
       name: `slug`,
       node,
       value,
-    })
+    });
   }
 }
 
@@ -128,11 +129,11 @@ function getCommonSchemaTypes() {
       totalWords: Float
       wordTime: Float
     }
-  `
+  `;
 }
 
 module.exports = {
   createBlogPages,
   onCreateNode,
   getCommonSchemaTypes,
-}
+};

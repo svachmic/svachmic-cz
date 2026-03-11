@@ -1,7 +1,6 @@
-const {
-  createRobotsTxtPlugin,
-  createGtagPlugin,
-} = require(`@svachmic/shared/config/gatsby-plugins`)
+const { createRobotsTxtPlugin, createGtagPlugin } = require(
+  `@svachmic/shared/config/gatsby-plugins`,
+);
 
 /**
  * @type {import('gatsby').GatsbyConfig}
@@ -51,4 +50,4 @@ module.exports = {
     createRobotsTxtPlugin(`https://svachmic.cz`),
     createGtagPlugin(`G-W0S5VPDPNS`),
   ],
-}
+};

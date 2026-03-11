@@ -25,11 +25,12 @@ Můj vlastní vstup do tohoto světa byl pečlivě načasován s koncem školní
 Po pár letech hraní ve škole jsme se s Pavlem poprvé vypravili na turnaj pro začátečníky v herně [Outpost][outpost-article]. V té době jsem hrál balík Mono Green Madness. Tyto víkendové turnaje byly neformální, plné hráčů jako jsem byl já - začátečníků bez silných balíčků, ale s o to větší chutí do hry. Bylo to něco jako formát Extended, ale bez výrazných omezení, což nám dávalo prostor experimentovat a učit se, bez nutnosti mít ty nejlepší (a nejdražší) karty.
 
 ![Street view Outpost herny v Kroftově ulici](./picture_3.jpg)
+
 <p style="text-align: center; font-size: small;">
   Outpost herna v Kroftově ulici (Street view ze srpna 2011)
 </p>
 
-V roce 2009 jsem hru opustil kvůli blížící se maturitě a následnému studiu na vysoké škole. Loni se nám narodila dcera a kombinace únavy z hraní her pouze u obrazovky a chutí jít občas mezi lidi (bez alkoholu) mě zavedla zpátky do známých alejí - deskovky a pak i Magicy. 
+V roce 2009 jsem hru opustil kvůli blížící se maturitě a následnému studiu na vysoké škole. Loni se nám narodila dcera a kombinace únavy z hraní her pouze u obrazovky a chutí jít občas mezi lidi (bez alkoholu) mě zavedla zpátky do známých alejí - deskovky a pak i Magicy.
 
 Za těch 14 let se ale změnilo v podstatě úplně všechno a rád bych tímto nabídnul vám, čtenářům, unikátní pohled na hru jako takovou. Nostalgické vzpomínky na hernu Outpost, která už je dnes bohužel zavřená, se snoubí s překvapením, které jsem zažil po návratu k hře - [pravidlo "mana burn" už neplatí][mana-burn]. Toto spojení starých vzpomínek a nových pravidel bylo inspirací pro název blogu (na kterém byl příspěvek původně publikován - pozn. autora) - Mana Outpost.
 
@@ -38,10 +39,10 @@ Za těch 14 let se ale změnilo v podstatě úplně všechno a rád bych tímto 
 Po dlouhé herní pauze jsem se vrátil ke hře, která prošla řadou změn. Můj první krok - účast na draftu ([Wilds of Eldraine][woe]) na Friday Night Magic (FNM) - byla první příležitostí setkat se s těmito změnami. S posledním otevřeným boosterem [Alara Reborn][alara] jsem si uvědomil, že mám před sebou nemalou výzvu dohnat zameškané.
 
 ![Booster Alara Reborn](./picture_4.jpg)
+
 <p style="text-align: center; font-size: small;">
   Poslední booster co jsem si koupil v Rytířovi před pauzou.
 </p>
-
 
 První věc, kterou jsem konečně po letech pochopil, je definice ["spellu"][spell]. Spell totiž, světe div se, zahrnuje jakoukoliv kartu, kterou vyvolávám pomocí many, nikoliv pouze "Sorcery" a "Instant". Lepší pozdě než nikdy, ale i tak jsem se trochu zastyděl.
 
@@ -66,6 +67,7 @@ Zajímavým aspektem HS je jeho design jako čistě digitální hry. Interakce a
 Výhodou digitální hry je zjednodušení administrativních aspektů, což umožňuje hráčům soustředit se na strategii. Trackování počtu životů, karet v ruce, nebo automatické navyšování síly potvor přenechává HS hře, což zjednodušuje hraní. Nepřijde mi adekvátní v roce 2024 hrát na "to je jedno, že se ti měla potvora automaticky zvětšit, je to zahraný!". S narůstající složitostí karet a mechanik je trestání hráče za zapomenutí automatického zvýšení počtu counterů zbytečné a vlastně úplně mimo mísu.
 
 ![Různé typy hracích kostek](./picture_7.jpg)
+
 <p style="text-align: center; font-size: small;">
   A jak trackujete čísla v analogovém světě vy?
 </p>
@@ -74,7 +76,7 @@ Dalším plusem HS je snadné a rychlé hledání protihráčů na podobné úro
 
 Nejvýraznějším rozdílem pro mě ale byla sociální interakce. V HS mi chyběla možnost diskutovat s protihráčem po hře, což je něco, co digitální chat nemůže plně nahradit. Tento nedostatek sociální interakce mě nakonec přivedl zpět k MTG. Možnost setkat se s lidmi, diskutovat o hře, učit se od sebe a smát se příšerným misplays při dalších FNM, to vše pro mě představuje esenci stolních her jako je právě MTG (tedy v papírové podobě). Proto jsem se ke hře vrátil. A HS? Už jenom [Battlegrounds][battlegrounds] u kafe o víkendu.
 
-Dík za pozornost a přeju šťastnou ruku při další hře! 🎲 
+Dík za pozornost a přeju šťastnou ruku při další hře! 🎲
 
 [alara]: https://mtg.fandom.com/wiki/Alara_Reborn
 [arena]: https://mtg.fandom.com/wiki/Magic:_The_Gathering_Arena
@@ -108,4 +110,4 @@ Dík za pozornost a přeju šťastnou ruku při další hře! 🎲
 [stack]: https://mtg.fandom.com/wiki/Stack
 [starter-2000]: https://mtg.fandom.com/wiki/Starter_2000
 [titans]: https://www.youtube.com/watch?v=HPtkLcaW5Wk
-[woe]: https://mtg.fandom.com/wiki/Wilds_of_Eldraine 
+[woe]: https://mtg.fandom.com/wiki/Wilds_of_Eldraine

@@ -1,7 +1,7 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 const TagFilter = ({ tags, selectedTags, onTagToggle }) => {
-  const [isCollapsed, setIsCollapsed] = useState(true)
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
     <div className="tag-filter">
@@ -26,8 +26,8 @@ const TagFilter = ({ tags, selectedTags, onTagToggle }) => {
       {isCollapsed && selectedTags.length > 0 && (
         <div className="selected-tags">
           {tags
-            .filter(tag => selectedTags.includes(tag))
-            .map(tag => (
+            .filter((tag) => selectedTags.includes(tag))
+            .map((tag) => (
               <button
                 key={tag}
                 className="tag-button active"
@@ -42,7 +42,7 @@ const TagFilter = ({ tags, selectedTags, onTagToggle }) => {
 
       {!isCollapsed && (
         <div className="tag-list">
-          {tags.map(tag => (
+          {tags.map((tag) => (
             <button
               key={tag}
               className={`tag-button ${selectedTags.includes(tag) ? "active" : ""}`}
@@ -55,7 +55,7 @@ const TagFilter = ({ tags, selectedTags, onTagToggle }) => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default TagFilter
+export default TagFilter;

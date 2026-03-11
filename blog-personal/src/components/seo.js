@@ -19,7 +19,7 @@ const Seo = ({
   tags = [],
   author,
   pathname = "",
-  children
+  children,
 }) => {
   const { site } = useStaticQuery(graphql`
     query {
@@ -44,11 +44,13 @@ const Seo = ({
   const siteUrl = site.siteMetadata?.siteUrl
   const twitterUsername = site.siteMetadata?.social?.twitter
   const authorName = author || site.siteMetadata?.author?.name
-  const canonicalUrl = `${siteUrl.replace(/\/$/, '')}${pathname || '/'}`
+  const canonicalUrl = `${siteUrl.replace(/\/$/, "")}${pathname || "/"}`
 
   // Create full image URL if image is provided
-  const fullImageUrl = image 
-    ? (image.startsWith('http') ? image : `${siteUrl}${image}`)
+  const fullImageUrl = image
+    ? image.startsWith("http")
+      ? image
+      : `${siteUrl}${image}`
     : `${siteUrl}/content/assets/profile-pic.jpg` // fallback to profile pic
 
   // Determine Twitter card type based on whether we have an image
@@ -59,7 +61,7 @@ const Seo = ({
       <html lang="cs" />
       <title>{defaultTitle ? `${title} | ${defaultTitle}` : title}</title>
       <meta name="description" content={metaDescription} />
-      
+
       {/* Open Graph tags */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
@@ -69,33 +71,43 @@ const Seo = ({
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content={defaultTitle} />
       <meta property="og:locale" content="cs_CZ" />
-      
+
       {/* Article-specific Open Graph tags */}
       {article && (
         <>
-          {publishedDate && <meta property="article:published_time" content={publishedDate} />}
-          {modifiedDate && <meta property="article:modified_time" content={modifiedDate} />}
-          {authorName && <meta property="article:author" content={authorName} />}
+          {publishedDate && (
+            <meta property="article:published_time" content={publishedDate} />
+          )}
+          {modifiedDate && (
+            <meta property="article:modified_time" content={modifiedDate} />
+          )}
+          {authorName && (
+            <meta property="article:author" content={authorName} />
+          )}
           {tags.map(tag => (
             <meta key={tag} property="article:tag" content={tag} />
           ))}
         </>
       )}
-      
+
       {/* Twitter Card tags */}
       <meta name="twitter:card" content={twitterCardType} />
-      {twitterUsername && <meta name="twitter:creator" content={`@${twitterUsername}`} />}
-      {twitterUsername && <meta name="twitter:site" content={`@${twitterUsername}`} />}
+      {twitterUsername && (
+        <meta name="twitter:creator" content={`@${twitterUsername}`} />
+      )}
+      {twitterUsername && (
+        <meta name="twitter:site" content={`@${twitterUsername}`} />
+      )}
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={fullImageUrl} />
       <meta name="twitter:image:alt" content={`${title} - ${defaultTitle}`} />
-      
+
       {/* Additional meta tags for better SEO */}
       <meta name="robots" content="index, follow" />
       <meta name="author" content={authorName} />
       <link rel="canonical" href={canonicalUrl} />
-      
+
       {children}
     </>
   )

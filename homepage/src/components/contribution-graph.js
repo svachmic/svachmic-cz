@@ -1,65 +1,65 @@
-import * as React from "react"
+import * as React from "react";
 
-const MOBILE_WEEKS = 26
+const MOBILE_WEEKS = 26;
 
 function getCellClass(source, level) {
-  if (level === 0 || source === "none") return "contrib__cell--level-0"
-  return `contrib__cell--${source}-${level}`
+  if (level === 0 || source === "none") return "contrib__cell--level-0";
+  return `contrib__cell--${source}-${level}`;
 }
 
 function formatTooltip(day) {
-  const { date, totalCount, githubCount, gitlabCount } = day
-  if (totalCount === 0) return `Žádné příspěvky — ${date}`
+  const { date, totalCount, githubCount, gitlabCount } = day;
+  if (totalCount === 0) return `Žádné příspěvky — ${date}`;
   const word =
     totalCount === 1
       ? "příspěvek"
       : totalCount >= 2 && totalCount <= 4
         ? "příspěvky"
-        : "příspěvků"
-  return `${totalCount} ${word} (GitHub: ${githubCount}, GitLab: ${gitlabCount}) — ${date}`
+        : "příspěvků";
+  return `${totalCount} ${word} (GitHub: ${githubCount}, GitLab: ${gitlabCount}) — ${date}`;
 }
 
 function useIsMobile(breakpoint = 600) {
-  const [isMobile, setIsMobile] = React.useState(false)
+  const [isMobile, setIsMobile] = React.useState(false);
   React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${breakpoint}px)`)
-    setIsMobile(mql.matches)
-    const handler = (e) => setIsMobile(e.matches)
-    mql.addEventListener("change", handler)
-    return () => mql.removeEventListener("change", handler)
-  }, [breakpoint])
-  return isMobile
+    const mql = window.matchMedia(`(max-width: ${breakpoint}px)`);
+    setIsMobile(mql.matches);
+    const handler = (e) => setIsMobile(e.matches);
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  }, [breakpoint]);
+  return isMobile;
 }
 
-const DAY_LABELS = ["", "Po", "", "St", "", "Pá", ""]
+const DAY_LABELS = ["", "Po", "", "St", "", "Pá", ""];
 
 const ContributionGraph = ({ weeks, months, totalContributions }) => {
-  const isMobile = useIsMobile()
+  const isMobile = useIsMobile();
 
-  const visibleWeeks = isMobile ? weeks.slice(-MOBILE_WEEKS) : weeks
-  const weekOffset = isMobile ? weeks.length - MOBILE_WEEKS : 0
+  const visibleWeeks = isMobile ? weeks.slice(-MOBILE_WEEKS) : weeks;
+  const weekOffset = isMobile ? weeks.length - MOBILE_WEEKS : 0;
 
   const visibleMonths = React.useMemo(() => {
     return months
       .filter((m) => {
-        const start = m.firstWeekIndex
-        const end = start + m.totalWeeks
-        return end > weekOffset && start < weekOffset + visibleWeeks.length
+        const start = m.firstWeekIndex;
+        const end = start + m.totalWeeks;
+        return end > weekOffset && start < weekOffset + visibleWeeks.length;
       })
       .map((m) => ({
         ...m,
         firstWeekIndex: Math.max(0, m.firstWeekIndex - weekOffset),
-      }))
-  }, [months, weekOffset, visibleWeeks.length])
+      }));
+  }, [months, weekOffset, visibleWeeks.length]);
 
-  const totalCols = visibleWeeks.length
+  const totalCols = visibleWeeks.length;
 
   const word =
     totalContributions === 1
       ? "příspěvek"
       : totalContributions >= 2 && totalContributions <= 4
         ? "příspěvky"
-        : "příspěvků"
+        : "příspěvků";
 
   return (
     <section className="contrib">
@@ -146,7 +146,7 @@ const ContributionGraph = ({ weeks, months, totalContributions }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContributionGraph
+export default ContributionGraph;

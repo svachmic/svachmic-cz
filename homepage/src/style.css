@@ -134,6 +134,31 @@ body {
   line-height: 1.6;
 }
 
+.now__link {
+  display: inline;
+  padding: 0.1rem 0.4rem;
+  background: rgba(107, 70, 193, 0.08);
+  border-bottom: 1.5px solid rgba(107, 70, 193, 0.3);
+  border-radius: 3px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.now__link:hover {
+  border-bottom-color: var(--color-primary);
+  background: rgba(107, 70, 193, 0.12);
+}
+
+.now__link-title {
+  font-weight: 600;
+  font-style: normal;
+  color: var(--color-primary);
+}
+
+.now__link-domain {
+  display: none;
+}
+
 .now__date {
   display: block;
   font-size: 0.75rem;
