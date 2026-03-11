@@ -1,7 +1,7 @@
-import React from "react"
+import React from "react";
 
 const YouTube = ({ videoId, title }) => {
-  const videoUrl = `https://www.youtube.com/embed/${videoId}`
+  const videoUrl = `https://www.youtube.com/embed/${videoId}`;
 
   return (
     <div className="iframe-container">
@@ -15,7 +15,7 @@ const YouTube = ({ videoId, title }) => {
         allowFullscreen
       />
     </div>
-  )
-}
+  );
+};
 
-export default YouTube
+export default YouTube;

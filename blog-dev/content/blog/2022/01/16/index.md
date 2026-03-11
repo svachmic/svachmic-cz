@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Firestore a Firebase Storage rules snadno a rychle"
+title: "Firestore a Firebase Storage rules snadno a rychle"
 description: "Jak nastavit pravidla přístupu pro Firestore a Firebase Storage a strukturu dat tak, abychom se nestříleli do vlastní nohy."
 date: "2022-01-16 18:00:00"
 categories: "tutorial"
@@ -17,7 +17,7 @@ Možná obecně "čas" na hobby projekty, ale to je mimo rozsah tohoto příspě
 
 [^1]: Compound queries do Firestore vyžadující nastavení indexů na kolekci lokálně projdou ale v produkci spadnou.
 
-Prototypování jde od ruky, na všechno jsou SDKčka a dá se celkem rychle dostat z 0 na 1. Teda na 0.999 (~ téměř 1, ale ne tak docela). Poslední krok je po sobě uklidit předtím, než vám "běžný franta uživatel" udělá v datech totální paseku svým chováním ve vaší aplikaci. Nebo nedejbože nějaký floutek pokusí různé techniky k přístupu cizích dat. Jelikož je Firebase serverless platforma, spoustu byznys logiky je třeba implementovat na klientech. 
+Prototypování jde od ruky, na všechno jsou SDKčka a dá se celkem rychle dostat z 0 na 1. Teda na 0.999 (~ téměř 1, ale ne tak docela). Poslední krok je po sobě uklidit předtím, než vám "běžný franta uživatel" udělá v datech totální paseku svým chováním ve vaší aplikaci. Nebo nedejbože nějaký floutek pokusí různé techniky k přístupu cizích dat. Jelikož je Firebase serverless platforma, spoustu byznys logiky je třeba implementovat na klientech.
 
 Například čtení uživatelského dokumentu z Firestore lze udělat takto:
 
@@ -44,7 +44,7 @@ rules_version = '2';
 service cloud.firestore {
     match /databases/{database}/documents {
         match /users/{user} {
-            allow read: if isSignedIn() 
+            allow read: if isSignedIn()
               && request.auth.uid == resource.data.id;
         }
     }
@@ -57,10 +57,10 @@ service cloud.firestore {
 
 Snažím se tu docílit toho, že když přistupuji k dokumentu v kolekci `users`, tak kontroluji, zda ID uživatele v tokenu odpovídá ID uloženému v dokumentu. Pro jednoduchost řekněme, že jeden dokument uživatele vypadá takto:
 
-| Name    | Value  |
-|:-------:|:------:|
-| id      | string |
-| email   | string |
+|  Name   | Value  |
+| :-----: | :----: |
+|   id    | string |
+|  email  | string |
 | records | array  |
 
 Jednoduchá řešení jsou krásná v tom, že jsou jednoduchá. Nicméně jak bylo krásné, tak bylo k ničemu. Proč? Protože k přečtení dokumentu a porovnání IDček nemá uživatel dostatečná práva...
@@ -89,13 +89,13 @@ Zpátky na stromy! Tak co teď? Kde udělali soudruzi z NDR chybu? Ve struktuře
 Vytvořit dokument v kolekci lze dvěma způsoby (příklad je z pohledu Node.js funkce):
 
 ```typescript
-firestore().collection("users").add(newUser);
+firestore().collection("users").add(newUser)
 ```
 
 a nebo:
 
 ```typescript
-firestore().collection("users").doc(newUserId).set(newUser);
+firestore().collection("users").doc(newUserId).set(newUser)
 ```
 
 První verze vytvoří dokument s automaticky vygenerovaném ID, druhý vytvoří dokument s daným ID. Druhý přístup má dva zásadní problémy:
@@ -134,7 +134,7 @@ Následně jsem přidal nové pravidlo:
 
 ```javascript
 match /records/{record} {
-    allow read: if isSignedIn() 
+    allow read: if isSignedIn()
         && resource.id in get(/databases/$(database)/documents/users/$(request.auth.uid)).data.records;
 }
 ```
@@ -149,10 +149,10 @@ db.collection("records")
     }
 ```
 
-Ale zase bychom se vraceli zpátky k tomu, že čteme **OBSAH** dokumentu. Pakliže se nachází v kolekci alespoň jeden dokument, ke kterému podle pravidel nemáme přístup, nemůžeme dělat query podle vnitřních hodnot. 
+Ale zase bychom se vraceli zpátky k tomu, že čteme **OBSAH** dokumentu. Pakliže se nachází v kolekci alespoň jeden dokument, ke kterému podle pravidel nemáme přístup, nemůžeme dělat query podle vnitřních hodnot.
 
 > "A teď jedna kontrolní soudruzi...jakpak se bude taková query chovat, když budeme porovnávat ID dokumentů, tedy nikoliv jejich obsah?"
-> 
+>
 > Bingo.
 
 ```swift

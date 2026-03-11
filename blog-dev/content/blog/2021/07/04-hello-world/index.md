@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Hello World!"
-description: "echo \"Hello World\" >> /dev/null"
+title: "Hello World!"
+description: 'echo "Hello World" >> /dev/null'
 date: "2021-07-04 18:00:00"
 categories: "story"
 tags: [czech, kotlin]

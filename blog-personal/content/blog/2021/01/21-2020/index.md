@@ -151,7 +151,6 @@ Takže na pozitivních vlnách a za zvuku Kelly Clarkson nashle příště! 👋
 </div>
 
 [guardian]: https://www.theguardian.com/science/2019/feb/17/study-blames-youtube-for-rise-in-number-of-flat-earthers
-
 [petakova]: https://prometheus-nakl.cz/index.php?zobraz=detail&id_katalog=170
 [occam]: https://cs.wikipedia.org/wiki/Occamova_břitva
 [holy-josef]: https://twitter.com/holyj?lang=gl

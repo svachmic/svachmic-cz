@@ -4,7 +4,7 @@
  */
 
 function createSitemapPlugin(siteUrl) {
-  const cleanUrl = siteUrl.replace(/\/$/, '')
+  const cleanUrl = siteUrl.replace(/\/$/, "");
   return {
     resolve: "gatsby-plugin-sitemap",
     options: {
@@ -29,28 +29,31 @@ function createSitemapPlugin(siteUrl) {
         }
       `,
       resolveSiteUrl: () => cleanUrl,
-      resolvePages: ({ allSitePage: { nodes: allPages }, allMarkdownRemark: { nodes: allPosts } }) => {
-        const postDateMap = {}
-        allPosts.forEach(post => {
+      resolvePages: ({
+        allSitePage: { nodes: allPages },
+        allMarkdownRemark: { nodes: allPosts },
+      }) => {
+        const postDateMap = {};
+        allPosts.forEach((post) => {
           postDateMap[post.fields.slug] = {
             lastmod: post.frontmatter.modified || post.frontmatter.date,
-          }
-        })
-        return allPages.map(page => {
-          return { ...page, ...postDateMap[page.path] }
-        })
+          };
+        });
+        return allPages.map((page) => {
+          return { ...page, ...postDateMap[page.path] };
+        });
       },
       serialize: ({ path, lastmod }) => {
-        const isIndex = path === '/'
+        const isIndex = path === "/";
         return {
           url: path,
           lastmod: lastmod || undefined,
-          changefreq: isIndex ? 'weekly' : 'monthly',
+          changefreq: isIndex ? "weekly" : "monthly",
           priority: isIndex ? 1.0 : 0.7,
-        }
+        };
       },
     },
-  }
+  };
 }
 
 function createFeedPlugin(feedTitle) {
@@ -72,7 +75,7 @@ function createFeedPlugin(feedTitle) {
       feeds: [
         {
           serialize: ({ query: { site, allMarkdownRemark } }) => {
-            return allMarkdownRemark.nodes.map(node => {
+            return allMarkdownRemark.nodes.map((node) => {
               return Object.assign({}, node.frontmatter, {
                 description: node.excerpt,
                 date: node.frontmatter.date,
@@ -80,23 +83,31 @@ function createFeedPlugin(feedTitle) {
                 url: site.siteMetadata.siteUrl + node.fields.slug,
                 guid: site.siteMetadata.siteUrl + node.fields.slug,
                 custom_elements: [{ "content:encoded": node.html }],
-              })
-            })
+              });
+            });
           },
           setup: ({ query: { site } }) => {
-            const siteUrl = site.siteMetadata.siteUrl.replace(/\/$/, '')
+            const siteUrl = site.siteMetadata.siteUrl.replace(/\/$/, "");
             return {
               title: site.siteMetadata.title,
               description: site.siteMetadata.description,
               site_url: siteUrl,
               feed_url: `${siteUrl}/rss.xml`,
               custom_namespaces: {
-                atom: 'http://www.w3.org/2005/Atom',
+                atom: "http://www.w3.org/2005/Atom",
               },
               custom_elements: [
-                { 'atom:link': { _attr: { href: `${siteUrl}/rss.xml`, rel: 'self', type: 'application/rss+xml' } } },
+                {
+                  "atom:link": {
+                    _attr: {
+                      href: `${siteUrl}/rss.xml`,
+                      rel: "self",
+                      type: "application/rss+xml",
+                    },
+                  },
+                },
               ],
-            }
+            };
           },
           query: `{
             allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
@@ -119,18 +130,18 @@ function createFeedPlugin(feedTitle) {
         },
       ],
     },
-  }
+  };
 }
 
 function createRobotsTxtPlugin(siteUrl) {
   return {
     resolve: `gatsby-plugin-robots-txt`,
     options: {
-      host: siteUrl.replace(/\/$/, ''),
-      sitemap: `${siteUrl.replace(/\/$/, '')}/sitemap-index.xml`,
-      policy: [{ userAgent: '*', allow: '/', disallow: ['/draft/'] }],
+      host: siteUrl.replace(/\/$/, ""),
+      sitemap: `${siteUrl.replace(/\/$/, "")}/sitemap-index.xml`,
+      policy: [{ userAgent: "*", allow: "/", disallow: ["/draft/"] }],
     },
-  }
+  };
 }
 
 function createGtagPlugin(trackingId) {
@@ -149,7 +160,7 @@ function createGtagPlugin(trackingId) {
         exclude: ["/draft/**"],
       },
     },
-  }
+  };
 }
 
 function createRemarkPlugins() {
@@ -181,7 +192,7 @@ function createRemarkPlugins() {
     },
     `gatsby-remark-prismjs`,
     `gatsby-remark-copy-linked-files`,
-  ]
+  ];
 }
 
 module.exports = {
@@ -190,4 +201,4 @@ module.exports = {
   createRobotsTxtPlugin,
   createGtagPlugin,
   createRemarkPlugins,
-}
+};
