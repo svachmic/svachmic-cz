@@ -1,7 +1,10 @@
 const path = require(`path`)
-const { createBlogPages, onCreateNode, getCommonSchemaTypes } = require(
-  `@svachmic/shared/config/gatsby-node-helpers`,
-)
+const {
+  createBlogPages,
+  onCreateNode,
+  getCommonSchemaTypes,
+  createLatestJson,
+} = require(`@svachmic/shared/config/gatsby-node-helpers`)
 
 const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
@@ -27,6 +30,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+
+exports.onPostBuild = createLatestJson()
 
 exports.onCreateWebpackConfig = ({ actions, loaders }) => {
   actions.setWebpackConfig({

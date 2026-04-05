@@ -61,6 +61,12 @@
     Cache-Control = "public, max-age=86400, must-revalidate"
 
 [[headers]]
+  for = "/latest.json"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+    Access-Control-Allow-Origin = "https://svachmic.cz"
+
+[[headers]]
   for = "/sw.js"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"

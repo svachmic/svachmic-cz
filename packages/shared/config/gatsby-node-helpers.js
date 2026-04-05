@@ -1,4 +1,5 @@
 const path = require(`path`);
+const fs = require(`fs`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 /**
@@ -132,8 +133,80 @@ function getCommonSchemaTypes() {
   `;
 }
 
+/**
+ * Creates the onPostBuild function that writes latest.json to public/.
+ * Reads site title and URL from siteMetadata via GraphQL.
+ */
+function createLatestJson() {
+  return async ({ graphql, reporter }) => {
+    const result = await graphql(`
+      {
+        site {
+          siteMetadata {
+            title
+            siteUrl
+          }
+        }
+        allMarkdownRemark(
+          sort: { frontmatter: { date: DESC } }
+          limit: 3
+          filter: { fields: { slug: { regex: "/^(?!/draft/)/" } } }
+        ) {
+          nodes {
+            excerpt(pruneLength: 160)
+            wordCount {
+              words
+            }
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              description
+              date
+              tags
+            }
+          }
+        }
+      }
+    `);
+
+    if (result.errors) {
+      reporter.panicOnBuild(`Error generating latest.json`, result.errors);
+      return;
+    }
+
+    const { title, siteUrl } = result.data.site.siteMetadata;
+    const baseUrl = siteUrl.replace(/\/$/, ``);
+
+    const posts = result.data.allMarkdownRemark.nodes.map((node) => ({
+      title: node.frontmatter.title,
+      slug: node.fields.slug,
+      url: `${baseUrl}${node.fields.slug}`,
+      date: node.frontmatter.date,
+      description: node.frontmatter.description || node.excerpt,
+      tags: node.frontmatter.tags || [],
+      readingTime: Math.ceil((node.wordCount?.words || 0) / 200),
+    }));
+
+    const data = {
+      site: { title, url: siteUrl },
+      generatedAt: new Date().toISOString(),
+      posts,
+    };
+
+    fs.writeFileSync(
+      path.join(`public`, `latest.json`),
+      JSON.stringify(data, null, 2),
+    );
+
+    reporter.info(`Wrote latest.json with ${posts.length} post(s)`);
+  };
+}
+
 module.exports = {
   createBlogPages,
   onCreateNode,
   getCommonSchemaTypes,
+  createLatestJson,
 };
