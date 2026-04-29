@@ -4,6 +4,7 @@ const {
   onCreateNode,
   getCommonSchemaTypes,
   createLatestJson,
+  createMarkdownSidecars,
 } = require(`@svachmic/shared/config/gatsby-node-helpers`)
 
 const blogPost = path.resolve(`./src/templates/blog-post.js`)
@@ -30,7 +31,10 @@ exports.createSchemaCustomization = ({ actions }) => {
   `)
 }
 
-exports.onPostBuild = createLatestJson()
+exports.onPostBuild = async (args) => {
+  await createLatestJson()(args)
+  await createMarkdownSidecars()(args)
+}
 
 exports.onCreateWebpackConfig = ({ actions, loaders }) => {
   actions.setWebpackConfig({

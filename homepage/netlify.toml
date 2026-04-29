@@ -66,3 +66,15 @@
   for = "/sw.js"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# Markdown sidecars for `Accept: text/markdown` content negotiation
+[[headers]]
+  for = "/*/index.md"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Vary = "Accept"
+    Content-Type = "text/markdown; charset=utf-8"
+
+[[edge_functions]]
+  path = "/*"
+  function = "markdown-negotiate"

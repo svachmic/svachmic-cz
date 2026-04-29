@@ -204,9 +204,69 @@ function createLatestJson() {
   };
 }
 
+/**
+ * Creates the onPostBuild function that copies each non-draft post's source
+ * markdown to public/{slug}/index.md and writes a public/markdown-manifest.json
+ * with token estimates. Used by the markdown-negotiate edge function to serve
+ * `Accept: text/markdown` requests.
+ */
+function createMarkdownSidecars() {
+  return async ({ graphql, reporter }) => {
+    const result = await graphql(`
+      {
+        allMarkdownRemark(
+          filter: { fields: { slug: { regex: "/^(?!/draft/)/" } } }
+        ) {
+          nodes {
+            fileAbsolutePath
+            wordCount {
+              words
+            }
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    `);
+
+    if (result.errors) {
+      reporter.panicOnBuild(
+        `Error generating markdown sidecars`,
+        result.errors,
+      );
+      return;
+    }
+
+    const manifest = {};
+    let count = 0;
+    for (const node of result.data.allMarkdownRemark.nodes) {
+      const md = fs.readFileSync(node.fileAbsolutePath, `utf8`);
+      const outDir = path.join(`public`, node.fields.slug);
+      fs.mkdirSync(outDir, { recursive: true });
+      fs.writeFileSync(path.join(outDir, `index.md`), md);
+
+      const tokens = Math.ceil((node.wordCount?.words || 0) * 1.3);
+      manifest[node.fields.slug] = {
+        tokens,
+        bytes: Buffer.byteLength(md, `utf8`),
+      };
+      count++;
+    }
+
+    fs.writeFileSync(
+      path.join(`public`, `markdown-manifest.json`),
+      JSON.stringify(manifest),
+    );
+
+    reporter.info(`Wrote ${count} markdown sidecar(s)`);
+  };
+}
+
 module.exports = {
   createBlogPages,
   onCreateNode,
   getCommonSchemaTypes,
   createLatestJson,
+  createMarkdownSidecars,
 };
