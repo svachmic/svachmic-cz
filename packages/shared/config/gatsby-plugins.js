@@ -133,17 +133,6 @@ function createFeedPlugin(feedTitle) {
   };
 }
 
-function createRobotsTxtPlugin(siteUrl) {
-  return {
-    resolve: `gatsby-plugin-robots-txt`,
-    options: {
-      host: siteUrl.replace(/\/$/, ""),
-      sitemap: `${siteUrl.replace(/\/$/, "")}/sitemap-index.xml`,
-      policy: [{ userAgent: "*", allow: "/", disallow: ["/draft/"] }],
-    },
-  };
-}
-
 function createGtagPlugin(trackingId) {
   return {
     resolve: `gatsby-plugin-google-gtag`,
@@ -198,7 +187,6 @@ function createRemarkPlugins() {
 module.exports = {
   createSitemapPlugin,
   createFeedPlugin,
-  createRobotsTxtPlugin,
   createGtagPlugin,
   createRemarkPlugins,
 };

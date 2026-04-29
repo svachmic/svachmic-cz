@@ -1,7 +1,6 @@
 const {
   createSitemapPlugin,
   createFeedPlugin,
-  createRobotsTxtPlugin,
   createGtagPlugin,
   createRemarkPlugins,
 } = require(`@svachmic/shared/config/gatsby-plugins`)
@@ -65,7 +64,6 @@ module.exports = {
         icon: `content/assets/favicon.png`,
       },
     },
-    createRobotsTxtPlugin(`https://blog.svachmic.cz`),
     createGtagPlugin(`G-KLMPJJ6PSP`),
   ],
 }

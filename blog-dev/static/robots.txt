@@ -1,0 +1,7 @@
+User-agent: *
+Content-Signal: ai-train=no, search=yes, ai-input=no
+Allow: /
+Disallow: /draft/
+
+Host: https://dev.svachmic.cz
+Sitemap: https://dev.svachmic.cz/sitemap-index.xml
