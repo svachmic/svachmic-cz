@@ -107,12 +107,13 @@ From individual site directories:
 
 ## Versioning
 
-DateVer format `YYYYMMDD.0` in each site's `package.json`. Bump the patch number for multiple builds on the same day.
+DateVer format `YYYY.M.D` in each site's `package.json` — pure DateVer with no zero-padding (npm/pnpm enforces strict SemVer 2.0.0, which rejects leading zeros like `2026.04.29`). For multiple builds on the same day, append a pre-release tag (e.g. `2026.4.29-2`) since the third segment is the day.
 
 Bump version:
 
 ```bash
-cd blog-dev && pnpm version $(date +"%Y%m%d").0 --no-git-tag-version && cd ..
-cd blog-personal && pnpm version $(date +"%Y%m%d").0 --no-git-tag-version && cd ..
-cd homepage && pnpm version $(date +"%Y%m%d").0 --no-git-tag-version && cd ..
+V=$(date +"%Y.%-m.%-d")
+cd blog-dev      && pnpm version $V --no-git-tag-version && cd ..
+cd blog-personal && pnpm version $V --no-git-tag-version && cd ..
+cd homepage      && pnpm version $V --no-git-tag-version && cd ..
 ```

@@ -1,7 +1,7 @@
 {
   "name": "svachmic-cz-dev-blog",
   "description": "Tech blog of Michal Svacha",
-  "version": "20260405.0.0",
+  "version": "2026.4.29",
   "license": "MIT",
   "private": true,
   "scripts": {

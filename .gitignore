@@ -86,3 +86,6 @@ scratch/
 
 # Local Netlify folder
 .netlify
+
+# Serena MCP project metadata (cache, memories, local config)
+.serena/
