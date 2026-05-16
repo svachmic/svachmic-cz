@@ -76,8 +76,7 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
           const date = new Date(post.frontmatter.date)
           const localizedDate = date.toLocaleDateString("cs-CZ")
-          const duration = post.fields?.readTimeEstimate?.duration || 0
-          const readingTime = Math.ceil(duration)
+          const readingTime = post.timeToRead
 
           return (
             <li key={post.fields.slug}>
@@ -157,20 +156,10 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
-        html
         excerpt
+        timeToRead
         fields {
           slug
-          readTimeEstimate {
-            duration
-            humanizedDuration
-            imageTime
-            otherLanguageTime
-            otherLanguageTimeCharacters
-            totalImages
-            totalWords
-            wordTime
-          }
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")

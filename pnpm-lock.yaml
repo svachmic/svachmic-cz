@@ -47,9 +47,6 @@ importers:
       gatsby-plugin-manifest:
         specifier: ^5.16.0
         version: 5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0)
-      gatsby-plugin-readingtime:
-        specifier: ^3.0.2
-        version: 3.0.2(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))
       gatsby-plugin-sharp:
         specifier: ^5.16.0
         version: 5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0)
@@ -89,9 +86,6 @@ importers:
       react-dom:
         specifier: ^19.2.4
         version: 19.2.4(react@19.2.4)
-      read-time-estimate:
-        specifier: ^0.0.3
-        version: 0.0.3
 
   blog-personal:
     dependencies:
@@ -125,9 +119,6 @@ importers:
       gatsby-plugin-manifest:
         specifier: ^5.16.0
         version: 5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0)
-      gatsby-plugin-readingtime:
-        specifier: ^3.0.2
-        version: 3.0.2(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))
       gatsby-plugin-sharp:
         specifier: ^5.16.0
         version: 5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0)
@@ -173,9 +164,6 @@ importers:
       react-dom:
         specifier: ^19.2.4
         version: 19.2.4(react@19.2.4)
-      read-time-estimate:
-        specifier: ^0.0.3
-        version: 0.0.3
 
   homepage:
     dependencies:
@@ -3248,11 +3236,6 @@ packages:
     peerDependencies:
       gatsby: ^5.0.0-next
 
-  gatsby-plugin-readingtime@3.0.2:
-    resolution: {integrity: sha512-lDjcK76yU3k8t3zEZ72Z5+fMFwTuhJEqQTIJooSnKF+mNmjcm3YAFm/r2Z23ioXVBQKgu+il+SZ0+9eHUc+Kvw==}
-    peerDependencies:
-      gatsby: ^4.0.0 || ^5.0.0
-
   gatsby-plugin-sharp@5.16.0:
     resolution: {integrity: sha512-MYcvpSKM39iVvagjqxCQCYEbhwv4Ql6REp93qFRxARCaDJ50tRSLvAz/i9iI4oZs0He+3AANYN2SK/GxqwV4eQ==}
     engines: {node: '>=18.0.0 <26'}
@@ -5119,9 +5102,6 @@ packages:
     resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
     engines: {node: '>=0.10.0'}
 
-  read-time-estimate@0.0.3:
-    resolution: {integrity: sha512-TF87eHTuEyRtu/mwnQE8FoZYHpsN1Oj+U/oROL5nrsoEWsh/iGhBzkV50N6DdPEqZ9Jh2PSZk1ZA7KMucgb+ng==}
-
   read@1.0.7:
     resolution: {integrity: sha512-rSOKNYUmaxy0om1BNjMN4ezNT6VKK+2xF4GBhc81mkH7L60i6dp8qPYrkndNLT3QPphoII3maL9PVC9XmhHwVQ==}
     engines: {node: '>=0.8'}
@@ -5141,9 +5121,6 @@ packages:
   readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
-
-  reading-time@1.5.0:
-    resolution: {integrity: sha512-onYyVhBNr4CmAxFsKS7bz+uTLRakypIe4R+5A824vBSkQy/hB3fZepoVEf8OVAxzLvK+H/jm9TzpI3ETSm64Kg==}
 
   recursive-readdir@2.2.3:
     resolution: {integrity: sha512-8HrF5ZsXk5FAH9dgsx3BlUer73nIhuj+9OrQwEbLTPOBzGkL1lsFCR01am+v+0m2Cmbs1nP12hLDl5FA7EszKA==}
@@ -10170,11 +10147,6 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  gatsby-plugin-readingtime@3.0.2(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3)):
-    dependencies:
-      gatsby: 5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3)
-      reading-time: 1.5.0
-
   gatsby-plugin-sharp@5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(type-fest@0.21.3)(typescript@5.9.3))(graphql@16.12.0):
     dependencies:
       '@babel/runtime': 7.28.6
@@ -12458,8 +12430,6 @@ snapshots:
 
   react@19.2.4: {}
 
-  read-time-estimate@0.0.3: {}
-
   read@1.0.7:
     dependencies:
       mute-stream: 0.0.8
@@ -12485,8 +12455,6 @@ snapshots:
   readdirp@3.6.0:
     dependencies:
       picomatch: 2.3.1
-
-  reading-time@1.5.0: {}
 
   recursive-readdir@2.2.3:
     dependencies:

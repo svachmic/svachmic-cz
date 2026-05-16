@@ -6,8 +6,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { ReadingProgressBar } from "@svachmic/shared"
 
-const readTimeEstimate = require("read-time-estimate")
-
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,
@@ -16,8 +14,7 @@ const BlogPostTemplate = ({
   const hyperlinks = site.siteMetadata.hyperlinks
   const date = new Date(post.frontmatter.date)
   const localizedDate = date.toLocaleDateString("cs-CZ")
-  const { duration } = readTimeEstimate(post.html)
-  const readingTime = Math.ceil(duration)
+  const readingTime = post.timeToRead
 
   return (
     <Layout location={location} title={siteTitle} hyperlinks={hyperlinks}>
@@ -190,6 +187,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -200,16 +198,6 @@ export const pageQuery = graphql`
       }
       fields {
         slug
-        readTimeEstimate {
-          duration
-          humanizedDuration
-          imageTime
-          otherLanguageTime
-          otherLanguageTimeCharacters
-          totalImages
-          totalWords
-          wordTime
-        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
