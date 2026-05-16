@@ -202,16 +202,6 @@ export const pageQuery = graphql`
       }
       fields {
         slug
-        readTimeEstimate {
-          duration
-          humanizedDuration
-          imageTime
-          otherLanguageTime
-          otherLanguageTimeCharacters
-          totalImages
-          totalWords
-          wordTime
-        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

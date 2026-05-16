@@ -17,16 +17,6 @@ function createBlogPages(templatePath) {
             id
             fields {
               slug
-              readTimeEstimate {
-                duration
-                humanizedDuration
-                imageTime
-                otherLanguageTime
-                otherLanguageTimeCharacters
-                totalImages
-                totalWords
-                wordTime
-              }
             }
           }
         }
@@ -117,18 +107,6 @@ function getCommonSchemaTypes() {
 
     type Fields {
       slug: String
-      readTimeEstimate: ReadTimeEstimate
-    }
-
-    type ReadTimeEstimate  {
-      duration: Float
-      humanizedDuration: String
-      imageTime: Float
-      otherLanguageTime: Float
-      otherLanguageTimeCharacters: Float
-      totalImages: Float
-      totalWords: Float
-      wordTime: Float
     }
   `;
 }
