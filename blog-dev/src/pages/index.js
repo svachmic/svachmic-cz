@@ -8,8 +8,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { TagFilter } from "@svachmic/shared"
 
-const readTimeEstimate = require("read-time-estimate")
-
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
@@ -78,8 +76,7 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
           const date = new Date(post.frontmatter.date)
           const localizedDate = date.toLocaleDateString("cs-CZ")
-          const { duration } = readTimeEstimate(post.html)
-          const readingTime = Math.ceil(duration)
+          const readingTime = post.timeToRead
 
           return (
             <li key={post.fields.slug}>
@@ -159,8 +156,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
-        html
         excerpt
+        timeToRead
         fields {
           slug
         }
