@@ -15,6 +15,8 @@ import "@fontsource/jetbrains-mono"
 import "@svachmic/shared/css/normalize.css"
 // shared design tokens
 import "@svachmic/shared/css/tokens.css"
+// shared peek component (expandable labeled disclosure)
+import "@svachmic/shared/css/peek.css"
 // custom CSS styles
 import "./src/style.css"
 // Highlighting for code blocks

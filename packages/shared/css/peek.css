@@ -1,0 +1,123 @@
+/* Peek — collapsible labeled-disclosure block with a teaser snippet.
+ *
+ * Markup:
+ *   <details class="peek">
+ *     <summary>
+ *       <span class="peek-label">LABEL</span>
+ *       <span class="peek-teaser">one-line teaser</span>
+ *     </summary>
+ *     <div class="peek-body">… expanded content …</div>
+ *   </details>
+ *
+ * Per-blog theme variables (must be defined in each blog's style.css):
+ *   --peek-bg          background tint for collapsed/expanded surface
+ *   --peek-bg-hover    background on hover
+ *   --peek-divider     hairline between summary and body when open
+ */
+
+.peek {
+  margin: var(--spacing-4) 0 var(--spacing-8);
+  background-color: var(--peek-bg);
+  border-left: 2px solid var(--color-primary);
+  border-radius: 0 3px 3px 0;
+}
+
+.peek > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: var(--spacing-2) var(--spacing-4);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  user-select: none;
+  flex-wrap: wrap;
+}
+
+.peek > summary::-webkit-details-marker {
+  display: none;
+}
+
+.peek > summary::before {
+  content: "";
+  flex-shrink: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 6px;
+  border-color: transparent transparent transparent var(--color-primary);
+  transition: transform 0.18s ease;
+}
+
+.peek[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.peek > summary:hover {
+  background-color: var(--peek-bg-hover);
+}
+
+.peek-label {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: var(--fontWeight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+}
+
+.peek-teaser {
+  font-family: var(--fontFamily-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  font-style: normal;
+}
+
+.peek[open] > summary {
+  border-bottom: 1px solid var(--peek-divider);
+}
+
+.peek-body {
+  padding: var(--spacing-3) var(--spacing-4);
+  font-family: var(--fontFamily-mono);
+  font-size: 0.82rem;
+  color: var(--color-text);
+  line-height: var(--lineHeight-normal);
+}
+
+.peek-body h4 {
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: var(--fontWeight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-light);
+  margin: var(--spacing-3) 0 var(--spacing-2);
+}
+
+.peek-body h4:first-child {
+  margin-top: 0;
+}
+
+.peek-body ul {
+  margin: 0 0 var(--spacing-2) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.peek-body ul li {
+  margin-bottom: var(--spacing-1);
+  padding-left: var(--spacing-3);
+  position: relative;
+}
+
+.peek-body ul li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: var(--fontWeight-bold);
+}
+
+.peek-body :last-child {
+  margin-bottom: 0;
+}
