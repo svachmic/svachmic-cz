@@ -31,6 +31,7 @@ const IndexPage = ({ data }) => {
             image={profilePic}
             alt="Michal Švácha"
             className="hero__photo"
+            loading="eager"
             imgStyle={{ borderRadius: "50%" }}
           />
         )}

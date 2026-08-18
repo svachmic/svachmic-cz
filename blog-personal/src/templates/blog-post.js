@@ -6,6 +6,11 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { ReadingProgressBar } from "@svachmic/shared"
 
+// Highlighting for code blocks
+import "prismjs/themes/prism.css"
+// KaTeX for math formulas
+import "katex/dist/katex.min.css"
+
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,

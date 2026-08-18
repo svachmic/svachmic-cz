@@ -139,7 +139,6 @@ function createGtagPlugin(trackingId) {
     options: {
       trackingIds: [trackingId],
       gtagConfig: {
-        optimize_id: "OPT_CONTAINER_ID",
         anonymize_ip: true,
         cookie_expires: 0,
       },
