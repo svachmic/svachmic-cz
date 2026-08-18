@@ -24,6 +24,11 @@
   /* Accent colors */
   --color-accent: #414868;           /* Border/separator color */
   --color-accent-bright: #545c7e;    /* Brighter border variant */
+
+  /* Peek (shared component) — dark theme tints */
+  --peek-bg: rgba(187, 154, 247, 0.08);
+  --peek-bg-hover: rgba(187, 154, 247, 0.12);
+  --peek-divider: rgba(187, 154, 247, 0.22);
 }
 
 /* HTML elements */

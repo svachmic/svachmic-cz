@@ -8,6 +8,11 @@
   --color-heading-black: black;
   --color-accent: #d1dce5;
   --color-background: #ffffff;
+
+  /* Peek (shared component) — light theme tints */
+  --peek-bg: rgba(107, 70, 193, 0.04);
+  --peek-bg-hover: rgba(107, 70, 193, 0.06);
+  --peek-divider: rgba(107, 70, 193, 0.12);
 }
 
 /* HTML elements */

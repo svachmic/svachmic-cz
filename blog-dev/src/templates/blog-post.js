@@ -6,6 +6,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { ReadingProgressBar } from "@svachmic/shared"
 
+// Highlighting for code blocks
+import "../prism-darcula.css"
+
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
   location,

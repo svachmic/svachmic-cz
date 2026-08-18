@@ -1,7 +1,7 @@
 {
   "name": "svachmic-cz-dev-blog",
   "description": "Tech blog of Michal Svacha",
-  "version": "2026.4.29",
+  "version": "2026.8.18",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@svachmic/shared": "workspace:*",
-    "@fontsource/jetbrains-mono": "^5.2.8",
-    "@fontsource/merriweather": "^5.2.11",
-    "@fontsource/montserrat": "^5.2.8",
-    "ajv": "^8.18.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@fontsource/merriweather": "^5.3.0",
+    "@fontsource/montserrat": "^5.3.0",
+    "ajv": "^8.20.0",
     "gatsby": "^5.16.1",
     "gatsby-plugin-feed": "^5.16.0",
     "gatsby-plugin-google-gtag": "^5.16.0",
@@ -34,8 +34,8 @@
     "gatsby-transformer-remark": "^6.16.0",
     "gatsby-transformer-sharp": "^5.16.0",
     "prismjs": "^1.29.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {}
 }
