@@ -9,11 +9,11 @@ categories: "personal"
 tags: [computers, retro, nostalgia]
 ---
 
-Videohry jsou jedna věc. Ale každá z nich běžela na nějakém železe. Tohle je příběh těch beden pod stolem — od 486ky, na které jsem v předškolním věku formátoval disk, až po poslední herní počítač, který jsem nechal opravit a znovu zapojil.
+Tohle není příběh her. Je to příběh beden pod stolem — co v nich bylo, jak se měnily konektory a disky, a proč jedna z nich po letech zase hučí.
 
-Hry, konzole a časopisy si nechám na jindy. Tady jdou jenom počítače.
+Hry, konzole a časopis LEVEL si nechám na jindy. Tady jdou jenom počítače.
 
-## Vraťte zpátky devadesátky! (1994–1997)
+## 486ka pod palandou (1994–1997)
 
 <details class="peek">
   <summary>
@@ -30,11 +30,11 @@ Hry, konzole a časopisy si nechám na jindy. Tady jdou jenom počítače.
   </div>
 </details>
 
-Můj první příběh s počítačem, který všude vyprávím, se odehrál v mých 4 letech, kdy mě rodiče posadili poprvé před počítač. Když za mnou přišli o pár chvil později, formátoval jsem úspěšně HDD. Jak? Tak to sám nevím. Nicméně původní záměr byl, abych na něm hrál hry. A za normálních okolností jsem je i rád hrával.
+Můj první příběh s počítačem, který všude vyprávím, se odehrál v mých 4 letech, kdy mě rodiče posadili poprvé před počítač. Když za mnou přišli o pár chvil později, formátoval jsem úspěšně HDD. Jak? Tak to sám nevím.
 
 Měl jsem v pokojíčku palandu se stolem dole. Na stole byl 14" CRT monitor a pod stolem hučela 486ka v béžový bedně. Nejdřív na ní byl MS-DOS, později Windows 95.
 
-## Kdo si hraje, nezlobí! (1998–2002)
+## Celeron s cédečkem (1998–2002)
 
 <details class="peek">
   <summary>
@@ -54,11 +54,11 @@ Měl jsem v pokojíčku palandu se stolem dole. Na stole byl 14" CRT monitor a p
   </div>
 </details>
 
-K Vánocům jsem dostal upgrade počítače — ze 486ky se stal Intel Pentium Celeron s grafickou kartou, CD mechanikou CREATIVE a 4GB HDD. A k tomu všemu **Genius Flight 2000 Gameport** — můj první joystick, s přibalenou hrou Incoming. Tuhle hru jsme nainstalovali, jednou zkusili a pak už nikdy nehráli.
+K Vánocům se z 486ky stal Intel Pentium Celeron: grafická karta, CD mechanika CREATIVE, 4GB disk. A k tomu **Genius Flight 2000 Gameport** — první joystick, v krabici s hrou Incoming. Nainstalovali jsme ji, jednou zkusili a už nikdy nespustili.
 
-S tímhle počítačem to bylo naposled, co jsem hrál komplet offline. Na konci školního roku 2001/2002 jsme se přestěhovali, já odešel ze základky na GymVod a k Vánocům dostal novej počítač. Zároveň přišla pevná linka a s ní připojení k internetu.
+Tohle bylo poslední železo bez sítě. K dalšímu stroji už vedla pevná linka.
 
-## Vypaluješ. Vypalujeme. (2003–2005)
+## Athlon 1800+ (2003–2005)
 
 <details class="peek">
   <summary>
@@ -79,11 +79,9 @@ S tímhle počítačem to bylo naposled, co jsem hrál komplet offline. Na konci
 
 *[PLACEHOLDER: foto mě ve 12 letech v tátově kanceláři, 2003]*
 
-Nebudeme si nic nalhávat — první dekáda milénia se táhla ve znamení vypalování her, filmů a seriálů. Kdo měl vypalovačku, byl in. Kdo měl co vypalovat, byl ještě víc in.
+Z DIN konektoru se stalo PS/2, z kuličkové myši optická (pořád ale přes redukci USB → PS/2) a z 14" CRT 19" ADI MicroScan. Pod stolem už nehučela 486ka, ale Athlon 1800+ s GeForce 4 Ti 4200.
 
-Z DIN konektoru se stalo PS/2, z kuličkové myši optická (pořád ale přes redukci USB → PS/2) a z 14" CRT 19" ADI MicroScan. Pod stolem už nebzučela 486ka, ale Athlon 1800+ s GeForce 4 Ti 4200.
-
-## Internet Expres (2006–2008)
+## Athlon 3200+ a první LCD (2006–2008)
 
 <details class="peek">
   <summary>
@@ -103,11 +101,9 @@ Z DIN konektoru se stalo PS/2, z kuličkové myši optická (pořád ale přes r
 
 Novej komp: Athlon 3200+, 1024 MB RAM, dva 120GB SATA disky. Poprvé LCD — 17" Hyundai přes DVI. CRT éra tímhle skončila.
 
-V roce 2007 jsem byl na Invexu / Digitexu. LEVEL bonanza.
+*[PLACEHOLDER: koupil jsem na Invexu/Digitexu 2007 nějaké železo, nebo jenom časopisy? Časopisy patří do LEVEL.]*
 
-*[PLACEHOLDER: co přesně jsem z Invexu/Digitexu odnesl — hardware, časopisy, obojí?]*
-
-## Florida aneb cesta tam a zase zpátky (2008–2009)
+## HP Pavilion dv6700 (2008–2009)
 
 <details class="peek">
   <summary>
@@ -124,11 +120,9 @@ V roce 2007 jsem byl na Invexu / Digitexu. LEVEL bonanza.
   </div>
 </details>
 
-Cesta do USA znamenala první notebook: HP Pavilion dv6700. Desktop zůstal v Česku. Poprvé jsem měl počítač, který se dal sbalit do batohu — a poprvé taky počítač, na kterým se herně nedalo skoro nic.
+Cesta do USA znamenala první notebook. Desktop zůstal v Česku. Poprvé počítač, který se dal sbalit do batohu — a poprvé taky počítač, na kterým se herně nedalo skoro nic. Když už jsem u něj byl, koukal jsem na seriály.
 
-Zbytek času jsem trávil mimo komp. Když už jsem u něj byl, koukal jsem na seriály.
-
-## Změna je život (2009–2014)
+## Athlon X2 a Crossfire (2009–2014)
 
 <details class="peek">
   <summary>
@@ -145,21 +139,15 @@ Zbytek času jsem trávil mimo komp. Když už jsem u něj byl, koukal jsem na s
   </div>
 </details>
 
-Po návratu do ČR, maturitní ročník. Desktop se vrátil do hry — tentokrát Athlon X2, dvě Radeony v Crossfire a 23" Samsung. *[PLACEHOLDER: doplnit přesný model Athlonu X2 a řad Radeonů]*
+Po návratu z Floridy se desktop vrátil: Athlon X2, dvě Radeony v Crossfire, 23" Samsung. *[PLACEHOLDER: doplnit přesný model Athlonu X2 a řad Radeonů]*
 
-Studoval jsem, měl jsem méně času na hraní. Počítač pořád stál, ale už to nebyl středobod pokoje.
+Počítač pořád stál. Už to ale nebyl středobod pokoje.
 
-## Paříž. Nepaříš? (2014–2015)
+## Prázdný stůl (2014–2025)
 
-Kolem roku 2014 jsem přestal sedět u desktopu. Erasmus to utnul, protože jsem s sebou nic neměl. Po návratu jsem psal diplomku a pracoval v MSD.
+Erasmus utnul desktopovou éru jednoduše: tu bednu nebylo kam vzít. Po návratu stůl zůstal prázdný. Devět let jsem k žádnému hernímu desktopu nesedl.
 
-Desktopová éra tímhle skončila. Ne vypínačem — spíš tím, že už nebylo kam tu bednu vzít.
-
-## Herní zima přichází (2015–2025)
-
-Stěhování do Švýcarska, práce, rodina. Počítač jako herní stroj zmizel z každodenního života. Devět let jsem k žádnému hernímu desktopu nesedl.
-
-## Ještě jsem nebyl in a už jsem retro (2025–doteď)
+## Servis (2025–)
 
 <details class="peek">
   <summary>
@@ -173,6 +161,6 @@ Stěhování do Švýcarska, práce, rodina. Počítač jako herní stroj zmizel
   </div>
 </details>
 
-Až teď se vracím ke kořenům. Vytáhl jsem staré železo, nechal ho servisovat a zjistil, že pořád funguje.
+Vytáhl jsem staré železo, nechal ho servisovat a zjistil, že pořád funguje.
 
-Protože počítač z dětství není jenom speka. Je to ta béžová bedna pod palandou, z který se ozývalo hučení ventilátoru, cvakání klávesnice přes DIN a cvakání kuličkový myši. A já chci, aby to hučení šlo znovu zapnout.
+Počítač z dětství není jenom speka. Je to ta béžová bedna pod palandou, z který se ozývalo hučení ventilátoru, cvakání klávesnice přes DIN a cvakání kuličkový myši. A já chci, aby to hučení šlo znovu zapnout.
