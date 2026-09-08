@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Počítače mého dětství"
-description: "Od béžové 486ky pod palandou až po servisovaný herní počítač, který jsem po letech znovu zapojil. Tentokrát bez her — jenom to železo."
+description: "Od béžové 486ky pod palandou po Athlon 3200+ a první LCD. Každé dva roky nové železo, jinak už nic neběželo."
 author: Michal Švácha
 date: "2026-09-20 10:00:00"
 modified: "2026-09-20 10:00:00"
@@ -9,9 +9,9 @@ categories: "personal"
 tags: [computers, retro, nostalgia]
 ---
 
-Tohle není příběh her. Je to příběh beden pod stolem — co v nich bylo, jak se měnily konektory a disky, a proč jedna z nich po letech zase hučí.
+Tohle není příběh her. Je to příběh beden pod stolem — a toho, že každé dva roky muselo přijít nové železo, jinak už nic neběželo.
 
-Hry, konzole a časopis LEVEL si nechám na jindy. Tady jdou jenom počítače.
+Hry, konzole a časopis LEVEL si nechám na jindy. Tady jdou jenom počítače. Tahle část končí v roce 2008, u poslední věže, kterou šlo ještě krmit. Notebooky, Macy a osm let aktualizací v krabici jsou [pokračování](/2026/09/27-pocitace-meho-detstvi-ii/).
 
 ## 486ka pod palandou (1994–1997)
 
@@ -103,64 +103,6 @@ Novej komp: Athlon 3200+, 1024 MB RAM, dva 120GB SATA disky. Poprvé LCD — 17"
 
 *[PLACEHOLDER: koupil jsem na Invexu/Digitexu 2007 nějaké železo, nebo jenom časopisy? Časopisy patří do LEVEL.]*
 
-## HP Pavilion dv6700 (2008–2009)
+Tohle byla poslední věž, kterou šlo ještě krmit: nová karta, nový disk, nové RAM. Další počítač se vešel do batohu. A to byl začátek konce upgradování.
 
-<details class="peek">
-  <summary>
-    <span class="peek-label">Hardware</span>
-    <span class="peek-teaser">HP Pavilion dv6700 · GeForce 8400M</span>
-  </summary>
-  <div class="peek-body">
-    <ul>
-      <li>HP Pavilion dv6700</li>
-      <li>Intel Core 2 Duo, 250 GB HDD, 2 GB RAM</li>
-      <li>NVIDIA GeForce 8400M GS</li>
-      <li>Microsoft Bluetooth Notebook Mouse 5000</li>
-    </ul>
-  </div>
-</details>
-
-Cesta do USA znamenala první notebook. Desktop zůstal v Česku. Poprvé počítač, který se dal sbalit do batohu — a poprvé taky počítač, na kterým se herně nedalo skoro nic. Když už jsem u něj byl, koukal jsem na seriály.
-
-## Athlon X2 a Crossfire (2009–2014)
-
-<details class="peek">
-  <summary>
-    <span class="peek-label">Hardware</span>
-    <span class="peek-teaser">Athlon X2 · Radeon HD 4XXX Crossfire</span>
-  </summary>
-  <div class="peek-body">
-    <ul>
-      <li>Athlon X2 …</li>
-      <li>2 × 1024 MB + 2 × 512 MB DDR1</li>
-      <li>2 × Radeon HD 4XXX Crossfire</li>
-      <li>Samsung 23" 720p</li>
-    </ul>
-  </div>
-</details>
-
-Po návratu z Floridy se desktop vrátil: Athlon X2, dvě Radeony v Crossfire, 23" Samsung. *[PLACEHOLDER: doplnit přesný model Athlonu X2 a řad Radeonů]*
-
-Počítač pořád stál. Už to ale nebyl středobod pokoje.
-
-## Prázdný stůl (2014–2025)
-
-Erasmus utnul desktopovou éru jednoduše: tu bednu nebylo kam vzít. Po návratu stůl zůstal prázdný. Devět let jsem k žádnému hernímu desktopu nesedl.
-
-## Servis (2025–)
-
-<details class="peek">
-  <summary>
-    <span class="peek-label">Návrat</span>
-    <span class="peek-teaser">servisovaný poslední herní PC</span>
-  </summary>
-  <div class="peek-body">
-    <ul>
-      <li>Servisovaný poslední herní PC</li>
-    </ul>
-  </div>
-</details>
-
-Vytáhl jsem staré železo, nechal ho servisovat a zjistil, že pořád funguje.
-
-Počítač z dětství není jenom speka. Je to ta béžová bedna pod palandou, z který se ozývalo hučení ventilátoru, cvakání klávesnice přes DIN a cvakání kuličkový myši. A já chci, aby to hučení šlo znovu zapnout.
+Pokračování: [Počítače mého dětství II](/2026/09/27-pocitace-meho-detstvi-ii/).
