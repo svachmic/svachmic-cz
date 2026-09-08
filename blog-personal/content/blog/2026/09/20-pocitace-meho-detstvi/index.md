@@ -11,7 +11,7 @@ tags: [computers, retro, nostalgia]
 
 Tohle není příběh her. Je to příběh beden pod stolem — a toho, že každé dva roky muselo přijít nové železo, jinak už nic neběželo.
 
-Hry, konzole a časopis LEVEL si nechám na jindy. Tady jdou jenom počítače. Tahle část končí v roce 2008, u poslední věže, kterou šlo ještě krmit. Notebooky, Macy a osm let aktualizací v krabici jsou [pokračování](/2026/09/27-pocitace-meho-detstvi-ii/).
+Hry, konzole a časopis LEVEL si nechám na jindy. Tady jdou jenom počítače. Tahle část končí v roce 2008, u poslední věže, kterou šlo ještě krmit. Notebooky, Macy a osm let aktualizací v krabici vyjdou o týden později, 27. září — [pokračování](/2026/09/27-pocitace-meho-detstvi-ii/).
 
 ## 486ka pod palandou (1994–1997)
 
@@ -105,4 +105,4 @@ Novej komp: Athlon 3200+, 1024 MB RAM, dva 120GB SATA disky. Poprvé LCD — 17"
 
 Tohle byla poslední věž, kterou šlo ještě krmit: nová karta, nový disk, nové RAM. Další počítač se vešel do batohu. A to byl začátek konce upgradování.
 
-Pokračování: [Počítače mého dětství II](/2026/09/27-pocitace-meho-detstvi-ii/).
+Pokračování vychází o týden později: [Počítače mého dětství II](/2026/09/27-pocitace-meho-detstvi-ii/).
