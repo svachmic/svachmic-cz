@@ -17,7 +17,7 @@ tags: [personal]
 
 25 let. Žádný slavnostní proslov. Chci si jen zapsat, co si z toho dne pamatuju — a co z něj cítím teď.
 
-11. září 2001 bylo úterý. Bylo mi jedenáct a ještě jsem chodil na základku. V New Yorku začínalo ráno, u nás odpoledne. Já byl doma. Nejdřív jsem vůbec nechápal, na co se to všichni dívají.
+Bylo úterý 11. září 2001. Bylo mi jedenáct a ještě jsem chodil na základku. V New Yorku začínalo ráno, u nás odpoledne. Já byl doma. Nejdřív jsem vůbec nechápal, na co se to všichni dívají.
 
 Na televizi běžely dokola dvě věže. Jedna hořela. Pak i druhá. Pak se jedna zřítila, jako by to nebyla budova, ale něco, co se dá smazat z obrazovky. Pak druhá. A znova. A znova. Komentátoři říkali slova, kterým jsem rozuměl jen napůl — New York, letadla, teroristé. Já v tom hledal film. Nějakou katastrofu, která se omylem pustila odpoledne.
 
