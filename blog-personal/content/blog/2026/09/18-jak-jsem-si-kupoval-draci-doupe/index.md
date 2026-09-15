@@ -24,7 +24,7 @@ Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já š
 ![Knihkupectví Krakatit na Jungmannově](./krakatit.jpg)
 
 <p style="text-align: center; font-size: small;">
-  Knihkupectví Krakatit na Jungmannově (Street view z června 2026)
+  Knihkupectví Krakatit na Jungmannově (<a href="https://maps.app.goo.gl/WSsgbpe6RHvnsMhe8">Street view z května 2009</a>)
 </p>
 
 Doma už jsem měl **Pravidla pro pokročilé 1.3**. Chyběly mi **Pravidla pro začátečníky 1.6** a **Pravidla pro experty 1.5**. Bez nich to nebyl komplet a já chtěl mít komplet, abychom si s kamarádama mohli hrát. DrD jsme tehdy hráli vedle [Magiců](/2024/01/15-stary-hrac-v-novem-svete/) — s těma jsem začal o rok dřív, na Pavlových narozeninách.
