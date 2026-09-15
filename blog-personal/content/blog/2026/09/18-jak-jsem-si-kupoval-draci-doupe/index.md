@@ -17,7 +17,7 @@ tags: [personal]
 
 Tohle není příspěvek o 11. září. Je to příspěvek o tom, jak jsem si kupoval [Dračí doupě][drd]. A o tom, co mi máma řekla, když jsem vyšel ven.
 
-Bylo úterý 11. září 2001. Bylo mi deset — jedenáct až v listopadu. Na tyhle procházky s kočárkem jsme chodili hodně. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Máma, já a brácha, kterému bylo šest měsíců.
+Bylo úterý 11. září 2001. Krásný den, slunečno a teplo. Bylo mi deset — jedenáct až v listopadu. Na tyhle procházky s kočárkem jsme chodili hodně. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Máma, já a brácha, kterému bylo šest měsíců.
 
 Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já šel dovnitř. Máma zůstala venku s kočárkem.
 
