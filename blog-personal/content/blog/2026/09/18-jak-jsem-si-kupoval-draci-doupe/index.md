@@ -15,11 +15,9 @@ tags: [personal]
   Foto: Carol M. Highsmith / archiv Carol M. Highsmith, Kongresová knihovna, oddělení tisků a fotografií. <a href="https://www.loc.gov/pictures/item/2011632531/">loc.gov</a>
 </p>
 
-Tohle není příspěvek o 11. září. Je to příspěvek o tom, jak jsem si kupoval [Dračí doupě][drd]. A o tom, co mi máma řekla, když jsem vyšel ven.
+Bydleli jsme na Jarově, blízko centra. Na tyhle procházky s kočárkem jsme chodili hodně. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Do centra jsme došli pěšky a zpátky jeli tramvají. Máma, já a brácha, kterému bylo šest měsíců. Krásný den, slunečno a teplo.
 
-Bylo úterý 11. září 2001. Krásný den, slunečno a teplo. Bylo mi deset — jedenáct až v listopadu. Na tyhle procházky s kočárkem jsme chodili hodně. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Máma, já a brácha, kterému bylo šest měsíců.
-
-Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já šel dovnitř. Máma zůstala venku s kočárkem.
+Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já šel dovnitř pro [Dračí doupě][drd]. Máma zůstala venku s kočárkem.
 
 ![Knihkupectví Krakatit na Jungmannově](./krakatit.jpg)
 
@@ -41,17 +39,21 @@ Bylo mi deset a kapesné jsem měl omezené. Koupit začátečníky a oba expert
 
 Koupil jsem je. Vyšel jsem z obchodu, pyšný, s taškou v ruce. A máma mi to řekla.
 
-Byla v šoku. Internet v kapse tehdy ještě nebyl, zprávy se nešířily samy. Teta — maminčina sestra — bydlela v Dallasu. Báli jsme se.
+Byla v šoku. V kapse měla Nokii 5110, jako skoro každej. Žádný internet v telefonu, jen hovory a SMS. Volala babičce. Volala Martinovi.
 
 "Musíme jít domů," řekla máma.
 
-Tak jsme šli. Já s Dračím doupětem pod paží, máma s kočárkem, a já ještě pořádně nechápal, proč se procházka musí zrušit. Když jsme přišli domů, v televizi to pouštěli pořád dokola. Nemohli jsme uvěřit, že je to doopravdy. Já v tom hledal film. Nějakou katastrofu, která se omylem pustila odpoledne. Něco ve mně ale vědělo, že to film není.
+Tak jsme šli. Já s Dračím doupětem pod paží, máma s kočárkem, a já ještě pořádně nechápal, proč se procházka musí zrušit.
+
+Doma už to Martin pustil v televizi. Řekl, že do dvojčat narazila dvě letadla. Jako by jedno nestačilo. Pouštěli to pořád dokola. Nemohli jsme uvěřit, že je to doopravdy.
+
+Večer jsme zkoušeli volat tetě do Dallasu. Babička volala sestře do Vancouveru. Všichni z toho byli vedle.
 
 Zpětně mi dochází, že rodiče z toho museli mít pocit, jako by začínala třetí světová. Demokracie a svoboda u nich měly teprve dvanáct let.
 
 Druhý den jsme ve škole nemluvili o ničem jiném. I když jsme byli jen malý děti. Měli jsme minutu ticha, ve stoje.
 
-O 25 let později bydlím ve Švýcarsku a mám dceru. Vím, kolik lidí ten den nepřišlo večer domů. Vím, proč se máma bála o sestru v Dallasu. Pořád ale, když tu siluetu uvidím, jsem na chvíli zase desetiletý kluk, který právě koupil začátečníky a oba experty a nechápe, proč musíme jít domů.
+Bylo úterý 11. září 2001. Bylo mi deset — jedenáct až v listopadu.
 
 [drd]: https://altar.cz/drd/about.html
 [hlidka]: https://www.dracihlidka.cz/
