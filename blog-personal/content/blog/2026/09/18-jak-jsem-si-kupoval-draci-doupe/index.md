@@ -17,7 +17,7 @@ tags: [personal]
 
 Tohle není příspěvek o 11. září. Je to příspěvek o tom, jak jsem si kupoval [Dračí doupě][drd]. A o tom, co mi máma řekla, když jsem vyšel ven.
 
-Bylo úterý 11. září 2001. Bylo mi deset — jedenáct až v listopadu. Na tyhle procházky s kočárkem jsme chodili často. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Máma, já a brácha, kterému bylo šest měsíců.
+Bylo úterý 11. září 2001. Bylo mi deset — jedenáct až v listopadu. Na tyhle procházky s kočárkem jsme chodili hodně. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Máma, já a brácha, kterému bylo šest měsíců.
 
 Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já šel dovnitř. Máma zůstala venku s kočárkem.
 
@@ -27,9 +27,9 @@ Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já š
   Knihkupectví Krakatit na Jungmannově (<a href="https://maps.app.goo.gl/WSsgbpe6RHvnsMhe8">Street view z května 2009</a>)
 </p>
 
-Doma už jsem měl **Pravidla pro pokročilé 1.3**. Sehnal jsem je zázrakem v antikvariátu u babičky na Hájích. Chyběly mi **Pravidla pro začátečníky 1.6** a **Pravidla pro experty 1.5**. Bez nich to nebyl komplet a já chtěl mít komplet, abychom si s kamarádama mohli hrát. DrD jsme tehdy hráli vedle [Magiců](/2024/01/15-stary-hrac-v-novem-svete/) — s těma jsem začal o rok dřív, na Pavlových narozeninách.
+Doma už jsem měl **Pravidla pro pokročilé 1.3**. Koupil jsem je jen zázrakem — v antikvariátu u babičky na Hájích. Chyběly mi **Pravidla pro začátečníky 1.6** a **Pravidla pro experty 1.5**. Bez nich to nebyl komplet a já chtěl mít komplet, abychom si s kamarádama mohli hrát. DrD jsme tehdy hráli vedle [Magiců](/2024/01/15-stary-hrac-v-novem-svete/) — s těma jsem začal o rok dřív, na Pavlových narozeninách.
 
-Bylo mi deset a kapesné nebylo nazbyt. Koupit dva díly pravidel najednou bylo rozhodnutí, ne nákup. V Krakatitu jsme byli už mockrát, než jsem se k tomu dokopal.
+Bylo mi deset a kapesné jsem měl omezené. Koupit dva sešity pravidel na DrD najednou bylo dost velké rozhodnutí. Byli jsme tam několikrát, než jsem se k nákupu odhodlal.
 
 *[Doporučení: tvoje tři díly pravidel vedle sebe — pokročilé 1.3, začátečníci 1.6, experti 1.5. Ideálně ty původní výtisky, pokud je ještě máš. Stejný typ fotky jako karty Portal Second Age v článku o Magic.]*
 
@@ -39,11 +39,11 @@ Byla v šoku. Internet v kapse tehdy ještě nebyl, zprávy se nešířily samy.
 
 "Musíme jít domů," řekla máma.
 
-Tak jsme šli. Já s Dračím doupětem pod paží, máma s kočárkem, a já ještě pořádně nechápal, proč se procházka musí zrušit. Doma už to bylo v televizi. Dvě věže, dokola. Pouštěli to pořád dokola a nemohli jsme uvěřit, že je to doopravdy. Já v tom hledal film. Nějakou katastrofu, která se omylem pustila odpoledne. Něco ve mně ale vědělo, že to film není.
+Tak jsme šli. Já s Dračím doupětem pod paží, máma s kočárkem, a já ještě pořádně nechápal, proč se procházka musí zrušit. Když jsme přišli domů, v televizi to pouštěli pořád dokola. Nemohli jsme uvěřit, že je to doopravdy. Já v tom hledal film. Nějakou katastrofu, která se omylem pustila odpoledne. Něco ve mně ale vědělo, že to film není.
 
-Zpětně mi dochází, jak to museli mít rodiče. Demokracie a svoboda u nás měly teprve dvanáct let. Museli mít pocit, že začíná třetí světová.
+Zpětně mi dochází, že rodiče z toho museli mít pocit, jako by začínala třetí světová. Demokracie a svoboda u nich měly teprve dvanáct let.
 
-Druhý den jsme ve škole nemluvili o ničem jiném. I když jsme byli jen malý děti. Stáli jsme a drželi minutu ticha.
+Druhý den jsme ve škole nemluvili o ničem jiném. I když jsme byli jen malý děti. Měli jsme minutu ticha, ve stoje.
 
 O 25 let později bydlím ve Švýcarsku a mám dceru. Vím, kolik lidí ten den nepřišlo večer domů. Vím, proč se máma bála o sestru v Dallasu. Pořád ale, když tu siluetu uvidím, jsem na chvíli zase desetiletý kluk, který právě koupil zbylé dva díly pravidel a nechápe, proč musíme jít domů.
 
