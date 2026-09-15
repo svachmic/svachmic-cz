@@ -12,7 +12,7 @@ tags: [personal]
 ![Záhlaví](./header.jpg)
 
 <p style="text-align: center; font-size: small;">
-  Photo by Carol M. Highsmith / Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division. <a href="https://www.loc.gov/pictures/item/2011632531/">loc.gov</a>
+  Foto: Carol M. Highsmith / archiv Carol M. Highsmith, Kongresová knihovna, oddělení tisků a fotografií. <a href="https://www.loc.gov/pictures/item/2011632531/">loc.gov</a>
 </p>
 
 Tohle není příspěvek o 11. září. Je to příspěvek o tom, jak jsem si kupoval [Dračí doupě][drd]. A o tom, co mi máma řekla, když jsem vyšel ven.
@@ -21,7 +21,11 @@ Bylo úterý 11. září 2001. Bylo mi deset — jedenáct až v listopadu. Šli
 
 Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já šel dovnitř. Máma zůstala venku s kočárkem.
 
-Doma už jsem měl **Pravidla pro pokročilé 1.3**. Chyběly mi **Pravidla pro začátečníky 1.6** a **Pravidla pro experty 1.5**. Bez nich to nebyl komplet a já chtěl mít komplet, abychom si s kamarádama mohli hrát.
+*[Doporučení: foto výlohy Krakatitu, ve stejném duchu jako Street view Outpostu v článku o Magic. Klidně dnešní Jungmannova 14, s popiskem že obchod pořád stojí.]*
+
+Doma už jsem měl **Pravidla pro pokročilé 1.3**. Chyběly mi **Pravidla pro začátečníky 1.6** a **Pravidla pro experty 1.5**. Bez nich to nebyl komplet a já chtěl mít komplet, abychom si s kamarádama mohli hrát. DrD jsme tehdy hráli vedle [Magiců](/2024/01/15-stary-hrac-v-novem-svete/) — s těma jsem začal o rok dřív, na Pavlových narozeninách.
+
+*[Doporučení: tvoje tři díly pravidel vedle sebe — pokročilé 1.3, začátečníci 1.6, experti 1.5. Ideálně ty původní výtisky, pokud je ještě máš. Stejný typ fotky jako karty Portal Second Age v článku o Magic.]*
 
 Koupil jsem je. Vyšel jsem z obchodu, pyšný, s taškou v ruce. A máma mi to řekla.
 
