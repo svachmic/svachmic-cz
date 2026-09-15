@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jak jsem si kupoval Dračí Doupě"
-description: "Chtěl jsem mít komplet. Vyšel jsem z Krakatitu a máma řekla, že musíme jít domů."
+description: "Chtěl jsem mít komplet. Vyšel jsem z Krakatitu a mamka řekla, že musíme jít domů."
 author: Michal Švácha
 date: "2026-09-18 10:00:00"
 modified: "2026-09-18 10:00:00"
@@ -15,9 +15,9 @@ tags: [personal]
   Foto: Carol M. Highsmith / archiv Carol M. Highsmith, Kongresová knihovna, oddělení tisků a fotografií. <a href="https://www.loc.gov/pictures/item/2011632531/">loc.gov</a>
 </p>
 
-Bydleli jsme na Jarově, blízko centra. Na tyhle procházky s kočárkem jsme chodili hodně. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Do centra jsme došli pěšky a zpátky jeli tramvají. Máma, já a brácha, kterému bylo šest měsíců. Krásný den, slunečno a teplo.
+Bydleli jsme na Jarově, blízko centra. Na tyhle procházky s kočárkem jsme chodili hodně. Vždycky po škole, v dny, kdy jsem neměl hodinu houslí. Do centra jsme došli pěšky a zpátky jeli tramvají. Mamka, já a brácha, kterému bylo šest měsíců. Krásný den, slunečno a teplo.
 
-Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já šel dovnitř pro [Dračí doupě][drd]. Máma zůstala venku s kočárkem.
+Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já šel dovnitř pro [Dračí doupě][drd]. Mamka zůstala venku s kočárkem.
 
 ![Knihkupectví Krakatit na Jungmannově](./krakatit.jpg)
 
@@ -37,13 +37,13 @@ Bylo mi deset a kapesné jsem měl omezené. Koupit začátečníky a oba expert
   Dračí doupě: začátečníci, pokročilí, experti (postavy) a experti (svět)
 </p>
 
-Koupil jsem je. Vyšel jsem z obchodu, pyšný, s taškou v ruce. A máma mi to řekla.
+Koupil jsem je. Vyšel jsem z obchodu, pyšný, s taškou v ruce. A mamka mi to řekla.
 
-Byla v šoku. V kapse měla Nokii 5110, jako skoro každej. Žádný internet v telefonu, jen hovory a SMS. Volala babičce. Volala Martinovi.
+Byla v šoku. Telefon neměla v kapse — držela ho v ruce. Nokia 5110, jako skoro každej. Pořád někdo volal. SMS pípala furt. Žádný internet, jen hovory a esemesky. Volala babičce. Volala Martinovi.
 
-"Musíme jít domů," řekla máma.
+"Musíme jít domů," řekla mamka.
 
-Tak jsme šli. Já s Dračím doupětem pod paží, máma s kočárkem, a já ještě pořádně nechápal, proč se procházka musí zrušit.
+Tak jsme šli. Já s Dračím doupětem pod paží, mamka s kočárkem, a já ještě pořádně nechápal, proč se procházka musí zrušit.
 
 Doma už to Martin pustil v televizi. Řekl, že do dvojčat narazila dvě letadla. Jako by jedno nestačilo. Pouštěli to pořád dokola. Nemohli jsme uvěřit, že je to doopravdy.
 
@@ -53,7 +53,9 @@ Zpětně mi dochází, že rodiče z toho museli mít pocit, jako by začínala 
 
 Druhý den jsme ve škole nemluvili o ničem jiném. I když jsme byli jen malý děti. Měli jsme minutu ticha, ve stoje.
 
-Bylo úterý 11. září 2001. Bylo mi deset — jedenáct až v listopadu.
+Bylo úterý 11. září 2001. Bylo mi deset.
+
+Je to pětadvacet let.
 
 [drd]: https://altar.cz/drd/about.html
 [hlidka]: https://www.dracihlidka.cz/
