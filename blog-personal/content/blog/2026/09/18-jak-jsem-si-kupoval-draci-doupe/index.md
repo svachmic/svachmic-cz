@@ -29,6 +29,8 @@ Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já š
 
 Doma už jsem měl **Pravidla pro pokročilé 1.3**. Koupil jsem je jen zázrakem — v antikvariátu u babičky na Hájích. Chyběly mi **Pravidla pro začátečníky 1.6** a oba díly pro experty: **Postavy** i **Svět**. Bez nich to nebyl komplet a já chtěl mít komplet, abychom si s kamarádama mohli hrát. DrD jsme tehdy hráli vedle [Magiců](/2024/01/15-stary-hrac-v-novem-svete/) — s těma jsem začal o rok dřív, na Pavlových narozeninách.
 
+Altar už ho nevyvíjí. Mladší čtenáři možná dračák neznají: díru po něm vyplnily hlavně dvě nezávislé hry. [Dračí hlídka][hlidka] (2020) drží náladu klasického 1.6. [Jeskyně a draci][jad] (2021) jedou na D&D 5e. Altar mezitím vydal i Plus a DrD II, ale u stolů se uchytily tyhle dvě.
+
 Bylo mi deset a kapesné jsem měl omezené. Koupit začátečníky a oba experty najednou bylo dost velké rozhodnutí. Byli jsme tam několikrát, než jsem se k nákupu odhodlal.
 
 ![Čtyři díly Dračího doupěte](./pravidla.jpg)
@@ -51,5 +53,7 @@ Druhý den jsme ve škole nemluvili o ničem jiném. I když jsme byli jen malý
 
 O 25 let později bydlím ve Švýcarsku a mám dceru. Vím, kolik lidí ten den nepřišlo večer domů. Vím, proč se máma bála o sestru v Dallasu. Pořád ale, když tu siluetu uvidím, jsem na chvíli zase desetiletý kluk, který právě koupil začátečníky a oba experty a nechápe, proč musíme jít domů.
 
-[drd]: https://www.altar.cz/drd/
+[drd]: https://altar.cz/drd/about.html
+[hlidka]: https://www.dracihlidka.cz/
+[jad]: https://www.jeskyneadraci.cz/
 [krakatit]: https://www.krakatit.cz/
