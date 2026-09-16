@@ -29,7 +29,7 @@ Doma už jsem měl **Pravidla pro pokročilé (verzi 1.3)**. Sehnal jsem je úpl
 
 > Mladší čtenáři možná dračák neznají - Altar už dnes DrD totiž nevyvíjí (nebo o tom alespoň nemluví). Ačkoliv později vydal DrD Plus a DrD II, od roku 2017, kdy vyšlo druhé vydání DrD II, jsme o ničem novém neslyšeli. Díru na trhu vyplnily hlavně dvě nezávislé hry. [Dračí hlídka][hlidka] (2020), která drží náladu klasickýho dračáku a pořádá pravidelně [HlídCony][hlidcon]. Tvůrci hlídky dokonce chtěli práva na dračák [koupit][altar], ale nepochodili. A potom [Jeskyně a draci][jad] (2021), které jsou plně postavené na D&D 5e.
 
-Bylo mi deset a kapesné jsem měl omezené. Koupit oba experty a k tomu ještě začátečníky najednou bylo dost velké rozhodnutí. Už tak jsme tam předtím byli několikrát, než jsem se k nákupu samotných expertů odhodlal. Koupil jsem to všechno - a k tomu ještě nejnovější číslo [Dechu Draka][dech]. Úspory v podstatě pryč, ale nepamatuju si, že bych toho někdy později litoval.
+Jakožto malej desetiletej kluk jsem měl jen kapesný a odměny za výzo. Koupit oba experty a k tomu ještě začátečníky najednou bylo dost velký rozhodnutí. Už tak jsme tam předtím byli několikrát, než jsem se k nákupu samotných expertů odhodlal. Koupil jsem to všechno - a k tomu ještě nejnovější číslo [Dechu Draka][dech]. Úspory v podstatě pryč, ale nepamatuju si, že bych toho někdy později litoval.
 
 ![Čtyři díly Dračího doupěte](./pravidla.jpg)
 
