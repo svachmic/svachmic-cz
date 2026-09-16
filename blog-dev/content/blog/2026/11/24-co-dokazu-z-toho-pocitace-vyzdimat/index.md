@@ -105,29 +105,49 @@ Agenti mi tu část nesebrali. Sebrali mi část, která mě stejně nebavila.
 
 Psát osm YAML souborů pro cert-manager mě nebavilo. Vědět, že chci managed certifikát na L7 a proč, mě bavilo. Dneska tu první půlku udělá agent a já pořád držím tu druhou. Spíš: držím ji na větší ploše. Můžu si za odpoledne nechat navrhnout šest variant lifecycle politiky, s hrubým modelem nákladů, a pořád musím rozhodnout, která je pravda o byznysu. Reklamace trvá 30 dní nebo 14? Dual-region je paranoia, nebo smlouva? To agent neví.
 
-Stejně jako Autopilot může pod přesunout, agent může přepsat strom souborů. Proto se parametrizují *oni*.
+Stejně jako Autopilot může pod přesunout, agent může přepsat strom souborů. Proto se parametrizují *oni*. A proto jsem za ten rok projel skoro každou variantu, která se vynořila.
+
+V květnu 2025 byl Cursor spolujezdec a ChatGPT denní hledač. ChatGPT už nemám. Cursor jsem odhlásil a znovu přihlásil. Claude Max 20× vyždímám pravidelně na strop. Osobně Grok a Grok Bots. To není loajalita ke značce. To je mapa, která se za dvanáct měsíců překreslila celá.
+
+A přístupů bylo víc než předplatných. Tmux a vlastní správa worktree. Cursor před Composerem, Cursor po Composeru, Composer jako orchestrátor vícero agentů. Ralph smyčky. GSD jako harness. `CLAUDE.md`, `GEMINI.md`, `AGENTS.md` — tři soubory, které se tváří jako README a chovají se jako `values.yaml`. Každý z nich sliboval, že *tohle* je ten správný knoflík. Všechny jsem zapnul. Všechny jsem zase parametrizoval.
 
 <details class="peek">
   <summary>
-    <span class="peek-label">Listopad 2026</span>
-    <span class="peek-teaser">skills, hooky, MCP, kdy se zastavit</span>
+    <span class="peek-label">12 měsíců knoflíků</span>
+    <span class="peek-teaser">tmux, Composer, Ralph, GSD, *.md, Max 20×</span>
   </summary>
   <div class="peek-body">
+    <h4>Harnessy</h4>
+    <ul>
+      <li>tmux + vlastní worktree management</li>
+      <li>Cursor před Composerem / po Composeru</li>
+      <li>Composer jako multi-agent orchestrace</li>
+      <li>Ralph loops</li>
+      <li>GSD jako harness framework</li>
+      <li><code>CLAUDE.md</code> / <code>GEMINI.md</code> / <code>AGENTS.md</code></li>
+    </ul>
+    <h4>Knoflíky u agenta</h4>
     <ul>
       <li>skills jako znovupoužitelné postupy — IaC pro způsob práce, ne pro cloud</li>
       <li>hooky jako policy: co se smí commitnout, co se musí otestovat, kdy fail-closed</li>
       <li>MCP jako IAM pro nástroje — ne všechny agentovy ruce patří do produkce</li>
-      <li>kontext a instrukce jako values.yaml: co je invariant, co je jenom default</li>
       <li>stop-podmínky: kdy se má agent zeptat, místo aby „nějak jel dál“</li>
+    </ul>
+    <h4>Předplatné, listopad 2026</h4>
+    <ul>
+      <li>ChatGPT: odhlášeno</li>
+      <li>Cursor: odhlášeno, znovu přihlášeno</li>
+      <li>Claude Max 20×: strop pravidelně</li>
+      <li>Grok + Grok Bots: osobně</li>
     </ul>
   </div>
 </details>
 
-V květnu 2025 byl Cursor spolujezdec. Dneska pouštím agenty, kteří jedou minuty až hodiny, sahají na soubory, testy, prohlížeč, tickety. Bottleneck není psaní. Bottleneck je specifikace, omezení a vkus — stejné tři věci, které rozhodují, jestli Terraform modul je infrastruktura, nebo jenom YAML, který se náhodou aplikoval.
+Bottleneck není psaní. Bottleneck je specifikace, omezení a vkus — stejné tři věci, které rozhodují, jestli Terraform modul je infrastruktura, nebo jenom YAML, který se náhodou aplikoval. Stejné tři věci, které rozhodují, jestli Ralph smyčka něco *dodělá*, nebo se jenom točí.
 
-*[PLACEHOLDER — screenshot: session s agentem, která skládá Terraform / skill / hook. Ideálně viditelné obojí: vygenerovaný lifecycle i instrukce, které ho držely v mantinelech. Tmavý terminál sedí k tématu blogu.]*
+*[PLACEHOLDER — screenshot: session s agentem, která skládá Terraform / skill / hook. Ideálně viditelné obojí: vygenerovaný lifecycle i instrukce, které ho držely v mantinelech. Alternativa: strop Claude Max 20×, nebo vedle sebe CLAUDE.md / AGENTS.md / GEMINI.md. Tmavý terminál sedí k tématu blogu.]*
 
-A jo, všechno se to hýbe hrozně rychle. Modely, nástroje, názvy, které za čtvrt roku nikdo nepoužívá. To není důvod k nostalgii po jarním Cursoru. To je důvod dělat to, co platí u GKE i u object storage: nesbírat nářadí, ale ptát se, co z něj ještě jde vyždímat.
+Tolik voleb. Tolik půdy za dvanáct měsíců. To není důvod k nostalgii po jarním Cursoru. To je důvod dělat to, co platí u GKE i u object storage: nesbírat nářadí, ale ptát se, co z něj ještě jde vyždímat.
 
 ## Pořád stejná otázka
 
