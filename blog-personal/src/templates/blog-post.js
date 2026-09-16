@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { ReadingProgressBar } from "@svachmic/shared"
+import { ReadingProgressBar, markExternalLinksInHtml } from "@svachmic/shared"
 
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
@@ -49,7 +49,7 @@ const BlogPostTemplate = ({
           )}
         </header>
         <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
+          dangerouslySetInnerHTML={{ __html: markExternalLinksInHtml(post.html) }}
           itemProp="articleBody"
         />
         <hr />

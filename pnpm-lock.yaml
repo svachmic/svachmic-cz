@@ -70,6 +70,9 @@ importers:
       gatsby-remark-copy-linked-files:
         specifier: ^6.16.0
         version: 6.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3))
+      gatsby-remark-external-links:
+        specifier: ^0.0.4
+        version: 0.0.4
       gatsby-remark-images:
         specifier: ^7.16.0
         version: 7.16.0(gatsby-plugin-sharp@5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3))(graphql@16.12.0))(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3))
@@ -142,6 +145,9 @@ importers:
       gatsby-remark-copy-linked-files:
         specifier: ^6.16.0
         version: 6.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3))
+      gatsby-remark-external-links:
+        specifier: ^0.0.4
+        version: 0.0.4
       gatsby-remark-images:
         specifier: ^7.16.0
         version: 7.16.0(gatsby-plugin-sharp@5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3))(graphql@16.12.0))(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3))
@@ -2225,6 +2231,9 @@ packages:
       '@babel/core': ^7.11.6
       core-js: ^3.0.0
 
+  babel-runtime@6.26.0:
+    resolution: {integrity: sha512-ITKNuq2wKlW1fJg9sSW52eepoYgZBggvOAHC0u/CYu/qxQ9EVzThCgR69BnSXLHjy2f7SY5zaQ4yt7H9ZVxY2g==}
+
   bail@1.0.5:
     resolution: {integrity: sha512-xFbRxM1tahm08yHBP16MMjVUAvDaBMD38zsM9EMAUN61omwLmKlOpB/Zku5QkjZ8TZ4vn53pj+t518cH0S03RQ==}
 
@@ -2610,6 +2619,10 @@ packages:
 
   core-js-pure@3.48.0:
     resolution: {integrity: sha512-1slJgk89tWC51HQ1AEqG+s2VuwpTRr8ocu4n20QUcH1v9lAN0RXen0Q0AABa/DK1I7RrNWLucplOHMx8hfTGTw==}
+
+  core-js@2.6.12:
+    resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
+    deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
 
   core-js@3.48.0:
     resolution: {integrity: sha512-zpEHTy1fjTMZCKLHUZoVeylt9XrzaIN2rbPXEt0k+q7JE5CkCZdo6bNq55bn24a69CH7ErAVLKijxJja4fw+UQ==}
@@ -3597,6 +3610,9 @@ packages:
     peerDependencies:
       gatsby: ^5.0.0-next
 
+  gatsby-remark-external-links@0.0.4:
+    resolution: {integrity: sha512-JIKZguAGoGlzsJusfCb4JKM5E6JUEDbtlBkbErt7CdMnfBP+AldZeMQEQWK5xsJ5uXCyc4qqcBWR8vp0afFpOw==}
+
   gatsby-remark-images@7.16.0:
     resolution: {integrity: sha512-8BYxFLU4koQrA0SrGwOHpdrh19vsoRYHxDb7o9ISVQU8d+CIc+fatoKkImvrxeMzx22th+ubw0oXvUNZooUeaQ==}
     engines: {node: '>=18.0.0 <26'}
@@ -3994,6 +4010,10 @@ packages:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
 
+  is-absolute-url@2.1.0:
+    resolution: {integrity: sha512-vOx7VprsKyllwjSkLV79NIhpyLfr3jAp7VaTCMXOJHu4m0Ew1CZ2fcjASwmV1jI3BWuWHB013M48eyeldk9gYg==}
+    engines: {node: '>=0.10.0'}
+
   is-absolute-url@3.0.3:
     resolution: {integrity: sha512-opmNIX7uFnS96NtPmhWQgQx6/NYFgsUXYMllcfzwWKUMwfo8kku1TvE6hkNcH+Q1ts5cMVrsY7j0bxXQDciu9Q==}
     engines: {node: '>=8'}
@@ -4156,6 +4176,10 @@ packages:
   is-regex@1.2.1:
     resolution: {integrity: sha512-MjYsKHO5O7mCsmRGxWcLWheFqN9DJ/2TmngvjKXihe6efViPqc274+Fx/4fYj/r03+ESvBdTXK0V6tA3rgez1g==}
     engines: {node: '>= 0.4'}
+
+  is-relative-url@2.0.0:
+    resolution: {integrity: sha512-UMyEi3F+Rvjpc29IAQQ5OuMoKylt8npO0eQdXPQ2M3A5iFvh1qG+MtiLQR2tyHcVVsqwWrQiztjPAe9hnSHYeQ==}
+    engines: {node: '>=0.10.0'}
 
   is-relative-url@3.0.0:
     resolution: {integrity: sha512-U1iSYRlY2GIMGuZx7gezlB5dp1Kheaym7zKzO1PV06mOihiWTXejLwm4poEJysPyXF+HtK/BEd0DVlcCh30pEA==}
@@ -4414,6 +4438,9 @@ packages:
 
   lodash.foreach@4.5.0:
     resolution: {integrity: sha512-aEXTF4d+m05rVOAUG3z4vZZ4xVexLKZGF0lIxuHZ1Hplpk/3B6Z1+/ICICYRLm7c41Z2xiejbkCkJoTlypoXhQ==}
+
+  lodash.iteratee@4.7.0:
+    resolution: {integrity: sha512-yv3cSQZmfpbIKo4Yo45B1taEvxjNvcpF1CEOc0Y6dEyvhPIfEJE3twDwPgWTPQubcSgXyBwBKG6wpQvWMDOf6Q==}
 
   lodash.map@4.6.0:
     resolution: {integrity: sha512-worNHGKLDetmcEYDvh2stPCrrQRkP20E4l0iIS7F8EvzMqBBi7ltvFN5m1HvTf1P7Jk1txKhvFcmYsCr8O2F1Q==}
@@ -5477,6 +5504,9 @@ packages:
   regenerate@1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
 
+  regenerator-runtime@0.11.1:
+    resolution: {integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==}
+
   regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
 
@@ -6268,8 +6298,14 @@ packages:
   unist-builder@2.0.3:
     resolution: {integrity: sha512-f98yt5pnlMWlzP539tPc4grGMsFaQQlP/vM396b00jngsiINumNmsY8rkXjfoi1c6QaM8nQ3vaGDuoKWbe/1Uw==}
 
+  unist-util-find@1.0.4:
+    resolution: {integrity: sha512-T5vI7IkhroDj7KxAIy057VbIeGnCXfso4d4GoUsjbAmDLQUkzAeszlBtzx1+KHgdsYYBygaqUBvrbYCfePedZw==}
+
   unist-util-generated@1.1.6:
     resolution: {integrity: sha512-cln2Mm1/CZzN5ttGK7vkoGw+RZ8VcUH6BtGbq98DDtRGquAAOXig1mrBQYelOwMXYS8rK+vZDyyojSjp7JX+Lg==}
+
+  unist-util-is@3.0.0:
+    resolution: {integrity: sha512-sVZZX3+kspVNmLWBPAB6r+7D9ZgAFPNWm66f7YNb420RlQSbn+n8rG8dGZSkrER7ZIXGQYNm5pqC3v3HopH24A==}
 
   unist-util-is@4.1.0:
     resolution: {integrity: sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg==}
@@ -6292,8 +6328,14 @@ packages:
   unist-util-visit-children@1.1.4:
     resolution: {integrity: sha512-sA/nXwYRCQVRwZU2/tQWUqJ9JSFM1X3x7JIOsIgSzrFHcfVt6NkzDtKzyxg2cZWkCwGF9CO8x4QNZRJRMK8FeQ==}
 
+  unist-util-visit-parents@2.1.2:
+    resolution: {integrity: sha512-DyN5vD4NE3aSeB+PXYNKxzGsfocxp6asDc2XXE3b0ekO2BaRUpBicbbUygfSvYfUz1IkmjFR1YF7dPklraMZ2g==}
+
   unist-util-visit-parents@3.1.1:
     resolution: {integrity: sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==}
+
+  unist-util-visit@1.4.1:
+    resolution: {integrity: sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==}
 
   unist-util-visit@2.0.3:
     resolution: {integrity: sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==}
@@ -9050,6 +9092,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  babel-runtime@6.26.0:
+    dependencies:
+      core-js: 2.6.12
+      regenerator-runtime: 0.11.1
+
   bail@1.0.5: {}
 
   balanced-match@1.0.2: {}
@@ -9520,6 +9567,8 @@ snapshots:
       browserslist: 4.28.1
 
   core-js-pure@3.48.0: {}
+
+  core-js@2.6.12: {}
 
   core-js@3.48.0: {}
 
@@ -10977,6 +11026,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  gatsby-remark-external-links@0.0.4:
+    dependencies:
+      babel-runtime: 6.26.0
+      is-relative-url: 2.0.0
+      unist-util-find: 1.0.4
+      unist-util-visit: 1.4.1
+
   gatsby-remark-images@7.16.0(gatsby-plugin-sharp@5.16.0(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3))(graphql@16.12.0))(gatsby@5.16.1(babel-eslint@10.1.0(eslint@7.32.0))(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(type-fest@4.41.0)(typescript@5.9.3)):
     dependencies:
       '@babel/runtime': 7.28.6
@@ -11910,6 +11966,8 @@ snapshots:
 
   ipaddr.js@1.9.1: {}
 
+  is-absolute-url@2.1.0: {}
+
   is-absolute-url@3.0.3: {}
 
   is-absolute@1.0.0:
@@ -12055,6 +12113,10 @@ snapshots:
       gopd: 1.2.0
       has-tostringtag: 1.0.2
       hasown: 2.0.2
+
+  is-relative-url@2.0.0:
+    dependencies:
+      is-absolute-url: 2.1.0
 
   is-relative-url@3.0.0:
     dependencies:
@@ -12316,6 +12378,8 @@ snapshots:
   lodash.flattendeep@4.4.0: {}
 
   lodash.foreach@4.5.0: {}
+
+  lodash.iteratee@4.7.0: {}
 
   lodash.map@4.6.0: {}
 
@@ -13460,6 +13524,8 @@ snapshots:
 
   regenerate@1.4.2: {}
 
+  regenerator-runtime@0.11.1: {}
+
   regenerator-runtime@0.13.11: {}
 
   regexp.prototype.flags@1.5.4:
@@ -14424,7 +14490,14 @@ snapshots:
 
   unist-builder@2.0.3: {}
 
+  unist-util-find@1.0.4:
+    dependencies:
+      lodash.iteratee: 4.7.0
+      unist-util-visit: 2.0.3
+
   unist-util-generated@1.1.6: {}
+
+  unist-util-is@3.0.0: {}
 
   unist-util-is@4.1.0: {}
 
@@ -14452,10 +14525,18 @@ snapshots:
 
   unist-util-visit-children@1.1.4: {}
 
+  unist-util-visit-parents@2.1.2:
+    dependencies:
+      unist-util-is: 3.0.0
+
   unist-util-visit-parents@3.1.1:
     dependencies:
       '@types/unist': 2.0.11
       unist-util-is: 4.1.0
+
+  unist-util-visit@1.4.1:
+    dependencies:
+      unist-util-visit-parents: 2.1.2
 
   unist-util-visit@2.0.3:
     dependencies:
