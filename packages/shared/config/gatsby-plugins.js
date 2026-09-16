@@ -181,7 +181,7 @@ function createRemarkPlugins() {
     `gatsby-remark-prismjs`,
     `gatsby-remark-copy-linked-files`,
     {
-      resolve: require.resolve(`../gatsby-remark-external-links`),
+      resolve: `gatsby-remark-external-links`,
       options: {
         target: `_blank`,
         rel: `noopener noreferrer`,

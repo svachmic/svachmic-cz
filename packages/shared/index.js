@@ -7,5 +7,4 @@ export { default as ReadingProgressBar } from "./components/reading-progress-bar
 export { default as TagFilter } from "./components/tag-filter";
 export { default as YouTube } from "./components/youtube";
 export { default as LinkedIn } from "./components/linkedin";
-export { default as ExternalLinkTargets } from "./components/external-link-targets";
 export { markExternalLinksInHtml } from "./utils/external-links";

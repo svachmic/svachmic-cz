@@ -12,7 +12,7 @@ tags: [personal]
 ![Záhlaví](./header.jpg)
 
 <p style="text-align: center; font-size: small;">
-  Foto: Carol M. Highsmith / archiv Carol M. Highsmith, Kongresová knihovna, oddělení tisků a fotografií. <a href="https://www.loc.gov/pictures/item/2011632531/">loc.gov</a>
+  Foto: Carol M. Highsmith / archiv Carol M. Highsmith, Kongresová knihovna, oddělení tisků a fotografií. <a href="https://www.loc.gov/pictures/item/2011632531/" target="_blank" rel="noopener noreferrer">loc.gov</a>
 </p>
 
 Bydleli jsme na Jarově, blízko centra. Často jsme chodili na procházky s kočárkem. Vždycky po škole, v dny, kdy jsem neměl housle. Do centra jsme došli pěšky a zpátky jeli tramvají. Mamka, já a brácha, kterému bylo šest měsíců. Byl krásný den, svítilo sluníčko a bylo teplo. Žádný vedro k zdechnutí. Tak akorát, foukal i příjemný vánek pozdního léta.
@@ -22,7 +22,7 @@ Zastavili jsme u [Knihkupectví Krakatit][krakatit] kousek od Myslíkovy. Já š
 ![Knihkupectví Krakatit na Jungmannově](./krakatit.jpg)
 
 <p style="text-align: center; font-size: small;">
-  Knihkupectví Krakatit na Jungmannově (<a href="https://maps.app.goo.gl/WSsgbpe6RHvnsMhe8">Street view z května 2009</a>)
+  Knihkupectví Krakatit na Jungmannově (<a href="https://maps.app.goo.gl/WSsgbpe6RHvnsMhe8" target="_blank" rel="noopener noreferrer">Street view z května 2009</a>)
 </p>
 
 Doma už jsem měl **Pravidla pro pokročilé (verzi 1.3)**. Sehnal jsem je jen zázrakem - v antikvariátu u babičky na Hájích. **Pravidla pro začátečníky** měl Pavel od táty ve verzi 1.2 a **Pravidla pro experty** jsme neměli ani jeden. Sice už jsme tou dobou měli něco nahráno v družině, ale já to prostě chtěl mít komplet i se začátečníkama - obzvlášť, když měli ty 1.6ky. DrD jsme tehdy hráli vedle [Magiců](/2024/01/15-stary-hrac-v-novem-svete/) - s těma jsem začal o rok dřív, na Pavlových narozeninách. Přesně tak, jak to [Richard Garfield][garfield] zamýšlel s D&D a MtG.

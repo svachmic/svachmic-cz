@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { ExternalLinkTargets } from "@svachmic/shared"
 
 const Layout = ({ location, title, children, hyperlinks }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -23,7 +22,6 @@ const Layout = ({ location, title, children, hyperlinks }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <ExternalLinkTargets />
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
