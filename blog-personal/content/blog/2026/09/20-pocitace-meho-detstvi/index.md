@@ -63,7 +63,7 @@ Tohle bylo poslední železo bez sítě. K dalšímu stroji už vedla pevná lin
 <details class="peek">
   <summary>
     <span class="peek-label">Hardware</span>
-    <span class="peek-teaser">Athlon 1800+ · GeForce 4 Ti 4200 · 19" ADI · Inspire 2.1</span>
+    <span class="peek-teaser">Athlon 1800+ · 19" ADI · Inspire 2.1 · WingMan</span>
   </summary>
   <div class="peek-body">
     <ul>
@@ -73,12 +73,12 @@ Tohle bylo poslední železo bez sítě. K dalšímu stroji už vedla pevná lin
       <li>Creative Inspire 2.1 2400</li>
       <li>Microsoft QWERTZ klávesnice připojená přes PS/2 konektor</li>
       <li>Microsoft optická myš připojená přes USB → PS/2 redukci</li>
-      <li>Logitech Wingman Action Pad Wired USB PC Gamepad</li>
+      <li>Logitech WingMan Action Pad</li>
     </ul>
   </div>
 </details>
 
-K Vánocům 2002 přišel Athlon 1800+ — a s ním obr: 19" ADI MicroScan P950. Po 14" CRT to byl monitor jako stůl. K tomu **Creative Inspire 2.1 2400**, subwoofer pod stolem a dvě satelity na kancly.
+K Vánocům 2002 přišel Athlon 1800+ — a s ním obr: 19" ADI MicroScan P950. Po 14" CRT to byl monitor jako stůl. K tomu **Creative Inspire 2.1 2400**, subwoofer pod stolem a dvě satelity na kancly, a **Logitech WingMan Action Pad**.
 
 ![19″ ADI MicroScan CRT](./adi-microscan.jpg)
 
@@ -90,6 +90,12 @@ K Vánocům 2002 přišel Athlon 1800+ — a s ním obr: 19" ADI MicroScan P950.
 
 <p style="text-align: center; font-size: small;">
   Creative Inspire 2.1 2400
+</p>
+
+![Logitech WingMan Action Pad](./logitech-wingman-action-pad.jpg)
+
+<p style="text-align: center; font-size: small;">
+  Logitech WingMan Action Pad
 </p>
 
 *[PLACEHOLDER: foto mě ve 12 letech v tátově kanceláři, 2003]*
