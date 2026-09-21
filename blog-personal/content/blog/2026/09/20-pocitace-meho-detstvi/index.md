@@ -63,13 +63,14 @@ Tohle bylo poslední železo bez sítě. K dalšímu stroji už vedla pevná lin
 <details class="peek">
   <summary>
     <span class="peek-label">Hardware</span>
-    <span class="peek-teaser">Athlon 1800+ · GeForce 4 Ti 4200 · 19" CRT</span>
+    <span class="peek-teaser">Athlon 1800+ · GeForce 4 Ti 4200 · 19" ADI · Inspire 2.1</span>
   </summary>
   <div class="peek-body">
     <ul>
       <li>Athlon 1800+ 1.8 GHz, 57 GB HDD, 256 MB RAM</li>
       <li>GeForce 4 Ti 4200 64 MB</li>
       <li>19" ADI MicroScan P950</li>
+      <li>Creative Inspire 2.1 2400</li>
       <li>Microsoft QWERTZ klávesnice připojená přes PS/2 konektor</li>
       <li>Microsoft optická myš připojená přes USB → PS/2 redukci</li>
       <li>Logitech Wingman Action Pad Wired USB PC Gamepad</li>
@@ -77,9 +78,23 @@ Tohle bylo poslední železo bez sítě. K dalšímu stroji už vedla pevná lin
   </div>
 </details>
 
+K Vánocům 2002 přišel Athlon 1800+ — a s ním obr: 19" ADI MicroScan P950. Po 14" CRT to byl monitor jako stůl. K tomu **Creative Inspire 2.1 2400**, subwoofer pod stolem a dvě satelity na kancly.
+
+![19″ ADI MicroScan CRT](./adi-microscan.jpg)
+
+<p style="text-align: center; font-size: small;">
+  19" ADI MicroScan P950
+</p>
+
+![Creative Inspire 2.1 2400](./creative-inspire-21-2400.jpg)
+
+<p style="text-align: center; font-size: small;">
+  Creative Inspire 2.1 2400
+</p>
+
 *[PLACEHOLDER: foto mě ve 12 letech v tátově kanceláři, 2003]*
 
-Z DIN konektoru se stalo PS/2, z kuličkové myši optická (pořád ale přes redukci USB → PS/2) a z 14" CRT 19" ADI MicroScan. Pod stolem už nehučela 486ka, ale Athlon 1800+ s GeForce 4 Ti 4200.
+Z DIN konektoru se stalo PS/2, z kuličkové myši optická (pořád ale přes redukci USB → PS/2). Pod stolem už nehučela 486ka, ale Athlon 1800+ s GeForce 4 Ti 4200.
 
 ## Athlon 3200+ a první LCD (2006–2008)
 
