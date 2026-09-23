@@ -16,7 +16,7 @@ tags: [computers, retro, nostalgia]
 <details class="peek">
   <summary>
     <span class="peek-label">Hardware</span>
-    <span class="peek-teaser">HP Pavilion dv6700 · GeForce 8400M</span>
+    <span class="peek-teaser">HP Pavilion dv6700 · Mouse 5000</span>
   </summary>
   <div class="peek-body">
     <ul>
@@ -28,9 +28,19 @@ tags: [computers, retro, nostalgia]
   </div>
 </details>
 
-Cesta do USA znamenala první notebook. Desktop zůstal v Česku. Poprvé počítač, který se dal sbalit — a poprvé počítač, do kterého nešlo strčit novou grafiku. Herně se na něm nedalo skoro nic. Když už jsem u něj byl, koukal jsem na seriály.
+Cesta do USA znamenala první notebook: **HP Pavilion dv6700**. Desktop zůstal v Česku. Poprvé počítač, který se dal sbalit — a poprvé počítač, do kterého nešlo strčit novou grafiku. S sebou ještě **Microsoft Bluetooth Notebook Mouse 5000**. Herně se na něm nedalo skoro nic. Když už jsem u něj byl, koukal jsem na seriály.
 
-*[PLACEHOLDER: foto Pavilionu / Florida]*
+![HP Pavilion dv6700](./hp-pavilion-dv6700.jpg)
+
+<p style="text-align: center; font-size: small;">
+  HP Pavilion dv6700
+</p>
+
+![Microsoft Bluetooth Notebook Mouse 5000](./microsoft-bluetooth-notebook-mouse-5000.jpg)
+
+<p style="text-align: center; font-size: small;">
+  Microsoft Bluetooth Notebook Mouse 5000
+</p>
 
 ## Athlon X2 pod stolem (2009–2010)
 
